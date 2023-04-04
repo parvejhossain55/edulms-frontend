@@ -1,5 +1,5 @@
 
 ## Getting Started
 
-This fronend is for Ostad Lms
+This fronend is for Lead Edu Care Lms
 Thanks
