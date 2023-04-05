@@ -22,7 +22,7 @@ const LoginPage = () => {
                         <h1>Your Logo</h1>
                     </div>
                     <h3 className='text-3xl py-8 font-semibold'>Sign in</h3>
-                    <p>If you don't have an account register</p>
+                    <p>If you dont have an account register</p>
                     <p>You can <span className='text-orange-600 font-bold mx-2'><button><Link href={'/signup'}>Register here !</Link></button></span> </p>
                     <form onSubmit={handleSubmit} action="">
                         <div className='my-12'>
