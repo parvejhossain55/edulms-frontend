@@ -1,5 +1,5 @@
 import React from 'react'
-import {Footer, Homepage, Nav} from '../components'
+import { Footer, Homepage, Nav } from '../components'
 import Head from 'next/head'
 
 
@@ -10,9 +10,9 @@ const index = () => {
         <title>Home</title>
       </Head>
       <main>
-          <Nav />
+        <Nav />
         <Homepage />
-          <Footer />
+        <Footer />
       </main>
     </>
   )
