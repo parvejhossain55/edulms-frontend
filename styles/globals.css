@@ -13,3 +13,24 @@
 .btn-primary:hover{
     @apply bg-orange-400 transition-colors
 }
+.btn-kh {
+    @apply text-center border-2 font-medium text-[14px] w-auto rounded-[10px] py-3 px-6 bg-rad-kh text-white shadow-2xl
+}
+.btn-kh:hover{
+    @apply bg-orange-400 transition-colors
+}
+.heading-kh{
+    @apply text-kh-heading font-bold font-Catamaran
+}
+.pregrap-kh{
+    @apply font-normal text-base  text-p-kh
+}
+.containte-kh{
+    @apply container px-4 mx-auto lg:px-10 xl:px-20
+}
+.title-kh{
+    @apply font-sacramento text-xl font-semibold text-rad-kh
+}
+.moving-banner{
+    @apply sm:hidden lg:block absolute lg:w-24 xl:max-w-[100px] animate-bounce  top-32
+}

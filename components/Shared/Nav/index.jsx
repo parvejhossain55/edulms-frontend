@@ -4,8 +4,8 @@ import React from "react";
 
 const Nav = () => {
     return (
-        <div>
-            <div className="home bg-slate-600 p-6">
+        <div className="bg-slate-600">
+            <div className=" containte-kh home  p-6">
                 <div className="header flex justify-between items-center">
                     <div className="logo text-white text-2xl font-semibold">
                         EduCareLms
