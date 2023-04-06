@@ -1,10 +1,13 @@
 import Link from "next/link";
 import React from "react";
+import HeroSection from "./Hero";
 
 const Homepage = () => {
   return (
     <div>
-    Home page sections here
+      <div>
+        <HeroSection />
+      </div>
     </div>
   );
 };

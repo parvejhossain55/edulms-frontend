@@ -1,5 +1,7 @@
-import Link from 'next/link'
 import React from 'react'
+import Link from 'next/link'
+import { BsFacebook } from 'react-icons/bs';
+import { AiFillGithub, AiOutlineGoogle } from 'react-icons/ai';
 
 const LoginPage = () => {
     const [inputs, setInputs] = React.useState({});
@@ -53,11 +55,11 @@ const LoginPage = () => {
                                 <p className='text-center text-slate-400 font-semibold'>or continue with</p>
                             </div>
                             <div>
-                                {/* <div className='flex justify-center'>
+                                <div className='flex justify-center'>
                                     <p className='mx-2 text-3xl my-6 text-blue-700'><button><BsFacebook /></button></p>
                                     <p className='mx-2 text-3xl my-6 text-slite-700'><button><AiFillGithub /></button></p>
                                     <p className='mx-2 text-3xl my-6 text-red-500'><button><AiOutlineGoogle /></button></p>
-                                </div> */}
+                                </div>
                             </div>
                         </div>
                     </form>
