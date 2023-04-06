@@ -1,20 +1,21 @@
 import React from 'react';
 import Image from "next/image"
 import authImage from '../../../assect/img/auth.jpg'
+import WhoWeAreImage from '../../../assect/img/who-we-are-shape.png'
 const WhoWeAre = () => {
     return (
-        <div className='who-we-are '>
-            <div className="containte-kh   ">
+        <div className='who-we-are bg-kh-white'>
+            <div className="containte-kh relative">
+                <Image src={WhoWeAreImage}  className='moving-banner right-0 top-20 ' alt={WhoWeAreImage}/>
                 <div className="flex justify-center items-center flex-col lg:justify-between lg:flex-row lg:py-20">
                     <div className="flex justify-center p-4 items-center lg:w-1/2">
                         <Image src={authImage} className="w-full rounded-full border-kh " alt='authImage'  />
                     </div>
 
                     <div className="flex flex-col lg:w-1/2">
-
                         <div className="flex flex-col">
                             <span className='title-kh py-4' >Who We Are</span>
-                            <h1 className='heading-kh py-4 text-2xl  md:text-5xl '>Kindergarten and Childhood is Our Passion</h1>
+                            <h1 className='heading-kh py-5 text-2xl  md:text-3xl lg:text-[45px] lg:leading-[50px] '>Kindergarten and Childhood is Our Passion</h1>
                             <p className='pregrap-kh leading-tight '>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
                             <p className='pregrap-kh leading-tight'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                             <div className="flex justify-between items-center flex-wrap pt-5 ">
@@ -38,7 +39,6 @@ const WhoWeAre = () => {
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>

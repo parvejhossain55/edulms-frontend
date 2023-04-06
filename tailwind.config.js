@@ -32,7 +32,7 @@ module.exports = {
         'rad-kh':'#ea512e',
         'yellow-kh':"#f5890d",
         "kh-white":"#fff",
-        'kh-seandary':'#fdf6ed',
+        'seandary-bg':'#fdf6ed',
         "kh-heading":"#1b0238",
         "p-kh":'#6b6b84'
       },
