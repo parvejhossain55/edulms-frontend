@@ -1,16 +1,5 @@
-import Homepage from "./Homepage";
-import LoginPage from "./Login";
-import SignupPage from "./Signup";
-import Nav from './Shared/Nav'
-import Footer from './Shared/Footer'
-
-
-
-
-export {
-    Homepage,
-    LoginPage,
-    SignupPage,
-    Nav,
-    Footer
-}
+export {default as Homepage} from './Homepage';
+export {default as LoginPage} from './Login';
+export {default as SignupPage} from './Signup';
+export {default as Nav} from './Shared/Nav';
+export {default as Footer} from './Shared/Footer';
