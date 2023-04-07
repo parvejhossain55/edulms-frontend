@@ -1,7 +1,8 @@
 import React from "react";
 import HeroSection from "./Hero";
 import WhoWeAre from "./Who-we-are";
-import Classes from "../Classes";
+import Classes from "./Classes";
+import CoreValue from "./CoreValue";
 
 const Homepage = () => {
   return (
@@ -10,6 +11,7 @@ const Homepage = () => {
         <HeroSection />
           <WhoWeAre />
           <Classes />
+          <CoreValue/>
       </div>
     </div>
   );
