@@ -1,8 +1,8 @@
 import React from 'react';
 import Image from "next/image";
-import Blog1 from "../../assect/img/blog-3.jpg";
-import Blog2 from "../../assect/img/blog-2.jpg";
-import Blog3 from "../../assect/img/blog-1.jpg";
+import Blog1 from "../../../assect/img/blog-3.jpg";
+import Blog2 from "../../../assect/img/blog-2.jpg";
+import Blog3 from "../../../assect/img/blog-1.jpg";
 
 const LatestNews = () => {
 
