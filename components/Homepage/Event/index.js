@@ -1,6 +1,5 @@
 import React from 'react';
 import Image from "next/image"
-import bg_image from "../../../assect/img/event-bg.jpg"
 import event1 from "../../../assect/img/event-1.png"
 import event2 from "../../../assect/img/event-2.png"
 import event3 from "../../../assect/img/event-3.png"
