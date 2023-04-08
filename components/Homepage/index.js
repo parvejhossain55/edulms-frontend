@@ -4,6 +4,7 @@ import WhoWeAre from "./Who-we-are";
 import Classes from "./Classes";
 import CoreValue from "./CoreValue";
 import Teacher from "./Teacher";
+import Event from "./Event";
 
 const Homepage = () => {
   return (
@@ -14,6 +15,7 @@ const Homepage = () => {
           <Classes />
           <CoreValue/>
           <Teacher/>
+          <Event/>
       </div>
     </div>
   );

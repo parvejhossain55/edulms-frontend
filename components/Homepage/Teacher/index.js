@@ -7,7 +7,7 @@ import fbIcon from "../../../assect/icon/facebook.png"
 const Teacher = () => {
 
     return (
-        <div className='bg-seandary-bg py-5 '>
+        <div className='bg-seandary-bg py-5 ' >
             <div className="containte-kh px-4 py-8 md:py-10 lg:py-12">
                 <p className="title-kh  mb-4 ">Our Core Teacher</p>
                 <h3 className="heading-kh mb-4  text-center">Meet Our Teacher</h3>
