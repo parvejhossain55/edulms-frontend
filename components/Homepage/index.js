@@ -3,6 +3,7 @@ import HeroSection from "./Hero";
 import WhoWeAre from "./Who-we-are";
 import Classes from "./Classes";
 import CoreValue from "./CoreValue";
+import Teacher from "./Teacher";
 
 const Homepage = () => {
   return (
@@ -12,6 +13,7 @@ const Homepage = () => {
           <WhoWeAre />
           <Classes />
           <CoreValue/>
+          <Teacher/>
       </div>
     </div>
   );

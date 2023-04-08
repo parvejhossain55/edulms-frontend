@@ -36,6 +36,7 @@ module.exports = {
         "kh-heading":"#1b0238",
         "p-kh":'#6b6b84'
       },
+
     },
   },
   plugins: [],
