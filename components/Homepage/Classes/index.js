@@ -1,13 +1,13 @@
 import React from 'react';
 import Image from "next/image"
-import class1 from '../../assect/img/class-1.jpg'
-import class2 from '../../assect/img/class-2.jpg'
-import class3 from '../../assect/img/class-3.jpg'
+import class1 from '../../../assect/img/class-1.jpg'
+import class2 from '../../../assect/img/class-2.jpg'
+import class3 from '../../../assect/img/class-3.jpg'
 
 const Classes = () => {
     return (
         <div className="classes bg-seandary-bg ">
-            <div className="containte-kh px-4 py-10 ">
+            <div className="containte-kh px-4 py-10  ">
                 <div className="flex flex-col items-center justify-center">
                     <span className="title-kh py-5 ">clesses </span>
                     <h3 className="heading-kh mb-8 text-3xl">Popular Classes</h3>
