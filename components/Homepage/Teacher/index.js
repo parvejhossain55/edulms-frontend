@@ -25,7 +25,7 @@ const Teacher = () => {
                     <div className="flex flex-col gap-3 basis-12 md:basis-5/12 lg:basis-3/12 ">
                     <Image src={teacherImage1} className='w-full rounded-full border-8 border-rad-kh' alt='teacher-1'/>
                         <h3 className="heading-kh text-center mt-2 text-2xl lg:text-3xl">`Glims Bond</h3>
-                        <p className='title-kh text-sm -m-2 '>Music Teacher</p>
+                        <p className='title-kh text-xs -m-2 '>Music Teacher</p>
                     </div>
                     <div className="flex flex-col gap-3 basis-12 md:basis-5/12 lg:basis-3/12 ">
                     <Image src={teacherImage4} className='w-full rounded-full border-8 border-rad-kh' alt='teacher-1'/>

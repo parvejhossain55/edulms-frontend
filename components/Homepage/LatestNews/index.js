@@ -5,7 +5,6 @@ import Blog2 from "../../../assect/img/blog-2.jpg";
 import Blog3 from "../../../assect/img/blog-1.jpg";
 
 const LatestNews = () => {
-
     return (
         <div className="classes bg-kh-white ">
             <div className="containte-kh px-4 py-10  ">
