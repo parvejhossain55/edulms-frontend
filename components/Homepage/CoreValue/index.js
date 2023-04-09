@@ -1,11 +1,14 @@
 import React from 'react';
 import Image from "next/image"
 import valueImage from "../../../assect/img/value-1.png"
+import valueShape1 from '../../../assect/img/value-shape-1.png'
+import valueShape2 from '../../../assect/img/value-shape-2.png'
+import valueShape3 from '../../../assect/img/value-shape-3.png'
 
 
 const CoreValue = () => {
     return (
-        <div className=" bg-kh-white py-5 md:py-8 ">
+        <div className=" bg-kh-white py-5 md:py-8 relative z-10 ">
             <div className="containte-kh px-4 py-10">
                 <div className="flex flex-col lg:justify-between items-center lg:items-start lg:flex-row gap-5">
                     <div className=" lg:w-1/2 ">
@@ -43,6 +46,12 @@ const CoreValue = () => {
                         </div>
                     </div>
                 </div>
+            </div>
+            <div>
+                <Image src={valueShape1} className='hidden lg:block w-[100px]  left-6 top-6 absolute -z-10 ' alt="value-shape-3"/>
+                <Image src={valueShape2} className='hidden lg:block w-[100px]  left-0 bottom-5 absolute -z-10 ' alt="value-shape-3"/>
+                <Image src={valueShape3} className='hidden lg:block w-[250px]  right-0 bottom-16 absolute -z-10 ' alt="value-shape-3"/>
+
             </div>
         </div>
     );

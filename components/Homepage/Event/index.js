@@ -10,7 +10,7 @@ const Event = () => {
 
     return (
         <div className="bg-amber-300 bg-fixed  ">
-            <div className="containte-kh px-4 py-8 md:py-12 lg:py-16">
+            <div className=" containte-kh px-4 py-8 md:py-12 lg:py-16">
                 <p className="font-sacramento text-xl text-center font-semibold text-white mb-5">Event</p>
                 <h3 className="font-extrabold font-Catamaran text-center text-white text-2xl md:text-3xl lg:4x1 mb-8">Upcoming Event</h3>
                 <div className="flex flex-col justify-center items-center  bg-kh-white gap-y-5 mb-5 py-3 w-full md:flex-row md:justify-between rounded-2xl ">

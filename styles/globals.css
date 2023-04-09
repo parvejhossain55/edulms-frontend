@@ -29,7 +29,7 @@
     @apply container px-4 mx-auto lg:px-10 xl:px-20
 }
 .title-kh{
-    @apply font-sacramento text-xl text-center font-semibold text-rad-kh
+    @apply font-sacramento text-center font-semibold text-rad-kh
 }
 .moving-banner{
     @apply hidden lg:block absolute lg:w-24 xl:max-w-[100px] animate-bounce
