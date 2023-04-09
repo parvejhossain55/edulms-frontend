@@ -55,7 +55,6 @@ import {useRouter} from "next/router";
                             </div>
                             <nav className="hidden md:flex space-x-10">
 
-
                                 <Link
                                     href="/"
                                     className={`text-base font-medium hover:text-rad-kh ${router.pathname === '/' ? 'text-rad-kh' : 'text-gray-500'}`}
