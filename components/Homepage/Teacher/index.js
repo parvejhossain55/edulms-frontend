@@ -7,7 +7,7 @@ const Teacher = () => {
 
     return (
         <div className='bg-seandary-bg py-5 ' >
-            <div className="containte-kh px-4 py-8 md:py-10 lg:py-12">
+            <div className="containte-kh px-4 py-6 md:py-8 lg:py-10 ">
                 <p className="title-kh  mb-4 ">Our Core Teacher</p>
                 <h3 className="heading-kh mb-4  text-center">Meet Our Teacher</h3>
                 <div className="flex items-center flex-col md:flex-row md:flex-wrap lg:flex-nowrap md:justify-between gap-3 ">

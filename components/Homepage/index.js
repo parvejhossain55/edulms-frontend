@@ -6,6 +6,7 @@ import CoreValue from "./CoreValue";
 import Teacher from "./Teacher";
 import Event from "./Event";
 import LatestNews from "./LatestNews";
+import BuyNowBtn from "./BuyNowBtn";
 
 const Homepage = () => {
   return (
@@ -18,6 +19,7 @@ const Homepage = () => {
           <Teacher/>
           <Event/>
           <LatestNews/>
+          <BuyNowBtn/>
       </div>
     </div>
   );
