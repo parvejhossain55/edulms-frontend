@@ -2,7 +2,6 @@ import React from 'react';
 import Image from "next/image"
 import teacherImage1 from '../../../assect/img/teacher-1.jpg'
 import teacherImage4 from '../../../assect/img/teacher-4.jpg'
-import fbIcon from "../../../assect/icon/facebook.png"
 
 const Teacher = () => {
 

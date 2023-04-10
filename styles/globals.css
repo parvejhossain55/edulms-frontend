@@ -14,8 +14,16 @@
     @apply bg-orange-400 transition-colors
 }
 .btn-kh {
-    @apply text-center border-2 font-medium text-[14px] w-auto rounded-[10px] py-3 px-6 bg-rad-kh text-white shadow-2xl
+    @apply text-center border-2 font-medium text-lg   w-auto rounded-[10px] py-3 px-6 bg-rad-kh text-white shadow-2xl
 }
+
+.icon-kh{
+    @apply text-center font-medium text-lg rounded-[20px] w-8 h-8 bg-rad-kh p-2 text-white
+}
+.icon-kh:hover{
+    @apply  text-rad-kh bg-kh-white transition-all delay-300 ease-in
+}
+
 .btn-kh:hover{
     @apply bg-orange-400 transition-colors
 }
