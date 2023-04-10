@@ -34,7 +34,7 @@
     @apply font-normal text-base  text-p-kh
 }
 .containte-kh{
-    @apply container px-4 mx-auto lg:px-10 xl:px-20
+    @apply container mx-auto lg:px-10 xl:px-20
 }
 .title-kh{
     @apply font-sacramento text-center font-semibold text-rad-kh

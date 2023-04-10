@@ -1,11 +1,18 @@
 import React from "react";
+import ContactHero from "./ContactHero";
+import ContactForm from "./ContactForm";
+import BuyNowBtn from "../Homepage/BuyNowBtn";
 
 
 const Contactuspage = () => {
     return (
-        <div>
-            section here
-        </div>
+       <div className=''>
+           <ContactHero/>
+           <ContactForm/>
+
+
+           <BuyNowBtn/>
+       </div>
     );
 };
 
