@@ -9,9 +9,6 @@ const Contactuspage = () => {
        <div className=''>
            <ContactHero/>
            <ContactForm/>
-
-
-           <BuyNowBtn/>
        </div>
     );
 };
