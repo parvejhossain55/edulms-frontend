@@ -1,10 +1,15 @@
 import React from "react";
+import AboutHero from "./AboutHero";
+import AboutSec from "./AboutSec";
+import FunFact from "./FunFact";
 
 
 const Aboutuspage = () => {
   return (
     <div>
-      section here
+          <AboutHero/>
+           <AboutSec/>
+            <FunFact/>
     </div>
   );
 };
