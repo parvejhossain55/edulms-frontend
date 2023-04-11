@@ -72,16 +72,16 @@ const ContactForm = () => {
                         <div className="flex flex-col justify-start gap-y-4">
                             <h3 className='heading-kh text-2xl '>Here to Help</h3>
                             <p className="flex  items-center ">
-                                <span className="text-rad-kh mr-3 text-xl  "  ><ImLocation/></span>Location :
-                                <strong >Wonder Street, USA, New York</strong>
+                                <span className="text-rad-kh mr-3 text-xl "  ><ImLocation/></span>Location :
+                                <strong  className='ml-2'>Wonder Street, USA, New York</strong>
                             </p>
                             <p className="flex  items-center ">
                                 <span className="text-rad-kh mr-3 text-xl  " ><TbPhoneCall/></span>Call Us:
-                                <a className='heading-kh hover:text-rad-kh transition-all hover:border-b-[1px] border-rad-kh  ' href="#">01321654214</a>
+                                <a className='heading-kh hover:text-rad-kh transition-all hover:border-b-[1px] border-rad-kh ml-2  ' href="#">01321654214</a>
                             </p>
                             <p className="flex  items-center ">
                                 <span className="text-rad-kh mr-3 text-xl  "  ><HiOutlineMail/></span>Email Us:
-                                <a className='heading-kh hover:text-rad-kh transition-all hover:border-b-[1px] border-rad-kh  ' href="#">helle@gmail.com</a>
+                                <a className='heading-kh hover:text-rad-kh transition-all hover:border-b-[1px] border-rad-kh ml-2  ' href="#">helle@gmail.com</a>
                             </p>
                         </div>
                         <div className="flex flex-col justify-start ">
