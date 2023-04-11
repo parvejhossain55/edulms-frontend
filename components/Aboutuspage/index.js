@@ -2,6 +2,7 @@ import React from "react";
 import AboutHero from "./AboutHero";
 import AboutSec from "./AboutSec";
 import FunFact from "./FunFact";
+import ExpertTeacher from "./ExpertTeacher";
 
 
 const Aboutuspage = () => {
@@ -10,6 +11,7 @@ const Aboutuspage = () => {
           <AboutHero/>
            <AboutSec/>
             <FunFact/>
+            <ExpertTeacher/>
     </div>
   );
 };
