@@ -14,14 +14,17 @@
     @apply bg-orange-400 transition-colors
 }
 .btn-kh {
-    @apply text-center border-2 font-medium text-lg   w-auto rounded-[10px] py-3 px-6 bg-rad-kh text-white shadow-2xl
+    @apply text-center border-2 font-medium text-lg w-auto rounded-[10px] py-3 px-6 bg-rad-kh text-white shadow-2xl
 }
 
 .icon-kh{
-    @apply text-center font-medium text-lg rounded-[20px] w-8 h-8 bg-rad-kh p-2 text-white
+    @apply text-center  font-medium text-lg rounded-[20px] w-[35px] h-[35px] bg-rad-kh p-2 text-white
 }
 .icon-kh:hover{
     @apply  text-rad-kh bg-kh-white transition-all delay-300 ease-in
+}
+.hover-box:hover .inner-hover-box{
+    @apply flex transition-[mt-0]
 }
 
 .btn-kh:hover{
