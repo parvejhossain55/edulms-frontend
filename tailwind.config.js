@@ -33,7 +33,9 @@ module.exports = {
         "kh-white":"#fff ",
         'seandary-bg':'#fdf6ed',
         "kh-heading":"#1b0238",
-        "p-kh":'#6b6b84'
+        "p-kh":'#6b6b84',
+        'org-light-jo': '#ffba6a'
+
       },
     },
   },

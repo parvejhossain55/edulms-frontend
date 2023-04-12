@@ -105,16 +105,7 @@ import {useRouter} from "next/router";
                             </div>
                         </div>
                     </div>
-                    {/*
-    Mobile menu, show/hide based on mobile menu state.
 
-    Entering: "duration-200 ease-out"
-      From: ""
-      To: ""
-    Leaving: "duration-100 ease-in"
-      From: "opacity-100 scale-100"
-      To: "opacity-0 scale-95"
-  */}
 
                     <div
                         className={
@@ -126,13 +117,13 @@ import {useRouter} from "next/router";
                         <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
                             <div className="pt-5 pb-6 px-5">
                                 <div className="flex items-center justify-between">
-                                    <div>
-                                        <img
+                                    <Link href='/' className='inline-block'>
+                                        <Image
                                             className="h-8 w-auto"
-                                            src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
+                                            src={Logo}
                                             alt="Workflow"
                                         />
-                                    </div>
+                                    </Link>
                                     <div className="-mr-2">
                                         <button
                                             type="button"
@@ -161,54 +152,50 @@ import {useRouter} from "next/router";
                                 </div>
                                 <div className="mt-6">
                                     <nav className="grid gap-y-8">
-                                        <a
-                                            href="#"
-                                            className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
-                                        >
-                                            {/* Heroicon name: outline/chart-bar */}
-                                            <svg
-                                                className="flex-shrink-0 h-6 w-6 text-indigo-600"
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                fill="none"
-                                                viewBox="0 0 24 24"
-                                                stroke="currentColor"
-                                                aria-hidden="true"
-                                            >
-                                                <path
-                                                    strokeLinecap="round"
-                                                    strokeLinejoin="round"
-                                                    strokeWidth={2}
-                                                    d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
-                                                />
-                                            </svg>
-                                            <span className="ml-3 text-base font-medium text-gray-900">
-                      Analytics
-                    </span>
-                                        </a>
-                                        <a
-                                            href="#"
-                                            className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
-                                        >
+                                        <Link
+                                            href="/programms"
+                                            className={`-m-3 p-3 flex items-center rounded-md hover:bg-org-light-jo  ${router.pathname === '/programms' ? 'bg-org-light-jo' : ''}`} >
                                             {/* Heroicon name: outline/cursor-click */}
-                                            <svg
-                                                className="flex-shrink-0 h-6 w-6 text-indigo-600"
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                fill="none"
-                                                viewBox="0 0 24 24"
-                                                stroke="currentColor"
-                                                aria-hidden="true"
-                                            >
-                                                <path
-                                                    strokeLinecap="round"
-                                                    strokeLinejoin="round"
-                                                    strokeWidth={2}
-                                                    d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122"
-                                                />
-                                            </svg>
+
                                             <span className="ml-3 text-base font-medium text-gray-900">
-                      Engagement
+                        Programms
                     </span>
-                                        </a>
+                                        </Link>
+                                        <Link
+                                            href="/blog"
+                                            className={`-m-3 p-3 flex items-center rounded-md hover:bg-org-light-jo  ${router.pathname === '/blog' ? 'bg-org-light-jo' : ''}`} >
+                                            {/* Heroicon name: outline/cursor-click */}
+
+                                            <span className="ml-3 text-base font-medium text-gray-900">
+                        Blog
+
+                    </span>
+                                        </Link>
+                                        <Link
+                                            href="/about-us"
+                                            className={`-m-3 p-3 flex items-center rounded-md hover:bg-org-light-jo  ${router.pathname === '/about-us' ? 'bg-org-light-jo' : ''}`} >
+                                            {/* Heroicon name: outline/cursor-click */}
+
+                                            <span className="ml-3 text-base font-medium text-gray-900">
+
+About Us
+
+
+                    </span>
+                                        </Link>
+
+                                        <Link
+                                            href="/contact-us"
+                                            className={`-m-3 p-3 flex items-center rounded-md hover:bg-org-light-jo  ${router.pathname === '/contact-us' ? 'bg-org-light-jo' : ''}`} >
+                                            {/* Heroicon name: outline/cursor-click */}
+
+                                            <span className="ml-3 text-base font-medium text-gray-900">
+
+Contact Us
+
+
+                    </span>
+                                        </Link>
 
 
                                     </nav>
@@ -219,14 +206,14 @@ import {useRouter} from "next/router";
                                 <div>
                                     <a
                                         href="#"
-                                        className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700"
+                                        className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white btn-kh"
                                     >
                                         Sign up
                                     </a>
-                                    <p className="mt-6 text-center text-base font-medium text-gray-500">
+                                    <p className="mt-6 text-center text-base font-medium text-gray-500 ">
                                         Existing customer?
-                                        <a href="#" className="text-indigo-600 hover:text-indigo-500">
-                                            Sign in
+                                        <a href="#" className="text-rad-kh ml-2">
+                                             Sign in
                                         </a>
                                     </p>
                                 </div>
