@@ -37,8 +37,22 @@ module.exports = {
         'org-light-jo': '#ffba6a'
 
       },
-    },
+      keyframes: {
+        slideInRight: {
+          '50%': {
+            transform: 'translateX(40px)',
+            // marginRight: '20px',
+          },
+          '100%': {
+            transform: 'translateX(0)',
+            // marginRight: '20px',
+          },
+        },
+      },
   },
+
+  },
+
   plugins: [
   ],
 }
