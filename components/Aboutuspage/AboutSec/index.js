@@ -5,8 +5,7 @@ import WhoWeAre_3 from "../../../assect/img/who-we-are-3.png"
 const AboutSec = () => {
 
     return (
-        <div>
-           <div id="aboutSec">
+           <div className='bg-kh-white' id="aboutSec">
                <div className="containte-kh py-6 md:py-8 lg:py-10">
                    <div className="flex flex-col lg:justify-between lg:flex-row gap-y-5 ">
                        <div className="flex flex-col justify-start lg:basis-1/2 gap-y-5 ">
@@ -44,8 +43,6 @@ const AboutSec = () => {
                    </div>
                </div>
            </div>
-
-        </div>
     );
 };
 
