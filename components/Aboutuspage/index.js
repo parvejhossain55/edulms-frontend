@@ -5,6 +5,8 @@ import FunFact from "./FunFact";
 import ExpertTeacher from "./ExpertTeacher";
 import AboutQuote from "./AboutQuote";
 import AboutCourses from "./AboutCourses";
+import AboutPricing from "./AboutPricing";
+import AboutSubscribe from "./AboutSubscribe";
 
 
 const Aboutuspage = () => {
@@ -16,6 +18,8 @@ const Aboutuspage = () => {
             <ExpertTeacher/>
             <AboutQuote/>
             <AboutCourses/>
+            <AboutPricing/>
+            <AboutSubscribe/>
     </div>
   );
 };

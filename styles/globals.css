@@ -28,7 +28,7 @@
 }
 .hover-box:hover .inner-hover-box{
     @apply flex transition-[mt-0]
-}
+ }
 
 .heading-kh{
     @apply text-kh-heading font-bold font-Catamaran
@@ -37,11 +37,21 @@
     @apply font-normal text-base  text-p-kh
 }
 .containte-kh{
-    @apply container mx-auto lg:px-10 xl:px-20
+    @apply container mx-auto px-3 sm:px-0 lg:px-10 xl:px-20
 }
 .title-kh{
     @apply font-sacramento text-center font-semibold text-rad-kh
 }
 .moving-banner{
     @apply hidden lg:block absolute lg:w-24 xl:max-w-[100px] animate-[slideInRight_4s_ease-in-out_infinite]
+}
+.input-kh{
+    @apply py-4 px-6 w-full mb-2 border-gray-300 focus:border-rad-kh border-[1.5px] rounded-lg outline-none transition-all delay-200 ease-in-out
+}
+
+.link-kh{
+    @apply hover:text-rad-kh transition-all border-transparent hover:border-rad-kh w-fit border-b-[1px]
+}
+.bg-banner-kh{
+    @apply absolute -z-30 bg-fixed  top-0 right-0  w-full
 }

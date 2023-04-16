@@ -5,4 +5,5 @@ export {default as Nav} from './Shared/Nav';
 export {default as Footer} from './Shared/Footer';
 export {default as Aboutuspage} from './Aboutuspage';
 export {default as Contactuspage} from './Contactuspage';
+export  {default as BlogPage} from  "./BlogPage"
 
