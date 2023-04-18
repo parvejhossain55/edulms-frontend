@@ -27,6 +27,9 @@ module.exports = {
       "sacramento": ["Sacramento", "cursive"]
     },
     extend: {
+      boxShadow:{
+        "kh":"0 0 1.25rem rgba(108,118,134,0.1)"
+      },
       colors: {
         'rad-kh':'#ea512e',
         'yellow-kh':"#f5890d",

@@ -21,10 +21,10 @@
 }
 
 .icon-kh{
-    @apply text-center  font-medium text-lg rounded-[20px] w-[35px] h-[35px] bg-rad-kh p-2 text-white
+    @apply flex justify-center items-center bg-rad-kh w-8 h-8 rounded-[16px]
 }
 .icon-kh:hover{
-    @apply  text-rad-kh bg-kh-white transition-all delay-300 ease-in
+    @apply text-rad-kh bg-kh-white transition-all delay-200 ease-in text-xl p-1
 }
 .hover-box:hover .inner-hover-box{
     @apply flex transition-[mt-0]
@@ -54,4 +54,12 @@
 }
 .bg-banner-kh{
     @apply absolute -z-30 bg-fixed  top-0 right-0  w-full
+}
+
+.link-text-kh{
+    @apply font-normal text-base text-p-kh hover:text-rad-kh transition-all border-transparent
+}
+
+.check:hover span {
+    @apply bg-rad-kh text-kh-white transition-all delay-100 ease-in
 }
