@@ -7,6 +7,7 @@ const ContactForm = () => {
 
     return (
         <div className='bg-kh-white'>
+
             <div className="containte-kh py-6 md:py-8 lg:py-10">
                 <div className="flex flex-col justify-start lg:justify-between
                                 lg:flex-row gap-y-7 lg:gap-x-8 ">
@@ -16,26 +17,24 @@ const ContactForm = () => {
                         <div className='px-2 sm:px-0 '>
                             <input type="text"
                                    placeholder='Your Name'
-                                   className="py-4 w-full mb-2 border-rad-kh focus:border-[1.5px] rounded-lg invalid:border-red-500 outline-none
+                                   className="input-kh
 
                                     " />
                             {/*  -------------->>> Error Massage here  <<<<<<----------------*/}
-                            <span className='text-rad-kh text-lg '>please enter your name </span>
+                            <span className='text-rad-kh text-lg hidden '>please enter your name </span>
                         </div>
                         <div className='px-2 sm:px-0 '>
                             <input type="email"
                                    placeholder='Your Email '
-                                   className="py-4 w-full mb-2 border-gray-300 focus:border-rad-kh border-[1.5px] rounded-lg invalid:border-red-500 outline-none
-
-                                    " />
+                                   className="input-kh"
+                            />
                             {/*  -------------->>> Error Massage here  <<<<<<----------------*/}
                             <span className='text-rad-kh text-lg hidden  '>please enter your email </span>
                         </div>
                         <div className='px-2 sm:px-0 '>
                             <input type="number"
                                    placeholder='Your Numbre'
-                                   className="py-4 w-full mb-2 border-gray-300 focus:border-rad-kh border-[1.5px]
-                                    rounded-lg invalid:border-red-500 outline-none "
+                                   className="input-kh"
                             />
                             {/*  -------------->>> Error Massage here  <<<<<<----------------*/}
                             <span className='text-rad-kh text-lg hidden  '>please enter your Number </span>
@@ -43,16 +42,15 @@ const ContactForm = () => {
                         <div className='px-2 sm:px-0 '>
                             <input type="text"
                                    placeholder='Subject'
-                                   className="py-4 w-full mb-2 border-gray-300 focus:border-rad-kh
-                                   border-[1.5px] rounded-lg invalid:border-red-500 outline-none"
+                                   className="input-kh"
                             />
                             {/*  -------------->>> Error Massage here  <<<<<<----------------*/}
                             <span className='text-rad-kh text-lg hidden  '>please enter your Subject </span>
                         </div>
                         <div className='px-2 sm:px-0 '>
                             <textarea
-                                   placeholder='Your Name'
-                                   className="py-4 w-full mb-2 border-gray-300 focus:border-rad-kh          border-[1.5px] rounded-xl invalid:border-red-500 outline-none "
+                                   placeholder='Write Your Massage '
+                                   className="input-kh "
                                       cols='10'
                                       rows='5 '>
                             </textarea>
@@ -61,14 +59,13 @@ const ContactForm = () => {
                         </div>
                         <div className='px-2 sm:px-0 '>
                             <input type="button"
-                                   className='text-center border-2 font-medium text-lg
-                                    w-auto rounded-[10px] py-1.5 px-6 bg-rad-kh text-white shadow-2xl '
+                                   className='btn-kh '
                                    value="Send Massage"
                             />
                         </div>
                     </div>
 
-                    <div className="flex flex-col justify-start lg:grow lg:justify-center gap-y-5 lg:mt-20 ">
+                    <div className="flex flex-col justify-start lg:grow lg:justify-center gap-y-5 lg:px-5 ">
                         <div className="flex flex-col justify-start gap-y-4">
                             <h3 className='heading-kh text-2xl '>Here to Help</h3>
                             <p className="flex  items-center ">
@@ -77,11 +74,11 @@ const ContactForm = () => {
                             </p>
                             <p className="flex  items-center ">
                                 <span className="text-rad-kh mr-3 text-xl  " ><TbPhoneCall/></span>Call Us:
-                                <a className='heading-kh hover:text-rad-kh transition-all hover:border-b-[1px] border-rad-kh ml-2  ' href="#">01321654214</a>
+                                <a className=' heading-kh link-kh ml-2' href="#">01321654214</a>
                             </p>
                             <p className="flex  items-center ">
                                 <span className="text-rad-kh mr-3 text-xl  "  ><HiOutlineMail/></span>Email Us:
-                                <a className='heading-kh hover:text-rad-kh transition-all hover:border-b-[1px] border-rad-kh ml-2  ' href="#">helle@gmail.com</a>
+                                <a className='heading-kh link-kh ml-2 ' href="#">helle@gmail.com</a>
                             </p>
                         </div>
                         <div className="flex flex-col justify-start ">

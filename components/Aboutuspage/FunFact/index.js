@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Index = () => {
+const FunFact = () => {
 
     return (
         <div className='bg-sky-200 ' id='fanFact'>
@@ -30,4 +30,4 @@ const Index = () => {
     );
 };
 
-export default Index;
+export default FunFact;
