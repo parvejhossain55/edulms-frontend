@@ -6,7 +6,7 @@ import blog_2 from '../../../assect/img/blog-2.jpg'
 import blog_3 from '../../../assect/img/blog-3.jpg'
 import client_1 from '../../../assect/img/client-1.jpg'
 import client_3 from '../../../assect/img/client-3.jpg'
-import class_3 from '../../../assect/img/class-1.jpg'
+import class_3 from '../../../assect/img/class-2.jpg'
 import {BsCheck, BsFillBookmarkFill, BsTwitter} from "react-icons/bs";
 import {FaCircle, FaFacebookF, FaPinterestP} from "react-icons/fa";
 
@@ -30,7 +30,6 @@ const blogPost = () => {
                                 <a className='link-text-kh pl-2 ' href="#">John Anderson</a>
                             </h5>
                         </div>
-
                         <div className='flex flex-col justify-start  gap-y-5'>
 
                             <h1 className='heading-kh text-xl md:text-2xl  '>
@@ -111,12 +110,7 @@ const blogPost = () => {
                                 </a>
                             </div>
                         </div>
-
-
-
-
                         {/*    ----->>> Comment  Box ---------<<<<<< */}
-
                         <div className="flex flex-col justify-start gap-y-5  ">
                             <h3 className='heading-kh text-2xl mb-4 '> 3 Comments:</h3>
                             <div className="flex justify-start gap-x-5 ">
@@ -189,18 +183,17 @@ const blogPost = () => {
                                             </a>
                                         </div>
                                     </div>
+
                                 </div>
 
                             </div>
                         </div>
-
-                      <div>
-                          <h2 className='heading-kh text-2xl mb-3 '> Leave a Reply</h2>
-                          <p className='pregrap-kh'>
+                         <div>
+                            <h2 className='heading-kh text-2xl mb-3 '> Leave a Reply</h2>
+                            <p className='pregrap-kh'>
                               Your email address will not be published. Required fields are marked *
-                          </p>
-                      </div>
-
+                            </p>
+                         </div>
                         <form className='flex flex-wrap justify-between items-center  gap-y-3 ' action="">
                             <input  className='input-kh bg-[#f4f4f4] border-none
                                         focus:border-transparent px-4 basis-full  sm:basis-[48%]  '
@@ -238,10 +231,7 @@ const blogPost = () => {
                                    value='Post A Comment'/>
 
                         </form>
-
-
                     </div>
-
                     <div className="flex flex-col basis-full lg:basis-4/12 gap-y-7 ">
                         {/*--------------->>>>>>>Search DIV <<<<<<<<<<<<<-------------------*/}
                         <div className="flex flex-col justify-start gap-y-5 shadow-kh p-4 px-5 ">
@@ -456,10 +446,7 @@ const blogPost = () => {
                             </div>
 
                     </div>
-
                 </div>
-
-
             </div>
         </div>
     );
