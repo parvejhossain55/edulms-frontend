@@ -15,7 +15,7 @@ const ContactHero = () => {
                     <div className="flex justify-start items-center gap-x-4">
                         <a className=' text-kh-white text-lg font-medium' href="/home">Home</a>
                         <span className='text-rad-kh text-lg font-medium '>|</span>
-                        <a className=' text-rad-kh text-lg font-medium ' href="?# ">Contact</a>
+                        <a className=' text-rad-kh text-lg font-medium ' href="#">Contact</a>
                     </div>
                 </div>
             </div>

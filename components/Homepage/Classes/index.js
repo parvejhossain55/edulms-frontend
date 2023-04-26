@@ -14,13 +14,13 @@ const Classes = () => {
                     <span className="title-kh py-5 ">clesses </span>
                     <h3 className="heading-kh mb-8 text-3xl">Popular Classes</h3>
                 </div>
-                <div className="flex justify-center items-center flex-col lg:justify-between lg:flex-row flex-wrap ">
-                    <div className="flex rounded-2xl lg:max-w-[400px] md:mx-auto flex-col bg-kh-white drop-shadow-lg my-4">
+                <div className="flex justify-center md:justify-start items-center flex-col  lg:justify-between md:flex-row flex-wrap gap-6 ">
+                    <div className="flex rounded-2xl md:basis-[48%] lg:basis-[32%] flex-col bg-kh-white drop-shadow-lg">
                         <div className="w-full overflow-hidden">
                             <Image src={class1} className="w-full transform hover:scale-125 hover:rotate-6 transition duration-500 ease-in-out " alt="classImage"/>
                         </div>
                         <div className="text-right">
-                            <button className="btn-kh pb-5 max-w-fit">$120</button>
+                            <button className="btn-kh !py-2 !rounded-t-none  pb-5 max-w-fit">$120</button>
                         </div>
                         <div className="flex flex-col p-4 ">
                             <h3 className="heading-kh mb-5">Color Matching</h3>
@@ -37,12 +37,12 @@ const Classes = () => {
 
                     </div>
 
-                    <div className="flex rounded-2xl lg:max-w-[400px] md:mx-auto flex-col bg-kh-white drop-shadow-lg my-5">
+                    <div className="flex rounded-2xl md:basis-[48%] lg:basis-[31%] flex-col bg-kh-white drop-shadow-lg">
                         <div className="w-full overflow-hidden">
-                            <Image src={class2}className="w-full transform hover:scale-125 hover:rotate-6 transition duration-500 ease-in-out " alt="classImage"/>
+                            <Image src={class2} className="w-full transform hover:scale-125 hover:rotate-6 transition duration-500 ease-in-out " alt="classImage"/>
                         </div>
                         <div className="text-right">
-                             <button className="btn-kh pb-5 max-w-fit">$150</button>
+                            <button className="btn-kh !py-2 !rounded-t-none  pb-5 max-w-fit">$150</button>
                         </div>
                         <div className="flex flex-col p-4 ">
                             <h3 className="heading-kh mb-5">Learning Disciplines</h3>
@@ -59,12 +59,12 @@ const Classes = () => {
 
                     </div>
 
-                    <div className="flex rounded-2xl lg:max-w-[400px] md:mx-auto flex-col bg-kh-white drop-shadow-lg my-5">
+                    <div className="flex rounded-2xl md:basis-[48%] lg:basis-[31%] flex-col bg-kh-white drop-shadow-lg">
                         <div className="w-full overflow-hidden">
-                            <Image src={class3}className="w-full transform hover:scale-125 hover:rotate-6 transition duration-500 ease-in-out " alt="classImage"/>
+                            <Image src={class3} className="w-full transform hover:scale-125 hover:rotate-6 transition duration-500 ease-in-out " alt="classImage"/>
                         </div>
                         <div className="text-right">
-                            <button className="btn-kh pb-5 max-w-fit">$180</button>
+                            <button className="btn-kh !py-2 !rounded-t-none  pb-5 max-w-fit">$180</button>
                         </div>
                         <div className="flex flex-col p-4 ">
                             <h3 className="heading-kh mb-5">Drawing</h3>

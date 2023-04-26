@@ -153,7 +153,7 @@ import {useRouter} from "next/router";
                                 <div className="mt-6">
                                     <nav className="grid gap-y-8">
                                         <Link
-                                            href="/programms"
+                                            href="/programs"
                                             className={`-m-3 p-3 flex items-center rounded-md hover:bg-org-light-jo  ${router.pathname === '/programms' ? 'bg-org-light-jo' : ''}`} >
                                             {/* Heroicon name: outline/cursor-click */}
 
