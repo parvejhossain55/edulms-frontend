@@ -13,7 +13,7 @@ import {FaCircle, FaFacebookF, FaPinterestP} from "react-icons/fa";
 import {AiOutlineLeft, AiOutlineRight} from "react-icons/ai";
 import {BiSearchAlt} from "react-icons/bi";
 
-const blogPost = () => {
+const BlogPost = () => {
     return (
         <div className='bg-kh-white ' id='blogPost'>
             <div className="containte-kh px-4 py-14   ">
@@ -328,7 +328,7 @@ const blogPost = () => {
                             </div>
                             <div className="flex justify-start gap-x-4  items-center ">
                                 <div className='basis-1/4 '>
-                                    <a className='w-full  ' href="# ">
+                                    <a className='w-full  ' href="#">
                                         <Image src={blog_2} className='w-auto h-20 rounded-lg' alt=""/>
 
                                     </a>
@@ -342,7 +342,7 @@ const blogPost = () => {
                             </div>
                             <div className="flex justify-start gap-x-4  items-center ">
                                 <div className='basis-1/4 '>
-                                    <a className='w-full  ' href="# ">
+                                    <a className='w-full  ' href="#">
                                         <Image src={blog_3} className='w-auto h-20 rounded-lg' alt=""/>
 
                                     </a>
@@ -356,7 +356,7 @@ const blogPost = () => {
                             </div>
                             <div className="flex justify-start gap-x-4  items-center ">
                                 <div className='basis-1/4 '>
-                                    <a className='w-full  ' href="# ">
+                                    <a className='w-full  ' href="#">
                                         <Image src={class_3} className='w-auto h-20 rounded-lg' alt=""/>
                                     </a>
                                 </div>
@@ -379,28 +379,28 @@ const blogPost = () => {
                             <div className="flex flex-col justify-start items-start gap-y-4 pb-5 ">
                                 <div className='flex justify-center items-center  gap-x-2'>
                                     <span className='text-[10px] text-rad-kh'> <FaCircle/></span>
-                                    <a className='link-text-kh text-md '  href="# ">Alphabet Parade</a>
+                                    <a className='link-text-kh text-md '  href="#">Alphabet Parade</a>
                                 </div>
 
                                 <div className='flex justify-center items-center  gap-x-2'>
                                     <span className='text-[10px] text-rad-kh'> <FaCircle/></span>
-                                    <a className='link-text-kh text-md '  href="# ">Games</a>
+                                    <a className='link-text-kh text-md '  href="#">Games</a>
                                 </div>
                                 <div className='flex justify-center items-center  gap-x-2'>
                                     <span className='text-[10px] text-rad-kh'> <FaCircle/></span>
-                                    <a className='link-text-kh text-md '  href="# ">Gross Motor</a>
+                                    <a className='link-text-kh text-md '  href="#">Gross Motor</a>
                                 </div>
                                 <div className='flex justify-center items-center  gap-x-2'>
                                     <span className='text-[10px] text-rad-kh'> <FaCircle/></span>
-                                    <a className='link-text-kh text-md '  href="# ">Inspare Success</a>
+                                    <a className='link-text-kh text-md '  href="#">Inspare Success</a>
                                 </div>
                                 <div className='flex justify-center items-center  gap-x-2'>
                                     <span className='text-[10px] text-rad-kh'> <FaCircle/></span>
-                                    <a className='link-text-kh text-md '  href="# ">Auditory Processing</a>
+                                    <a className='link-text-kh text-md '  href="#">Auditory Processing</a>
                                 </div>
                                 <div className='flex justify-center items-center  gap-x-2'>
                                     <span className='text-[10px] text-rad-kh'> <FaCircle/></span>
-                                    <a className='link-text-kh text-md '  href="# ">Kindergarten</a>
+                                    <a className='link-text-kh text-md '  href="#">Kindergarten</a>
                                 </div>
                             </div>
 
@@ -452,4 +452,4 @@ const blogPost = () => {
     );
 };
 
-export default blogPost;
+export default BlogPost;
