@@ -12,9 +12,6 @@ const Footer = () => {
             <div className="containte-kh py-10 z-10 text-white ">
                 <div className="flex flex-col  justify-center items-center gap-y-4 ">
                     <div className="flex flex-col justify-start items-start sm:justify-between sm:flex-row sm:flex-wrap lg:flex-nowrap ">
-
-
-
                         <div className="sm:w-[46%] lg:w-[24%] w-full flex flex-col justify-start sm:mr-5 mb-4">
                             <h2 className='font-bold text-[40px] mb-6'>Ketan</h2>
                             <p className='font-normal text-base text-white mb-5 text-justify md:pr-16  '>
@@ -37,7 +34,6 @@ const Footer = () => {
                                     <a className='link-kh' href="#"> 01533-000000
                                     </a>
                                 </div>
-
                             </div>
                             <div className="flex justify-start mb-4  ">
                                 <i className='mt-2 font-normal text-2xl text-rad-kh mr-6 '><HiOutlineMail/></i>
@@ -54,17 +50,19 @@ const Footer = () => {
                                     <p className='text-kh-white  transition-all pr-8 '> 175 5th Ave Premium Area, New York, NY 10010, United States</p>
                                 </div>
                             </div>
-
                         </div>
                         <div className="sm:w-[46%] lg:w-[24%] w-fuex flex-col justify-start gap-4 mt-">
                             <h2 className='font-bold text-2xl mb-2'>Contact Us</h2>
                             <span className='w-24 h-[2px] bg-rad-kh '></span>
                             <div className="flex flex-col justify-start gap-y-4">
-                                <a className='link-kh' href="#"> Maths Olympiad
+                                <a className='link-kh' href="#">
+                                    Maths Olympiad
                                 </a>
-                                <a className='link-kh' href="#">  Art Competition
+                                <a className='link-kh' href="#">
+                                    Art Competition
                                 </a>
-                                <a className='link-kh' href="#">  English Novels
+                                <a className='link-kh' href="#">
+                                    English Novels
                                 </a>
                                 <a className='link-kh' href="#">  Science Competition</a>
                                 <a className='link-kh ' href="#">  Teachers Day</a>
@@ -103,16 +101,7 @@ const Footer = () => {
                                     <Image src={footerImage} alt='footer-gallary '/>
                                 </div>
                             </div>
-
-
                         </div>
-                    </div>
-                    <div className="inline-block gap-x-4  ">
-                        <a href="#">1</a>
-                        <a href="#">2</a>
-                        <a href="#">3</a>
-                        <a href="#">5</a>
-                        <a href="#">7</a>
                     </div>
                 </div>
 

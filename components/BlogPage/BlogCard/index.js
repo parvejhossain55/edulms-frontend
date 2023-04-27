@@ -3,14 +3,18 @@ import Image from "next/image";
 import Blog1 from "../../../assect/img/blog-3.jpg";
 import Blog2 from "../../../assect/img/blog-2.jpg";
 import Blog3 from "../../../assect/img/blog-1.jpg";
+import Pagination from "../../Program/Pagination";
+import {GrFormNext, GrFormPrevious} from "react-icons/gr";
+
 
 const BlogCard = () => {
     return (
         <div className="classes bg-kh-white ">
             <div className="containte-kh px-4 py-10  ">
-                <div className="flex justify-center items-center flex-col lg:justify-between lg:flex-row flex-wrap py-8  gap-y-5">
+                <div className="flex flex-col gap-y-12 justify-center items-center">
+                    <div className="flex justify-center items-center flex-col md:justify-between md:flex-row  flex-wrap gap-y-5">
 
-                    <div className="bg-seandary-bg flex rounded-2xl lg:max-w-[400px] md:mx-auto flex-col bg-kh-white drop-shadow-lg my-4">
+                    <div className="bg-seandary-bg flex rounded-2xl basis-full md:basis-[48%] lg:basis-[32%]  flex-col bg-kh-white drop-shadow-lg">
                         <div className="w-full overflow-hidden rounded-t-xl ">
                             <Image src={Blog1} className="w-full transform  hover:scale-125 hover:rotate-6 transition duration-500 ease-in-out " alt="classImage"/>
                         </div>
@@ -27,7 +31,7 @@ const BlogCard = () => {
                         </div>
                     </div>
 
-                    <div className="bg-seandary-bg flex rounded-2xl lg:max-w-[400px] md:mx-auto flex-col bg-kh-white drop-shadow-lg my-4">
+                    <div className="bg-seandary-bg flex rounded-2xl basis-full md:basis-[48%] lg:basis-[32%] flex-col bg-kh-white drop-shadow-lg">
                         <div className="w-full overflow-hidden rounded-t-xl ">
                             <Image src={Blog2} className="w-full transform hover:scale-125 hover:rotate-6 transition duration-500 ease-in-out " alt="classImage"/>
                         </div>
@@ -46,7 +50,7 @@ const BlogCard = () => {
                         </div>
                     </div>
 
-                    <div className="bg-seandary-bg flex rounded-2xl lg:max-w-[400px] md:mx-auto flex-col bg-kh-white drop-shadow-lg my-4">
+                    <div className="bg-seandary-bg flex rounded-2xl basis-full md:basis-[48%] lg:basis-[32%] flex-col bg-kh-white drop-shadow-lg">
                         <div className="w-full overflow-hidden rounded-t-xl ">
                             <Image src={Blog3} className="w-full transform hover:scale-125 hover:rotate-6 transition duration-500 ease-in-out " alt="classImage"/>
                         </div>
@@ -65,7 +69,7 @@ const BlogCard = () => {
                         </div>
                     </div>
 
-                    <div className="bg-seandary-bg flex rounded-2xl lg:max-w-[400px] md:mx-auto flex-col bg-kh-white drop-shadow-lg my-4">
+                    <div className="bg-seandary-bg flex rounded-2xl basis-full md:basis-[48%] lg:basis-[32%] flex-col bg-kh-white drop-shadow-lg">
                         <div className="w-full overflow-hidden rounded-t-xl ">
                             <Image src={Blog1} className="w-full transform  hover:scale-125 hover:rotate-6 transition duration-500 ease-in-out " alt="classImage"/>
                         </div>
@@ -82,7 +86,7 @@ const BlogCard = () => {
                         </div>
                     </div>
 
-                    <div className="bg-seandary-bg flex rounded-2xl lg:max-w-[400px] md:mx-auto flex-col bg-kh-white drop-shadow-lg my-4">
+                    <div className="bg-seandary-bg flex rounded-2xl basis-full md:basis-[48%] lg:basis-[32%] flex-col bg-kh-white drop-shadow-lg">
                         <div className="w-full overflow-hidden rounded-t-xl ">
                             <Image src={Blog2} className="w-full transform hover:scale-125 hover:rotate-6 transition duration-500 ease-in-out " alt="classImage"/>
                         </div>
@@ -101,7 +105,7 @@ const BlogCard = () => {
                         </div>
                     </div>
 
-                    <div className="bg-seandary-bg flex rounded-2xl lg:max-w-[400px] md:mx-auto flex-col bg-kh-white drop-shadow-lg my-4">
+                    <div className="bg-seandary-bg flex rounded-2xl basis-full md:basis-[48%] lg:basis-[32%] flex-col bg-kh-white drop-shadow-lg">
                         <div className="w-full overflow-hidden rounded-t-xl ">
                             <Image src={Blog3} className="w-full transform hover:scale-125 hover:rotate-6 transition duration-500 ease-in-out " alt="classImage"/>
                         </div>
@@ -118,6 +122,46 @@ const BlogCard = () => {
 
                             <button className="btn-kh pb-5 max-w-fit">Join Class</button>
                         </div>
+                    </div>
+                </div>
+                {
+
+                    /*        pagenation component col your choice */}
+                                {/*<Pagination/>*/}
+
+                    <div className="flex justify-between items-center gap-x-4 ">
+                        <a className='bg-white w-9 h-9 shadow-[0_2px_10px_0_#d8dde6] rounded-[18px] flex justify-center items-center p-2 font-bold text-lg hover:bg-yellow-kh delay-200 transition-all  '
+                           href="#">
+                            <GrFormPrevious/>
+                        </a>
+                        <a className='bg-white w-9 h-9 shadow-[0_2px_10px_0_#d8dde6] rounded-[18px] flex justify-center items-center p-2 font-bold text-lg hover:bg-yellow-kh delay-200 transition-all  '
+                           href="#">
+                            1
+                        </a>
+
+                        <a className='bg-white w-9 h-9 shadow-[0_2px_10px_0_#d8dde6] rounded-[18px] flex justify-center items-center p-2 font-bold text-lg hover:bg-yellow-kh delay-200 transition-all  '
+                           href="#">
+                            2
+                        </a>
+
+                        <a className='bg-white w-9 h-9 shadow-[0_2px_10px_0_#d8dde6] rounded-[18px] flex justify-center items-center p-2 font-bold text-lg hover:bg-yellow-kh delay-200 transition-all  '
+                           href="#">
+                            3
+                        </a>
+
+                        <a className='bg-white w-9 h-9 shadow-[0_2px_10px_0_#d8dde6] rounded-[18px] flex justify-center items-center p-2 font-bold text-lg hover:bg-yellow-kh delay-200 transition-all  '
+                           href="#">
+                            4
+                        </a>
+
+                        <a className='bg-white w-9 h-9 shadow-[0_2px_10px_0_#d8dde6] rounded-[18px] flex justify-center items-center p-2 font-bold text-lg hover:bg-yellow-kh delay-200 transition-all  '
+                           href="#">
+                            5
+                        </a>
+                        <a className='bg-white w-9 h-9 shadow-[0_2px_10px_0_#d8dde6] rounded-[18px] flex justify-center items-center p-2 !font-bold text-lg hover:bg-yellow-kh delay-200 transition-all  '
+                           href="#">
+                            <GrFormNext/>
+                        </a>
                     </div>
                 </div>
             </div>

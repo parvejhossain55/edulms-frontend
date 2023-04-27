@@ -50,7 +50,7 @@
 }
 
 .link-kh{
-    @apply hover:text-rad-kh transition-all border-transparent hover:border-rad-kh w-fit border-b-[1px]
+    @apply hover:text-rad-kh transition-all border-transparent hover:border-rad-kh w-fit border-b
 }
 .bg-banner-kh{
     @apply absolute -z-30 bg-fixed  top-0 right-0  w-full
