@@ -10,7 +10,6 @@ const BlogPage = () => {
             <BlogCard/>
             <BlogPost/>
         </div>
-
     );
 };
 
