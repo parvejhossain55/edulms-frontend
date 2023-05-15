@@ -59,7 +59,6 @@ const BlogPost = () => {
                                 </div>
                                 <div className='basis-1/3'>
                                     {/* <Image src={blog_2} className='w-full ' alt="blog-1" /> */}
-
                                 </div>
                                 <div className='basis-1/3'>
                                     {/* <Image src={blog_3} className='w-full ' alt="blog-1" /> */}

@@ -14,7 +14,7 @@
     @apply bg-orange-400 transition-colors
 }
 .btn-kh {
-    @apply text-center border-2 font-medium w-fit text-lg rounded-[10px] py-3 px-6 bg-rad-kh text-white shadow-2xl
+    @apply text-center font-medium w-fit text-lg rounded-[10px] py-2 px-6 bg-rad-kh text-white
 }
 .btn-kh:hover{
     @apply bg-orange-400 transition-colors
@@ -44,6 +44,9 @@
 }
 .moving-banner{
     @apply hidden lg:block absolute lg:w-24 xl:max-w-[100px] animate-[slideInRight_4s_ease-in-out_infinite]
+}
+.topBottomSlide{
+  @apply animate-[slideTopBottom_4s_ease-in-out_infinite]
 }
 .input-kh{
     @apply py-4 px-6 w-full mb-2 border-gray-300 focus:border-rad-kh border-[1.5px] rounded-lg outline-none transition-all delay-200 ease-in-out

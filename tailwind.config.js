@@ -51,6 +51,19 @@ module.exports = {
             // marginRight: '20px',
           },
         },
+
+        slideTopBottom: {
+          '50%': {
+            transform: 'translateY(40px)',
+          },
+          '100%': {
+            transform: 'translateY(0)',
+          },
+        },
+
+
+
+
       },
   },
 
