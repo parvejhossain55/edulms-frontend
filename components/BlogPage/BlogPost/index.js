@@ -221,7 +221,7 @@ const BlogPost = () => {
                                         type="checkbox"
                                         id='blog-formCheck'
                                 />
-                                <label className='pregrap-kh' For="blog-formCheck">
+                                <label className='pregrap-kh' htmlFor="blog-formCheck">
                                     Save my name, email, and website in this browser for the next time I comment.
                                 </label>
                             </div>
