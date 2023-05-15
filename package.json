@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "deployVercel": "push-dir --dir=dist --branch=vercel --cleanup"
   },
   "dependencies": {
     "@emotion/react": "^11.11.0",
