@@ -2,6 +2,10 @@ import React from 'react'
 import Link from 'next/link';
 import { BsFacebook } from 'react-icons/bs';
 import { AiFillGithub, AiOutlineGoogle } from 'react-icons/ai';
+import MyComponent from '../../uiComponents/TextInput';
+import { Box, Button } from '@mui/material';
+import Image from 'next/image';
+import Logo from './../../assect/img/leadeducare-lg-logo.png'
 
 const SignupPage = () => {
     const [inputs, setInputs] = React.useState({});
@@ -18,10 +22,18 @@ const SignupPage = () => {
     }
     return (
         <div>
-            <div>
+            <div className='mt-12'>
                 <div className="px-6 sm:w-2/3 sm:justify-center sm:m-auto md:w-2/4 lg:w-1/3">
                     <div className="logo">
-                        <h1>Your Logo</h1>
+                    <Box component={Link} href='/'>
+                        <Image
+                            width={80}
+                            height={80}
+                            src={Logo}
+                            alt='Leadedu'
+
+                        />
+                    </Box>
                     </div>
                     <h3 className='text-3xl py-8 font-semibold'>Sign in</h3>
                     <p>If you already have an account register</p>
@@ -29,42 +41,46 @@ const SignupPage = () => {
                     <form onSubmit={handleSubmit} action="">
                         <div className='my-12'>
                             <div className='my-6'>
-                                <label className='text-sm font-semibold' htmlFor="">Full Name</label>
-                                <input
+                                <MyComponent
+                                    variant='outlined'
+                                    label='Full Name'
                                     name="name"
                                     value={inputs.name || ""}
                                     onChange={handleChange}
                                     className='form_control' type="text" />
                             </div>
                             <div className='my-6'>
-                                <label className='text-sm font-semibold' htmlFor="">Email</label>
-                                <input
+                                <MyComponent
+                                    variant='outlined'
+                                    label='Email Address'
                                     name="email"
                                     value={inputs.email || ""}
+                                    onChange={handleChange}
+                                    className='form_control' type="email" />
+                            </div>
+                            <div className='my-6'>
+                                <MyComponent
+                                    variant='outlined'
+                                    label='Phone'
+                                    name="phone"
+                                    value={inputs.phone || ""}
                                     onChange={handleChange}
                                     className='form_control' type="text" />
                             </div>
                             <div className='my-6'>
-                                <label className='text-sm font-semibold' htmlFor="">Password</label>
-                                <input
+                                <MyComponent
+                                    variant='outlined'
+                                    label='Password'
                                     name="password"
                                     value={inputs.password || ""}
                                     onChange={handleChange}
                                     className='form_control' type="password" />
                             </div>
-                            <div className='my-6'>
-                                <label className='text-sm font-semibold' htmlFor="">Conform Password</label>
-                                <input
-                                    name="conformPassword"
-                                    value={inputs.conformPassword || ""}
-                                    onChange={handleChange}
-                                    className='form_control' type="password" />
+                            <div>
+                            <Button color='secondary' className='bg-purple-700' variant='contained' sx={{width: '100%', background: 'blue', marginTop: 4, padding: 1, fontSize: '1rem', fontWeight: 'bold'}} type='submit'>Login</Button>
                             </div>
                             <div>
-                                <button className='btn-primary'>Register</button>
-                            </div>
-                            <div>
-                                <p className='text-center text-slate-400 font-semibold'>or continue with</p>
+                                <p className='text-center text-slate-400 font-semibold mt-4'>or continue with</p>
                             </div>
                             <div>
                                 <div className='flex justify-center'>

@@ -2,6 +2,12 @@ import React from 'react'
 import Link from 'next/link'
 import { BsFacebook } from 'react-icons/bs';
 import { AiFillGithub, AiOutlineGoogle } from 'react-icons/ai';
+import MyComponent from '../../uiComponents/TextInput';
+import { Box, Button } from '@mui/material';
+import Logo from './../../assect/img/leadeducare-lg-logo.png'
+import Image from 'next/image';
+
+
 
 const LoginPage = () => {
     const [inputs, setInputs] = React.useState({});
@@ -18,28 +24,35 @@ const LoginPage = () => {
     }
     return (
         <div>
-            <div>
+            <div className='mt-12'>
                 <div className="px-6 sm:w-2/3 sm:justify-center sm:m-auto md:w-2/4 lg:w-1/3">
-                    <div className="logo">
-                        <h1>Your Logo</h1>
-                    </div>
+                    <Box component={Link} href='/'>
+                        <Image
+                            width={80}
+                            height={80}
+                            src={Logo}
+                            alt='Leadedu'
+
+                        />
+                    </Box>
                     <h3 className='text-3xl py-8 font-semibold'>Sign in</h3>
                     <p>If you dont have an account register</p>
                     <p>You can <span className='text-orange-600 font-bold mx-2'><button><Link href={'/signup'}>Register here !</Link></button></span> </p>
                     <form onSubmit={handleSubmit} action="">
                         <div className='my-12'>
                             <div>
-                                <label className='text-sm font-semibold' htmlFor="">Email</label>
-                                <input
+                                <MyComponent
+                                    variant='outlined'
+                                    label='Email Address'
                                     name="email"
                                     value={inputs.email || ""}
                                     onChange={handleChange}
                                     className='form_control' type="text" />
                             </div>
                             <div className='my-6'>
-                                <label className='text-sm font-semibold' htmlFor="">Password</label>
-                                <input
-                                    name="password"
+                                <MyComponent
+                                    label='Password'
+                                    name='password'
                                     value={inputs.password || ""}
                                     onChange={handleChange}
                                     className='form_control' type="password" />
@@ -49,10 +62,10 @@ const LoginPage = () => {
                                 <div className='text-orange-600'><button>Forget Password ?</button></div>
                             </div>
                             <div>
-                                <button className='btn-primary'>Login</button>
+                                <Button color='secondary' className='bg-purple-700' variant='contained' sx={{ width: '100%', background: 'blue', marginTop: 4, padding: 1, fontSize: '1rem', fontWeight: 'bold' }} type='submit'>Login</Button>
                             </div>
                             <div>
-                                <p className='text-center text-slate-400 font-semibold'>or continue with</p>
+                                <p className='text-center text-slate-400 font-semibold mt-4'>or continue with</p>
                             </div>
                             <div>
                                 <div className='flex justify-center'>
