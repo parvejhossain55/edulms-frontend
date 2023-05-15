@@ -14,7 +14,7 @@ const BlogCard = () => {
                 <div className="flex flex-col gap-y-12 justify-center items-center">
                     <div className="flex justify-center items-center flex-col md:justify-between md:flex-row  flex-wrap gap-y-5">
 
-                    <div className="bg-seandary-bg flex rounded-2xl basis-full md:basis-[48%] lg:basis-[32%]  flex-col bg-kh-white drop-shadow-lg">
+                    <div className=" flex rounded-2xl basis-full md:basis-[48%] lg:basis-[32%]  flex-col bg-kh-white drop-shadow-lg">
                         <div className="w-full overflow-hidden rounded-t-xl ">
                             <Image src={Blog1} className="w-full transform  hover:scale-125 hover:rotate-6 transition duration-500 ease-in-out " alt="classImage"/>
                         </div>
@@ -31,7 +31,7 @@ const BlogCard = () => {
                         </div>
                     </div>
 
-                    <div className="bg-seandary-bg flex rounded-2xl basis-full md:basis-[48%] lg:basis-[32%] flex-col bg-kh-white drop-shadow-lg">
+                    <div className=" flex rounded-2xl basis-full md:basis-[48%] lg:basis-[32%] flex-col bg-kh-white drop-shadow-lg">
                         <div className="w-full overflow-hidden rounded-t-xl ">
                             <Image src={Blog2} className="w-full transform hover:scale-125 hover:rotate-6 transition duration-500 ease-in-out " alt="classImage"/>
                         </div>
@@ -50,7 +50,7 @@ const BlogCard = () => {
                         </div>
                     </div>
 
-                    <div className="bg-seandary-bg flex rounded-2xl basis-full md:basis-[48%] lg:basis-[32%] flex-col bg-kh-white drop-shadow-lg">
+                    <div className=" flex rounded-2xl basis-full md:basis-[48%] lg:basis-[32%] flex-col bg-kh-white drop-shadow-lg">
                         <div className="w-full overflow-hidden rounded-t-xl ">
                             <Image src={Blog3} className="w-full transform hover:scale-125 hover:rotate-6 transition duration-500 ease-in-out " alt="classImage"/>
                         </div>
@@ -69,7 +69,7 @@ const BlogCard = () => {
                         </div>
                     </div>
 
-                    <div className="bg-seandary-bg flex rounded-2xl basis-full md:basis-[48%] lg:basis-[32%] flex-col bg-kh-white drop-shadow-lg">
+                    <div className=" flex rounded-2xl basis-full md:basis-[48%] lg:basis-[32%] flex-col bg-kh-white drop-shadow-lg">
                         <div className="w-full overflow-hidden rounded-t-xl ">
                             <Image src={Blog1} className="w-full transform  hover:scale-125 hover:rotate-6 transition duration-500 ease-in-out " alt="classImage"/>
                         </div>
@@ -86,7 +86,7 @@ const BlogCard = () => {
                         </div>
                     </div>
 
-                    <div className="bg-seandary-bg flex rounded-2xl basis-full md:basis-[48%] lg:basis-[32%] flex-col bg-kh-white drop-shadow-lg">
+                    <div className=" flex rounded-2xl basis-full md:basis-[48%] lg:basis-[32%] flex-col bg-kh-white drop-shadow-lg">
                         <div className="w-full overflow-hidden rounded-t-xl ">
                             <Image src={Blog2} className="w-full transform hover:scale-125 hover:rotate-6 transition duration-500 ease-in-out " alt="classImage"/>
                         </div>
@@ -105,7 +105,7 @@ const BlogCard = () => {
                         </div>
                     </div>
 
-                    <div className="bg-seandary-bg flex rounded-2xl basis-full md:basis-[48%] lg:basis-[32%] flex-col bg-kh-white drop-shadow-lg">
+                    <div className=" flex rounded-2xl basis-full md:basis-[48%] lg:basis-[32%] flex-col bg-kh-white drop-shadow-lg">
                         <div className="w-full overflow-hidden rounded-t-xl ">
                             <Image src={Blog3} className="w-full transform hover:scale-125 hover:rotate-6 transition duration-500 ease-in-out " alt="classImage"/>
                         </div>

@@ -1,12 +1,12 @@
 import React from 'react';
-import Image from 'next/image'
-import blogPostImg from '../../../assect/img/BlogPost.jpg'
-import blog_1 from '../../../assect/img/blog-1.jpg'
-import blog_2 from '../../../assect/img/blog-2.jpg'
-import blog_3 from '../../../assect/img/blog-3.jpg'
-import client_1 from '../../../assect/img/client-1.jpg'
-import client_3 from '../../../assect/img/client-3.jpg'
-import class_3 from '../../../assect/img/class-2.jpg'
+// import Image from 'next/image'
+// import blogPostImg from '../../../assect/img/BlogPost.jpg'
+// import blog_1 from '../../../assect/img/blog-1.jpg'
+// import blog_2 from '../../../assect/img/blog-2.jpg'
+// import blog_3 from '../../../assect/img/blog-3.jpg'
+// import client_1 from '../../../assect/img/client-1.jpg'
+// import client_3 from '../../../assect/img/client-3.jpg'
+// import class_3 from '../../../assect/img/class-2.jpg'
 import {BsCheck, BsFillBookmarkFill, BsTwitter} from "react-icons/bs";
 import {FaCircle, FaFacebookF, FaPinterestP} from "react-icons/fa";
 
@@ -20,7 +20,7 @@ const BlogPost = () => {
                 <div className="flex flex-col lg:flex-row lg:gap-x-2  gap-y-5 ">
                     <div className="flex flex-col pr-4 basis-full lg:basis-8/12 gap-y-6 mb-5">
                         <div className='w-full'>
-                            <Image src={blogPostImg} className='w-full' alt='blog-post' />
+                            {/* <Image src={blogPostImg} className='w-full' alt='blog-post' /> */}
                         </div>
                         <div className='flex justify-start items-center gap-x-5'>
                             <h5 className='text-kh-heading font-medium  '>Posted On:
@@ -55,14 +55,14 @@ const BlogPost = () => {
                             </p>
                             <div className="flex justify-between items-center w-full gap-x-4 my-3">
                                 <div className='basis-1/3'>
-                                    <Image src={blog_1} className='w-full ' alt="blog-1" />
+                                    {/* <Image src={blog_1} className='w-full ' alt="blog-1" /> */}
                                 </div>
                                 <div className='basis-1/3'>
-                                    <Image src={blog_2} className='w-full ' alt="blog-1" />
+                                    {/* <Image src={blog_2} className='w-full ' alt="blog-1" /> */}
 
                                 </div>
                                 <div className='basis-1/3'>
-                                    <Image src={blog_3} className='w-full ' alt="blog-1" />
+                                    {/* <Image src={blog_3} className='w-full ' alt="blog-1" /> */}
                                 </div>
                             </div>
 
@@ -115,7 +115,7 @@ const BlogPost = () => {
                             <h3 className='heading-kh text-2xl mb-4 '> 3 Comments:</h3>
                             <div className="flex justify-start gap-x-5 ">
                                 <div>
-                                    <Image src={client_1} className='w-20'  alt='client-avtar'/>
+                                    {/* <Image src={client_1} className='w-20'  alt='client-avtar'/> */}
                                 </div>
                                 <div className="flex flex-col gap-y-3">
                                     {/*--------------this is main comment ----------->>>> */}
@@ -131,7 +131,7 @@ const BlogPost = () => {
                                     {/*=====>>>>> Reply the Commet =============>>>> box*/}
                                     <div className="flex justify-start gap-x-5 mt-4 ">
                                         <div>
-                                            <Image src={client_3} className='w-20'  alt='client-avtar'/>
+                                            {/* <Image src={client_3} className='w-20'  alt='client-avtar'/> */}
                                         </div>
                                         <div className="flex flex-col justify-start  gap-y-2.5">
                                             <h3 className='heading-kh'> John Jones</h3>
@@ -152,7 +152,7 @@ const BlogPost = () => {
                             {/*------------------------------------ 2nd Commend ------------->>>>>>*/}
                             <div className="flex justify-start gap-x-5 ">
                                 <div>
-                                    <Image src={client_1} className='w-20'  alt='client-avtar'/>
+                                    {/* <Image src={client_1} className='w-20'  alt='client-avtar'/> */}
                                 </div>
                                 <div className="flex flex-col gap-y-3">
                                     {/*--------------this is main comment ----------->>>> */}
@@ -169,7 +169,7 @@ const BlogPost = () => {
                                     {/*=====>>>>> Reply the Commet =============>>>> box*/}
                                     <div className="flex justify-start gap-x-5 mt-4 ">
                                         <div>
-                                            <Image src={client_3} className='w-20'  alt='client-avtar'/>
+                                            {/* <Image src={client_3} className='w-20'  alt='client-avtar'/> */}
                                         </div>
                                         <div className="flex flex-col gap-y-2.5">
                                             <h3 className='heading-kh'> John Jones</h3>
@@ -260,7 +260,7 @@ const BlogPost = () => {
                             <div className="flex justify-start gap-x-4  items-center ">
                                 <div className='basis-1/4 '>
                                     <a className='w-full  ' href="#">
-                                        <Image src={blog_1} className='w-auto h-20 rounded-lg' alt=""/>
+                                        {/* <Image src={blog_1} className='w-auto h-20 rounded-lg' alt=""/> */}
 
                                     </a>
                                 </div>
@@ -274,7 +274,7 @@ const BlogPost = () => {
                             <div className="flex justify-start gap-x-4  items-center ">
                                 <div className='basis-1/4 '>
                                     <a className='w-full  ' href="#">
-                                        <Image src={blog_2} className='w-auto h-20 rounded-lg' alt=""/>
+                                        {/* <Image src={blog_2} className='w-auto h-20 rounded-lg' alt=""/> */}
 
                                     </a>
                                 </div>
@@ -288,7 +288,7 @@ const BlogPost = () => {
                             <div className="flex justify-start gap-x-4  items-center ">
                                 <div className='basis-1/4 '>
                                     <a className='w-full  ' href="#">
-                                        <Image src={blog_3} className='w-auto h-20 rounded-lg' alt=""/>
+                                        {/* <Image src={blog_3} className='w-auto h-20 rounded-lg' alt=""/> */}
 
                                     </a>
                                 </div>
@@ -302,7 +302,7 @@ const BlogPost = () => {
                             <div className="flex justify-start gap-x-4  items-center ">
                                 <div className='basis-1/4 '>
                                     <a className='w-full  ' href="#">
-                                        <Image src={class_3} className='w-auto h-20 rounded-lg' alt=""/>
+                                        {/* <Image src={class_3} className='w-auto h-20 rounded-lg' alt=""/> */}
                                     </a>
                                 </div>
                                 <div className="flex flex-col gap-y-1 basis-3/4 ">
@@ -315,7 +315,7 @@ const BlogPost = () => {
                             <div className="flex justify-start gap-x-4  items-center ">
                                 <div className='basis-1/4 '>
                                     <a className='w-full  ' href="#">
-                                        <Image src={blog_1} className='w-auto h-20 rounded-lg' alt=""/>
+                                        {/* <Image src={blog_1} className='w-auto h-20 rounded-lg' alt=""/> */}
 
                                     </a>
                                 </div>
@@ -329,7 +329,7 @@ const BlogPost = () => {
                             <div className="flex justify-start gap-x-4  items-center ">
                                 <div className='basis-1/4 '>
                                     <a className='w-full  ' href="#">
-                                        <Image src={blog_2} className='w-auto h-20 rounded-lg' alt=""/>
+                                        {/* <Image src={blog_2} className='w-auto h-20 rounded-lg' alt=""/> */}
 
                                     </a>
                                 </div>
@@ -343,7 +343,7 @@ const BlogPost = () => {
                             <div className="flex justify-start gap-x-4  items-center ">
                                 <div className='basis-1/4 '>
                                     <a className='w-full  ' href="#">
-                                        <Image src={blog_3} className='w-auto h-20 rounded-lg' alt=""/>
+                                        {/* <Image src={blog_3} className='w-auto h-20 rounded-lg' alt=""/> */}
 
                                     </a>
                                 </div>
@@ -357,7 +357,7 @@ const BlogPost = () => {
                             <div className="flex justify-start gap-x-4  items-center ">
                                 <div className='basis-1/4 '>
                                     <a className='w-full  ' href="#">
-                                        <Image src={class_3} className='w-auto h-20 rounded-lg' alt=""/>
+                                        {/* <Image src={class_3} className='w-auto h-20 rounded-lg' alt=""/> */}
                                     </a>
                                 </div>
                                 <div className="flex flex-col gap-y-1 basis-3/4 ">
@@ -371,7 +371,7 @@ const BlogPost = () => {
                         </div>
 
                         {/*    ------------->>>>>> category  DIV <<<<<<<-----------------*/}
-                        <div className="flex flex-col shadow-kh justify-start justify-center gap-y-5 px-5 ">
+                        <div className="flex flex-col shadow-kh  justify-center gap-y-5 px-5 ">
                             <div className='border-b border-y-gray-100 pt-5'>
                                 <h3 className='heading-kh text-xl border-b w-fit pb-2  border-rad-kh '>Categories </h3>
                             </div>
@@ -414,7 +414,7 @@ const BlogPost = () => {
 
                         {/*    ------------------>>>>>>Popular TAGS DIV -<<<<<<<<-------------------------*/}
 
-                            <div className="flex flex-col shadow-kh justify-start justify-center gap-y-5 px-5 pb-7">
+                            <div className="flex flex-col shadow-kh  justify-center gap-y-5 px-5 pb-7">
                                 <div className='border-b border-y-gray-100 pt-5'>
                                     <h3 className='heading-kh text-xl border-b w-fit pb-2  border-rad-kh '>Popular Tags </h3>
                                 </div>
