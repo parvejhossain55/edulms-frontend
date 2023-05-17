@@ -24,7 +24,7 @@
     @apply flex justify-center items-center bg-rad-kh w-8 h-8 rounded-[16px]
 }
 .icon-kh:hover{
-    @apply text-rad-kh bg-kh-white transition-all delay-200 ease-in text-xl p-1
+    @apply text-rad-kh bg-kh-white transition-all duration-500
 }
 .hover-box:hover .inner-hover-box{
     @apply flex transition-[mt-0]
@@ -53,7 +53,7 @@
 }
 
 .link-kh{
-    @apply hover:text-rad-kh transition-all border-transparent hover:border-rad-kh w-fit border-b
+    @apply hover:text-[#ea512e]  before:w-0 before:h-[1px]  before:absolute hover:duration-500 before:-left-0 before:-bottom-2 before:bg-[#ea512e] relative before:duration-300 hover:before:w-full 
 }
 .bg-banner-kh{
     @apply absolute -z-30 bg-fixed  top-0 right-0  w-full
