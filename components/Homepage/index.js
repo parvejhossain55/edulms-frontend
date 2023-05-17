@@ -6,6 +6,7 @@ import CoreValue from "./CoreValue";
 import Teacher from "./Teacher";
 import Event from "./Event";
 import LatestNews from "./LatestNews";
+import Activities from "./Activitie";
 // import BuyNowBtn from "./BuyNowBtn";
 
 const Homepage = () => {
@@ -14,6 +15,7 @@ const Homepage = () => {
       <div>
         <HeroSection />
           <WhoWeAre />
+        <Activities/>
           <Classes />
           <CoreValue/>
           <Teacher/>

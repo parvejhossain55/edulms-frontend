@@ -8,7 +8,7 @@ import classShape2 from '../../../assect/img/class-shape-2.png'
 
 const Classes = () => {
     return (
-        <div className="classes bg-seandary-bg relative z-10 pb-8 ">
+        <div className="classes bg-kh-white relative z-10 pb-8 ">
             <div className="containte-kh px-4 py-10   ">
                 <div className="flex flex-col items-center justify-center">
                     <span className="title-kh py-5 ">clesses </span>

@@ -66,3 +66,13 @@
 .check:hover span {
     @apply bg-rad-kh text-kh-white transition-all delay-100 ease-in
 }
+
+.activity-box:hover .readMore-kh{
+    @apply -tracking-[-1.2px]
+}
+.activity-box:hover .title-link{
+    @apply text-yellow-kh
+}
+.activity-box:hover strong{
+    @apply bg-yellow-kh text-white
+}
