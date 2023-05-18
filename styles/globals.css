@@ -76,3 +76,15 @@
 .activity-box:hover strong{
     @apply bg-yellow-kh text-white
 }
+
+.footer-img-effect{
+    @apply before:bg-[#ea512e] relative before:absolute top-0 left-0 before:w-full
+     before:h-full hover:before:opacity-50 before:opacity-0 before:duration-300 cursor-pointer overflow-hidden before:z-10
+}
+
+.footer-img-effect:hover img{
+    transform: scale(1.1);
+} 
+.footer-img-effect img{
+    transition-duration:500ms ;
+} 
