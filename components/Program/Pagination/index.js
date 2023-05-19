@@ -1,5 +1,6 @@
 import React from 'react';
 import {GrFormNext, GrFormPrevious} from "react-icons/gr";
+import Link from "next/link";
 
 const Pagination = () => {
 
@@ -7,38 +8,34 @@ const Pagination = () => {
         <div>
             {/*--------------->>>>>>>>pagination section here<<<<<<------------*/}
             <div className="flex justify-between items-center gap-x-4 ">
-                <a className='bg-white w-9 h-9 shadow-[0_2px_10px_0_#d8dde6] rounded-[18px] flex justify-center items-center p-2 font-bold text-lg hover:bg-yellow-kh delay-200 transition-all  '
-                   href="#">
+                <Link className='bg-white w-9 h-9 shadow-[0_2px_10px_0_#d8dde6] rounded-[18px] flex justify-center items-center p-2 font-bold text-lg hover:bg-yellow-kh delay-200 transition-all  '
+                      href="#">
                     <GrFormPrevious/>
-                </a>
-                <a className='bg-white w-9 h-9 shadow-[0_2px_10px_0_#d8dde6] rounded-[18px] flex justify-center items-center p-2 font-bold text-lg hover:bg-yellow-kh delay-200 transition-all  '
-                   href="#">
+                </Link>
+                <Link className='bg-white w-9 h-9 shadow-[0_2px_10px_0_#d8dde6] rounded-[18px] flex justify-center items-center p-2 font-bold text-lg hover:bg-yellow-kh duration-200 transition  '
+                      href="#">
                     1
-                </a>
-
-                <a className='bg-white w-9 h-9 shadow-[0_2px_10px_0_#d8dde6] rounded-[18px] flex justify-center items-center p-2 font-bold text-lg hover:bg-yellow-kh delay-200 transition-all  '
-                   href="#">
+                </Link>
+                <Link className='bg-white w-9 h-9 shadow-[0_2px_10px_0_#d8dde6] rounded-[18px] flex justify-center items-center p-2 font-bold text-lg hover:bg-yellow-kh duration-200 transition  '
+                      href="#">
                     2
-                </a>
-
-                <a className='bg-white w-9 h-9 shadow-[0_2px_10px_0_#d8dde6] rounded-[18px] flex justify-center items-center p-2 font-bold text-lg hover:bg-yellow-kh delay-200 transition-all  '
-                   href="#">
+                </Link>
+                <Link className='bg-white w-9 h-9 shadow-[0_2px_10px_0_#d8dde6] rounded-[18px] flex justify-center items-center p-2 font-bold text-lg hover:bg-yellow-kh duration-200 transition  '
+                      href="#">
                     3
-                </a>
-
-                <a className='bg-white w-9 h-9 shadow-[0_2px_10px_0_#d8dde6] rounded-[18px] flex justify-center items-center p-2 font-bold text-lg hover:bg-yellow-kh delay-200 transition-all  '
-                   href="#">
+                </Link>
+                <Link className='bg-white w-9 h-9 shadow-[0_2px_10px_0_#d8dde6] rounded-[18px] flex justify-center items-center p-2 font-bold text-lg hover:bg-yellow-kh duration-200 transition  '
+                      href="#">
                     4
-                </a>
-
-                <a className='bg-white w-9 h-9 shadow-[0_2px_10px_0_#d8dde6] rounded-[18px] flex justify-center items-center p-2 font-bold text-lg hover:bg-yellow-kh delay-200 transition-all  '
-                   href="#">
+                </Link>
+                <Link className='bg-white w-9 h-9 shadow-[0_2px_10px_0_#d8dde6] rounded-[18px] flex justify-center items-center p-2 font-bold text-lg hover:bg-yellow-kh duration-200 transition  '
+                      href="#">
                     5
-                </a>
-                <a className='bg-white w-9 h-9 shadow-[0_2px_10px_0_#d8dde6] rounded-[18px] flex justify-center items-center p-2 !font-bold text-lg hover:bg-yellow-kh delay-200 transition-all  '
-                   href="#">
+                </Link>
+                <Link className='bg-white w-9 h-9 shadow-[0_2px_10px_0_#d8dde6] rounded-[18px] flex justify-center items-center p-2 !font-bold text-lg hover:bg-yellow-kh duration-200 transition  '
+                      href="#">
                     <GrFormNext/>
-                </a>
+                </Link>
             </div>
 
         </div>

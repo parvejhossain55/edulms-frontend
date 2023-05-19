@@ -14,12 +14,14 @@
     @apply bg-orange-400 transition-colors
 }
 .btn-kh {
-    @apply text-center font-medium w-fit text-lg rounded-[10px] py-2 px-6 bg-rad-kh text-white
+    @apply text-center font-medium w-fit text-lg rounded-[10px] py-2 px-6 bg-rad-kh text-white relative translate-x-[left-0]
 }
-.btn-kh:hover{
-    @apply bg-orange-400 transition-colors
+.btn-kh::before{
+    @apply content-[''] absolute top-0 left-[-00%] bg-yellow-kh opacity-40 w-0  h-full rounded-[10px] duration-300
 }
-
+.btn-kh::before:hover{
+    @apply left-0 w-full
+}
 .icon-kh{
     @apply flex justify-center items-center bg-rad-kh w-8 h-8 rounded-[16px]
 }
@@ -28,7 +30,7 @@
 }
 .hover-box:hover .inner-hover-box{
     @apply flex transition-[mt-0]
- }
+}
 
 .heading-kh{
     @apply text-kh-heading font-bold font-Catamaran
@@ -46,14 +48,14 @@
     @apply hidden lg:block absolute lg:w-24 xl:max-w-[100px] animate-[slideInRight_4s_ease-in-out_infinite]
 }
 .topBottomSlide{
-  @apply animate-[slideTopBottom_4s_ease-in-out_infinite]
+    @apply animate-[slideTopBottom_4s_ease-in-out_infinite]
 }
 .input-kh{
     @apply py-4 px-6 w-full mb-2 border-gray-300 focus:border-rad-kh border-[1.5px] rounded-lg outline-none transition-all delay-200 ease-in-out
 }
 
 .link-kh{
-    @apply hover:text-[#ea512e]  before:w-0 before:h-[1px]  before:absolute hover:duration-500 before:-left-0 before:-bottom-2 before:bg-[#ea512e] relative before:duration-300 hover:before:w-full 
+    @apply hover:text-[#ea512e]  before:w-0 before:h-[1px]  before:absolute hover:duration-500 before:-left-0 before:-bottom-2 before:bg-[#ea512e] relative before:duration-300 hover:before:w-full
 }
 .bg-banner-kh{
     @apply absolute -z-30 bg-fixed  top-0 right-0  w-full
@@ -70,21 +72,25 @@
 .activity-box:hover .readMore-kh{
     @apply -tracking-[-1.2px]
 }
-.activity-box:hover .title-link{
+.activity-box:hover .title-link,
+.card:hover .title-link{
     @apply text-yellow-kh
 }
 .activity-box:hover strong{
     @apply bg-yellow-kh text-white
 }
+.card:hover .cardImage{
+    @apply transform scale-[1.15] rotate-[5deg]
+}
 
 .footer-img-effect{
     @apply before:bg-[#ea512e] relative before:absolute top-0 left-0 before:w-full
-     before:h-full hover:before:opacity-50 before:opacity-0 before:duration-300 cursor-pointer overflow-hidden before:z-10
+    before:h-full hover:before:opacity-50 before:opacity-0 before:duration-300 cursor-pointer overflow-hidden before:z-10
 }
 
 .footer-img-effect:hover img{
     transform: scale(1.1);
-} 
+}
 .footer-img-effect img{
     transition-duration:500ms ;
-} 
+}
