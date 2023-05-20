@@ -14,12 +14,14 @@ const ClassCard = ({
                          seat='35'
                      }) => {
     return (
-        <div className="card flex rounded-2xl md:basis-[48%] lg:basis-[31%] flex-col bg-kh-white drop-shadow-lg">
-            <div className=" w-full overflow-hidden">
-                <Image src={image} className="cardImage w-full transition duration-400 ease-in " alt="classImage"/>
+        <div className="card flex rounded-2xl md:basis-[49%] lg:basis-[32%] flex-col bg-kh-white shadow-[0_2px_28px_0_rgba(0,0,0,0.09)]">
+            <div className=" w-full overflow-hidden ">
+                <Image src={image} width={650} height={500} className="cardImage transition duration-500 ease-in " alt="classImage"/>
             </div>
-            <div className="text-right mb-2">
-                <button className="btn-kh !py-2 !rounded-t-none max-w-fit">{price}</button>
+            <div className="text-right mb-4  mt-[6px] ">
+                <strong className="text-center font-medium w-fit text-lg rounded-bl-[10px] py-2 px-6 bg-rad-kh text-white">
+                    {price}
+                </strong>
             </div>
             <div className="flex flex-col px-4 pb-6 ">
                 <Link className="heading-kh mb-4 text-xl md:text-2xl transition-all duration-200 ease-in  title-link" href='#'>{title}</Link>
@@ -31,10 +33,7 @@ const ClassCard = ({
                     <h5 className='font-medium'><span className="text-rad-kh mr-1">seat : </span>{seat}</h5>
                 </div>
 
-                <Btn value={'buy now'}/>
-
-
-                {/*<button className="btn-kh z-0">Join Class</button>*/}
+                <button className="btn-kh z-0">Join Class</button>
             </div>
 
         </div>
