@@ -42,7 +42,7 @@
     @apply container mx-auto px-3 sm:px-0 lg:px-10 xl:px-20
 }
 .title-kh{
-    @apply font-sacramento text-center font-semibold text-rad-kh
+    @apply  text-center font-semibold text-rad-kh
 }
 .moving-banner{
     @apply hidden lg:block absolute lg:w-24 xl:max-w-[100px] animate-[slideInRight_4s_ease-in-out_infinite]
