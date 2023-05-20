@@ -2,22 +2,22 @@ import React from 'react';
 import {ImLocation} from "react-icons/im";
 import {HiOutlineMail} from "react-icons/hi";
 import {TbPhoneCall} from "react-icons/tb";
+import { Button } from '../../Design';
 
 const ContactForm = () => {
 
     return (
-        <div className='bg-kh-white'>
-
-            <div className="containte-kh py-6 md:py-8 lg:py-10">
+        <div className='bg-kh-white pt-16 pb-16'>
+            <div className="w-[1140px] mx-auto ">
                 <div className="flex flex-col justify-start lg:justify-between
                                 lg:flex-row gap-y-7 lg:gap-x-8 ">
 
-                    <div className="flex flex-col justify-start lg:grow gap-y-5 ">
+                    <div className="flex flex-col justify-start lg:grow gap-y-5 w-2/5">
                         <h1 className='heading-kh text-2xl'>Ready to Get Started?</h1>
                         <div className='px-2 sm:px-0 '>
                             <input type="text"
                                    placeholder='Your Name'
-                                   className="input-kh
+                                   className="w-full p-4 border border-gray-200 rounded-md focus-visible:outline-none focus-visible:outline-2 duration-300 ease-in-out focus-visible:border-orange-500
 
                                     " />
                             {/*  -------------->>> Error Massage here  <<<<<<----------------*/}
@@ -26,7 +26,7 @@ const ContactForm = () => {
                         <div className='px-2 sm:px-0 '>
                             <input type="email"
                                    placeholder='Your Email '
-                                   className="input-kh"
+                                   className="w-full p-4 border border-gray-200 rounded-md focus-visible:outline-none focus-visible:outline-2 duration-300 ease-in-out focus-visible:border-orange-500"
                             />
                             {/*  -------------->>> Error Massage here  <<<<<<----------------*/}
                             <span className='text-rad-kh text-lg hidden  '>please enter your email </span>
@@ -34,7 +34,7 @@ const ContactForm = () => {
                         <div className='px-2 sm:px-0 '>
                             <input type="number"
                                    placeholder='Your Numbre'
-                                   className="input-kh"
+                                   className="w-full p-4 border border-gray-200 rounded-md focus-visible:outline-none focus-visible:outline-2 duration-300 ease-in-out focus-visible:border-orange-500"
                             />
                             {/*  -------------->>> Error Massage here  <<<<<<----------------*/}
                             <span className='text-rad-kh text-lg hidden  '>please enter your Number </span>
@@ -42,7 +42,7 @@ const ContactForm = () => {
                         <div className='px-2 sm:px-0 '>
                             <input type="text"
                                    placeholder='Subject'
-                                   className="input-kh"
+                                   className="w-full p-4 border border-gray-200 rounded-md focus-visible:outline-none focus-visible:outline-2 duration-300 ease-in-out focus-visible:border-orange-500"
                             />
                             {/*  -------------->>> Error Massage here  <<<<<<----------------*/}
                             <span className='text-rad-kh text-lg hidden  '>please enter your Subject </span>
@@ -50,7 +50,7 @@ const ContactForm = () => {
                         <div className='px-2 sm:px-0 '>
                             <textarea
                                    placeholder='Write Your Massage '
-                                   className="input-kh "
+                                   className="w-full p-4 border border-gray-200 rounded-md focus-visible:outline-none focus-visible:outline-2 duration-300 ease-in-out focus-visible:border-orange-500 "
                                       cols='10'
                                       rows='5 '>
                             </textarea>
@@ -58,10 +58,7 @@ const ContactForm = () => {
                             <span className='text-rad-kh text-lg hidden  '>please enter your name </span>
                         </div>
                         <div className='px-2 sm:px-0 '>
-                            <input type="button"
-                                   className='btn-kh '
-                                   value="Send Massage"
-                            />
+                            <button type='submit' className={`${Button.btn_primary}`}>Send Message</button>
                         </div>
                     </div>
 

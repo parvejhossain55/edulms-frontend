@@ -5,6 +5,7 @@ import teacher_9 from '../../../assect/img/teacher-9.jpg'
 import teacher_10 from '../../../assect/img/teacher-10.jpg'
 import {FaFacebookF, FaGooglePlusG} from "react-icons/fa";
 import {BsTwitter} from "react-icons/bs";
+import { Button } from '../../Design';
 
 
 
@@ -19,7 +20,7 @@ const ExpertTeacher = () => {
                         <p className='pregrap-kh'>
                             Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqu
                         </p>
-                        <button className='text-center border-2 font-medium text-lg w-fit rounded-[10px] py-3 px-10 bg-rad-kh text-white shadow-2xl'> Instructor Profile</button>
+                        <button className={`${Button.btn_card}`}> Instructor Profile</button>
                     </div>
                     <div className="hover-box flex basis-12 md:basis-[48%] lg:basis-[32%] relative   ">
 

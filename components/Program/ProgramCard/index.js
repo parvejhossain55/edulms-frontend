@@ -7,6 +7,7 @@ import classShape1 from "../../../assect/img/class-shape-1.png";
 import classShape2 from "../../../assect/img/class-shape-2.png";
 import Pagination from "../Pagination";
 import {GrFormNext, GrFormPrevious} from "react-icons/gr";
+import { Button } from '../../Design';
 
 const ProgramCard = () => {
 
@@ -33,7 +34,7 @@ const ProgramCard = () => {
                                     <h5 className='font-medium' ><span className="text-rad-kh ">Time</span> 8-10 AM</h5>
                                     <h5 className='font-medium'><span className="text-rad-kh ">Seat</span> 25</h5>
                                 </div>
-                                <button className="btn-kh pb-5 max-w-fit">Join Class</button>
+                                <button className={`${Button.btn_card}`}>Join Class</button>
 
                             </div>
 
@@ -55,7 +56,7 @@ const ProgramCard = () => {
                                     <h5 className='font-medium' ><span className="text-rad-kh ">Time</span> 8-10 AM</h5>
                                     <h5 className='font-medium'><span className="text-rad-kh ">Seat</span> 25</h5>
                                 </div>
-                                <button className="btn-kh pb-5 max-w-fit">Join Class</button>
+                                <button className={`${Button.btn_card}`}>Join Class</button>
 
                             </div>
 
@@ -97,7 +98,7 @@ const ProgramCard = () => {
                                     <h5 className='font-medium' ><span className="text-rad-kh ">Time</span> 8-10 AM</h5>
                                     <h5 className='font-medium'><span className="text-rad-kh ">Seat</span> 25</h5>
                                 </div>
-                                <button className="btn-kh pb-5 max-w-fit">Join Class</button>
+                                <button className={`${Button.btn_card}`}>Join Class</button>
 
                             </div>
 
@@ -119,7 +120,7 @@ const ProgramCard = () => {
                                     <h5 className='font-medium' ><span className="text-rad-kh ">Time</span> 8-10 AM</h5>
                                     <h5 className='font-medium'><span className="text-rad-kh ">Seat</span> 25</h5>
                                 </div>
-                                <button className="btn-kh pb-5 max-w-fit">Join Class</button>
+                                <button className={`${Button.btn_card}`}>Join Class</button>
 
                             </div>
 

@@ -3,6 +3,7 @@ import Image from 'next/image'
 import blogPostImg from '../../../assect/img/BlogPost.jpg'
 
 import {BsCheck} from "react-icons/bs";
+import { Button } from '../../Design';
 
 
 
@@ -31,8 +32,8 @@ const ProgramDetails = () => {
                             <a className='text-base bg-[#fcefea] hover:bg-rad-kh text-kh-heading hover:text-white px-5 py-4
                                     transition-all delay-150 font-bold active:bg-rad-kh ease-in- capitalize !rounded-none'
                                href="#">
-                                Lesson<
-                               /a>
+                                Lesson
+                               </a>
                             <a className='text-base bg-[#fcefea] hover:bg-rad-kh text-kh-heading hover:text-white px-5 py-4
                                     transition-all delay-150 font-bold active:bg-rad-kh ease-in- capitalize !rounded-none'
                                href="#">
@@ -132,15 +133,15 @@ const ProgramDetails = () => {
                         </div>
 
                         {/* -------------------->>>> popular post<<<<<<<<---------           */}
-                        <div className="flex flex-col justify-start items-center gap-y-4 shadow-kh px-5 bg-[#fcefea] ">
-                            <h1 className='heading-kh text-2xl capitalize pt-4 '>Subscribe to Our Newsletter</h1>
+                        <div className="flex flex-col justify-start items-center gap-y-4 shadow-kh p-5 bg-[#fcefea] ">
+                            <h1 className='text-2xl capitalize pt-4 font-semibold'>Subscribe to Our Newsletter</h1>
 
                             <form className="flex flex-col gap-y-3 w-full" action=''>
                                 <input type="text"
                                        placeholder='Enter Your Email'
                                        className='w-full px-4 py-4 -mb-7'
                                 />
-                                <button className='btn-primary capitalize !rounded-none !py-4  '>subscribe</button>
+                                <button className={`${Button.btn_primary} mt-8`}>subscribe</button>
                             </form>
 
                         </div>

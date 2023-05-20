@@ -4,6 +4,7 @@ import aboutCourse from '../../../assect/img/AboutCourses -1.png';
 import aboutCourse_shape_1 from '../../../assect/img/AboutCourses-shape-1.png';
 import aboutCourse_shape_2 from '../../../assect/img/AboutCourses-shape-2.png';
 import aboutCourse_shape_3 from '../../../assect/img/AboutCourses-shape-3.png';
+import { Button } from '../../Design';
 
 const AboutCourses = () => {
     return (
@@ -22,15 +23,15 @@ const AboutCourses = () => {
                         <p className="pregrap-kh">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                         </p>
-                        <a className='btn-kh' href="#">Search Tutor</a>
+                        <button className={`${Button.btn_card}`} href="#">Search Tutor</button>
 
                     </div>
                     <div className="flex justify-center items-center lg:basis-1/2 z-0 relative  ">
                         <Image src={aboutCourse_shape_3} alt='aboutCourse_shape_1'
-                               className='hidden lg:block animate-[slideInRight_4s_ease-in-out_infinite]
+                            className='hidden lg:block animate-[slideInRight_4s_ease-in-out_infinite]
                                absolute bottom-20 left-[7%]  z-10 ' />
                         <Image src={aboutCourse} className='w-full overflow-hidden z-20 ' alt={"who-we-are-3" +
-                            "  "}/>
+                            "  "} />
                     </div>
                 </div>
             </div>
