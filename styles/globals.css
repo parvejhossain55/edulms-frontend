@@ -79,9 +79,6 @@
 .activity-box:hover strong{
     @apply bg-yellow-kh text-white
 }
-.card:hover .cardImage{
-    @apply transform scale-[1.2]
-}
 
 .footer-img-effect{
     @apply before:bg-[#ea512e] relative before:absolute top-0 left-0 before:w-full

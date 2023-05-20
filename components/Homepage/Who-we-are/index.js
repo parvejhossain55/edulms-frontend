@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from "next/image"
 import WhoWeAreImage from '../../../assect/img/who-we-are-2.png'
+import { Button } from '../../Design';
 const WhoWeAre = () => {
     return (
         <div className='who-we-are bg-kh-white'>
@@ -32,7 +33,7 @@ const WhoWeAre = () => {
                                     <span className='w-7 h-7 text-kh-white bg-rad-kh hover:bg-yellow-kh text-sm font-semibold text-center rounded-full pt-1'>4</span>
                                     <h3 className="text-kh-heading text-base font-semibold ml-4">Play to Learn</h3>
                                 </div>
-                                <button className="btn-kh mt-3 ">Read More</button>
+                                <button className={`mt-3 ${Button.btn_primary}`}>Read More</button>
                             </div>
                         </div>
                     </div>

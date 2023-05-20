@@ -1,4 +1,5 @@
 import '../styles/globals.css'
+import '../styles/style.css'
 import LoadingBar from 'react-top-loading-bar'
 import { useRouter } from 'next/router'
 import React from 'react'

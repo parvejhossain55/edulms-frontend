@@ -10,6 +10,7 @@ import rightBanner_4 from '../../../assect/img/hero-right-banner-2.png'
 
 
 import Image from 'next/image'
+import { Button } from '../../Design'
 
 const HeroSection = () => {
     return (
@@ -37,8 +38,8 @@ const HeroSection = () => {
                                 </h1>
                                 <p className='pregrap-kh w-auto pr-5'> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
                                 <div className="flex justify-center items-center  lg:justify-start  ">
-                                    <button className='btn-kh mr-7'> Learn More </button>
-                                    <button className='btn-kh' > Find Out More</button>
+                                    <button className={`${Button.btn_primary} mr-7`}> Learn More </button>
+                                    <button className={`${Button.btn_primary}`}> Find Out More</button>
                                 </div>
                             </div>
                             <div className=" w-full lg:w-1/2 py-5 ">

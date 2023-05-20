@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from "next/image";
 import Link from "next/link";
+import { HeroImg } from '../../Design';
 
 const Hero = ({
                   image,
@@ -8,10 +9,8 @@ const Hero = ({
               }
 ) => {
     return (
-        <div className='md:relative py-8 md:py-12 lg:py-16 bg-gray-500 md:bg-transparent' id="ProgramUs">
-            <Image src={image} className='hidden md:block bg-fixed -z-20 md:fixed top-0 left-0 w-full after:bg-d'
-                   alt='Abou-Hero-bg-banner' />
-            <div className="containte-kh py-20 z-10 static top-0 left-0  ">
+        <div className={`bg-[url("https://templates.envytheme.com/ketan/default/assets/img/page-banner/page-banner-5.jpg")] ${HeroImg.primary_img}`} id="ProgramUs">
+            <div className="containte-kh py-44 z-10 static top-0 left-0  ">
                 <div className="flex flex-col justify-center items-center">
                     <h1 className="text-kh-white capitalize font-extrabold font-Catamaran text-3xl mb-6">{subject}</h1>
                     <div className="flex justify-start items-center gap-x-4">

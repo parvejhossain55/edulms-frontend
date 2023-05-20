@@ -14,14 +14,14 @@ const Homepage = () => {
     <div>
       <div>
         <HeroSection />
-          <WhoWeAre />
-        <Activities/>
-          <Classes />
-          <CoreValue/>
-          <Teacher/>
-          <Event/>
-          <LatestNews/>
-          {/*<BuyNowBtn/>*/}
+        <WhoWeAre />
+        <Activities />
+        <Classes />
+        <CoreValue />
+        <Teacher />
+        <Event />
+        <LatestNews />
+        {/*<BuyNowBtn/>*/}
       </div>
     </div>
   );
