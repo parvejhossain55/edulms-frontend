@@ -1,5 +1,5 @@
 import React from 'react'
-import { LoginPage } from '../components'
+import { LoginPage } from '../../components'
 import Head from 'next/head'
 
 const login = () => {

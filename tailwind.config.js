@@ -23,8 +23,6 @@ module.exports = {
     },
     fontFamily: {
       "Catamaran": ['Catamaran', 'sans-serif'],
-      "roboto": ['Roboto', 'sans-serif'],
-      "sacramento": ["Sacramento", "cursive"]
     },
     extend: {
       boxShadow: {

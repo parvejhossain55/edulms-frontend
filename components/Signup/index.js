@@ -22,22 +22,22 @@ const SignupPage = () => {
     }
     return (
         <div>
-            <div className='mt-12'>
+            <div className='truncate min-h-screen bg-gradient-to-r from-indigo-100 from-10% via-purple-200 via-30% to-emerald-100 to-100% pt-12'>
                 <div className="px-6 sm:w-2/3 sm:justify-center sm:m-auto md:w-2/4 lg:w-1/3">
                     <div className="logo">
-                    <Box component={Link} href='/'>
-                        <Image
-                            width={80}
-                            height={80}
-                            src={Logo}
-                            alt='Leadedu'
+                        <Box component={Link} href='/'>
+                            <Image
+                                width={80}
+                                height={80}
+                                src={Logo}
+                                alt='Leadedu'
 
-                        />
-                    </Box>
+                            />
+                        </Box>
                     </div>
                     <h3 className='text-3xl py-8 font-semibold'>Sign in</h3>
                     <p>If you already have an account register</p>
-                    <p>You can <span className='text-orange-600 font-bold mx-2'><button> <Link href='/login'>Login here ?</Link> </button></span> </p>
+                    <p>You can <span className='text-orange-600 font-bold mx-2'><button> <Link href='/users/login'>Login here ?</Link> </button></span> </p>
                     <form onSubmit={handleSubmit} action="">
                         <div className='my-12'>
                             <div className='my-6'>
@@ -47,7 +47,7 @@ const SignupPage = () => {
                                     name="name"
                                     value={inputs.name || ""}
                                     onChange={handleChange}
-                                    className='form_control' type="text" />
+                                    type="text" />
                             </div>
                             <div className='my-6'>
                                 <MyComponent
@@ -56,7 +56,7 @@ const SignupPage = () => {
                                     name="email"
                                     value={inputs.email || ""}
                                     onChange={handleChange}
-                                    className='form_control' type="email" />
+                                    type="email" />
                             </div>
                             <div className='my-6'>
                                 <MyComponent
@@ -65,7 +65,7 @@ const SignupPage = () => {
                                     name="phone"
                                     value={inputs.phone || ""}
                                     onChange={handleChange}
-                                    className='form_control' type="text" />
+                                    type="text" />
                             </div>
                             <div className='my-6'>
                                 <MyComponent
@@ -74,10 +74,19 @@ const SignupPage = () => {
                                     name="password"
                                     value={inputs.password || ""}
                                     onChange={handleChange}
-                                    className='form_control' type="password" />
+                                    type="password" />
+                            </div>
+                            <div className='my-6'>
+                                <MyComponent
+                                    variant='outlined'
+                                    label='Confirm Password'
+                                    name="confirmPassword"
+                                    value={inputs.confirmPassword || ""}
+                                    onChange={handleChange}
+                                    type="password" />
                             </div>
                             <div>
-                            <Button color='secondary' className='bg-purple-700' variant='contained' sx={{width: '100%', background: 'blue', marginTop: 4, padding: 1, fontSize: '1rem', fontWeight: 'bold'}} type='submit'>Login</Button>
+                                <Button color='secondary' className='bg-purple-700' variant='contained' sx={{ width: '100%', background: '#7b1fa2', '&:hover': { background: '#7b1fa2' }, marginTop: 4, padding: 1.5, fontSize: '1rem', fontWeight: 'bold' }} type='submit' disableElevation>Signup</Button>
                             </div>
                             <div>
                                 <p className='text-center text-slate-400 font-semibold mt-4'>or continue with</p>

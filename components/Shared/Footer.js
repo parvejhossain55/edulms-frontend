@@ -4,7 +4,8 @@ import { BsFillTelephoneFill, BsTwitter } from "react-icons/bs";
 import { HiOutlineMail } from "react-icons/hi";
 import { MdOutlineLocationOn } from "react-icons/md";
 import Image from 'next/image'
-import footerImage from '../../../assect/img/class-2.jpg'
+import footerImage from '../../assect/img/class-2.jpg'
+import logo from '../../assect/img/leadeducare-lg-logo.png'
 
 
 const Footer = () => {
@@ -15,7 +16,14 @@ const Footer = () => {
                     <div className="flex flex-col  justify-center items-center gap-y-4 ">
                         <div className="flex flex-col justify-start items-start sm:justify-between sm:flex-row sm:flex-wrap lg:flex-nowrap ">
                             <div className="sm:w-[46%] lg:w-[24%] xl:w-[25%] w-full flex flex-col justify-start sm:mr-5 mb-4">
-                                <h2 className='font-bold text-[44px] mb-6'>Ketan</h2>
+                                <h2 className='font-bold text-[44px] mb-6'>
+                                    <Image
+                                        width={100}
+                                        height={100}
+                                        alt='Logo'
+                                        src={logo}
+                                    />
+                                </h2>
                                 <p className='font-normal text-base text-white mb-5 text-left'>
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
                                 </p>

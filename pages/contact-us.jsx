@@ -1,6 +1,6 @@
 import React from 'react';
 import Head from "next/head";
-import { Contactuspage, Footer, Nav} from "../components";
+import { Contactuspage} from "../components";
 
 const ContactUs = () => {
     return (
@@ -9,9 +9,7 @@ const ContactUs = () => {
                 <title>Contact Us</title>
             </Head>
             <main>
-                <Nav />
                 <Contactuspage />
-                <Footer />
             </main>
         </>
     );

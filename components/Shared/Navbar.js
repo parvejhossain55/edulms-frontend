@@ -14,7 +14,7 @@ import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import useScrollTrigger from '@mui/material/useScrollTrigger';
 import Image from 'next/image';
-import logo from '../../../assect/img/leadeducare-lg-logo.png'
+import logo from '../../assect/img/leadeducare-lg-logo.png'
 import Link from 'next/link';
 import { Drawer, List, ListItem, ListItemButton, ListItemText, SwipeableDrawer } from '@mui/material';
 import { useRouter } from 'next/router';
@@ -22,7 +22,7 @@ import { useRouter } from 'next/router';
 
 
 
-function Header(props) {
+export default function Navbar(props) {
 
     const router = useRouter()
     const [user, setUser] = React.useState({ value: null })
@@ -43,6 +43,9 @@ function Header(props) {
     const SidebarToggle = () => {
         setOpen(true)
     }
+    const handleListItemClick = (event, index) => {
+        setSelectedIndex(index);
+    };
 
 
 
@@ -131,17 +134,17 @@ function Header(props) {
                                     key={index.toString()}
                                     // onClick={handleCloseNavMenu}
                                     sx={{
-                                        my: 2, color: '#514848',fontWeight: '600', display: 'block', textTransform: 'capitalize',
+                                        my: 2, color: '#514848', fontWeight: '600', display: 'block', textTransform: 'capitalize',
                                         '&.Mui-selected': {
                                             color: '#ea512e',
                                             background: 'none'
-                                            
+
                                         }
                                     }}
                                     component={Link}
                                     href={`${page.link}`}
                                     selected={selectedIndex === index}
-                                // onClick={(event) => handleListItemClick(event, index)}
+                                    onClick={(event) => handleListItemClick(event, index)}
                                 >
                                     {page.title}
                                 </MenuItem>
@@ -149,7 +152,7 @@ function Header(props) {
                         </Box>
                         {
                             !user.value && <Box sx={{ flexGrow: 0 }}>
-                                <Button color='secondary' component={Link} href='/login' sx={{ textTransform: 'capitalize', fontWeight: '800' }} variant='contained'>Login</Button>
+                                <Button color='secondary' component={Link} href='/users/login' sx={{ textTransform: 'capitalize', fontWeight: '600', background: '#ea512e', '&:hover': {background: '#ff2e00'} }} variant='contained' disableElevation>Login</Button>
                             </Box>
                         }
                         {
@@ -223,7 +226,7 @@ function Header(props) {
         </ElevationScroll>
     );
 }
-export default Header;
+
 
 
 

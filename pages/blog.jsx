@@ -1,6 +1,6 @@
 import React from 'react';
 import Head from "next/head";
-import {BlogPage, Footer, Nav} from "../components";
+import {BlogPage} from "../components";
 
 const Blog = () => {
     return (
@@ -9,9 +9,7 @@ const Blog = () => {
                 <title>Contact Us</title>
             </Head>
             <main>
-                <Nav />
                 <BlogPage />
-                <Footer />
             </main>
         </>
     );

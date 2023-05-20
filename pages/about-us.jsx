@@ -1,6 +1,6 @@
 import React from 'react';
 import Head from "next/head";
-import {Aboutuspage, Footer, Nav} from "../components";
+import {Aboutuspage} from "../components";
 
 const AboutUs = () => {
     return (
@@ -9,9 +9,7 @@ const AboutUs = () => {
                 <title>About Us</title>
             </Head>
             <main>
-                <Nav />
                 <Aboutuspage />
-                <Footer />
             </main>
         </>
     );

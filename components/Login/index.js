@@ -24,7 +24,7 @@ const LoginPage = () => {
     }
     return (
         <div>
-            <div className='mt-12'>
+            <div className='truncate min-h-screen bg-gradient-to-r from-indigo-100 from-10% via-purple-200 via-30% to-emerald-100 to-100% pt-12'>
                 <div className="px-6 sm:w-2/3 sm:justify-center sm:m-auto md:w-2/4 lg:w-1/3">
                     <Box component={Link} href='/'>
                         <Image
@@ -37,7 +37,7 @@ const LoginPage = () => {
                     </Box>
                     <h3 className='text-3xl py-8 font-semibold'>Sign in</h3>
                     <p>If you dont have an account register</p>
-                    <p>You can <span className='text-orange-600 font-bold mx-2'><button><Link href={'/signup'}>Register here !</Link></button></span> </p>
+                    <p>You can <span className='text-orange-600 font-bold mx-2'><button><Link href={'/users/signup'}>Register here !</Link></button></span> </p>
                     <form onSubmit={handleSubmit} action="">
                         <div className='my-12'>
                             <div>
@@ -47,7 +47,7 @@ const LoginPage = () => {
                                     name="email"
                                     value={inputs.email || ""}
                                     onChange={handleChange}
-                                    className='form_control' type="text" />
+                                    type="text" />
                             </div>
                             <div className='my-6'>
                                 <MyComponent
@@ -55,14 +55,14 @@ const LoginPage = () => {
                                     name='password'
                                     value={inputs.password || ""}
                                     onChange={handleChange}
-                                    className='form_control' type="password" />
+                                    type="password" />
                             </div>
                             <div className='flex justify-between items-center text-sm'>
                                 <div>Rememeber me</div>
-                                <div className='text-orange-600'><button>Forget Password ?</button></div>
+                                <div className='text-orange-600 font-semibold'><button>Forget Password ?</button></div>
                             </div>
                             <div>
-                                <Button color='secondary' className='bg-purple-700' variant='contained' sx={{ width: '100%', background: 'blue', marginTop: 4, padding: 1, fontSize: '1rem', fontWeight: 'bold' }} type='submit'>Login</Button>
+                                <Button color='secondary' className='bg-purple-700' variant='contained' sx={{ width: '100%', background: '#7b1fa2', '&:hover': { background: '#7b1fa2' }, marginTop: 4, padding: 1.5, fontSize: '1rem', fontWeight: 'bold' }} type='submit' disableElevation>Login</Button>
                             </div>
                             <div>
                                 <p className='text-center text-slate-400 font-semibold mt-4'>or continue with</p>

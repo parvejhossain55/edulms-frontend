@@ -2,6 +2,8 @@ import '../styles/globals.css'
 import LoadingBar from 'react-top-loading-bar'
 import { useRouter } from 'next/router'
 import React from 'react'
+import Layout from '../components/Shared/Layout'
+
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter()
@@ -23,7 +25,12 @@ function MyApp({ Component, pageProps }) {
         progress={progress}
         onLoaderFinished={() => setProgress(0)}
       />
-      <Component {...pageProps} />
+      {
+        router.pathname.includes('users') ? <Component {...pageProps} /> :
+          <Layout >
+            <Component {...pageProps} />
+          </Layout>
+      }
     </>
   )
 }
