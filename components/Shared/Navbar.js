@@ -133,7 +133,6 @@ export default function Navbar(props) {
                                 <MenuItem
                                     key={index.toString()}
                                     // onClick={handleCloseNavMenu}
-                                    className='font-Catamaran'
                                     sx={{
                                         my: 2, color: '#514848', fontWeight: '600', display: 'block', textTransform: 'capitalize',
                                         '&.Mui-selected': {
