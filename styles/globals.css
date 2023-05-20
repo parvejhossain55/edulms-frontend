@@ -55,7 +55,7 @@
 }
 
 .link-kh{
-    @apply hover:text-[#ea512e]  before:w-0 before:h-[1px]  before:absolute hover:duration-500 before:-left-0 before:-bottom-2 before:bg-[#ea512e] relative before:duration-300 hover:before:w-full
+    @apply hover:text-[#ea512e] font-semibold  before:w-0 before:h-[1px]  before:absolute hover:duration-500 before:-left-0 before:-bottom-2 before:bg-[#ea512e] relative before:duration-300 hover:before:w-full
 }
 .bg-banner-kh{
     @apply absolute -z-30 bg-fixed  top-0 right-0  w-full
