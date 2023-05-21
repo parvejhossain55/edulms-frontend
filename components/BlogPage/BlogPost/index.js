@@ -13,6 +13,7 @@ import {FaCircle, FaFacebookF, FaPinterestP} from "react-icons/fa";
 import {AiOutlineLeft, AiOutlineRight} from "react-icons/ai";
 import {BiSearchAlt} from "react-icons/bi";
 import { Button } from '../../Design';
+import Link from "next/Link";
 
 const BlogPost = () => {
     return (
@@ -25,10 +26,10 @@ const BlogPost = () => {
                         </div>
                         <div className='flex justify-start items-center gap-x-5'>
                             <h5 className='text-kh-heading font-medium  '>Posted On:
-                                <a className='link-text-kh  pl-2 ' href="#">September 31, 2022</a>
+                                <a className='Link-text-kh  pl-2 ' href="#">September 31, 2022</a>
                             </h5>
                             <h5 className='text-kh-heading  font-medium '>Posted By:
-                                <a className='link-text-kh pl-2 ' href="#">John Anderson</a>
+                                <a className='Link-text-kh pl-2 ' href="#">John Anderson</a>
                             </h5>
                         </div>
                         <div className='flex flex-col justify-start  gap-y-5'>
@@ -86,8 +87,8 @@ const BlogPost = () => {
                             <div className="flex justify-between items-center my-6   ">
                                 <div className="flex justify-start items-center ">
                                     <span className='mr-2 '> <BsFillBookmarkFill/></span>
-                                    <a className='link-text-kh capitalize' href="#"> preschool, </a>
-                                    <a className='link-text-kh capitalize' href="#">children</a>
+                                    <a className='Link-text-kh capitalize' href="#"> preschool, </a>
+                                    <a className='Link-text-kh capitalize' href="#">children</a>
                                 </div>
                                 <div className="flex justify-start items-center">
                                     <span className='pregrap-kh mr-3 '>Share:</span>
@@ -120,7 +121,7 @@ const BlogPost = () => {
                                 <div className="flex flex-col gap-y-3">
                                     {/*--------------this is main comment ----------->>>> */}
                                     <h3 className='heading-kh'> John Jones</h3>
-                                    <a href='#' className='link-text-kh  !text-sm w-fit '>April 24, 2022 at 10:59 am</a>
+                                    <a href='#' className='Link-text-kh  !text-sm w-fit '>April 24, 2022 at 10:59 am</a>
                                     <p className="pregrap-kh text-justify">
                                         Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen.
                                     </p>
@@ -135,7 +136,7 @@ const BlogPost = () => {
                                         </div>
                                         <div className="flex flex-col justify-start  gap-y-2.5">
                                             <h3 className='heading-kh'> John Jones</h3>
-                                            <a href='#' className='link-text-kh  !text-sm w-fit '>April 24, 2022 at 10:59 am</a>
+                                            <a href='#' className='Link-text-kh  !text-sm w-fit '>April 24, 2022 at 10:59 am</a>
                                             <p className="pregrap-kh text-justify">
                                                 Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen.
                                             </p>
@@ -157,7 +158,7 @@ const BlogPost = () => {
                                 <div className="flex flex-col gap-y-3">
                                     {/*--------------this is main comment ----------->>>> */}
                                     <h3 className='heading-kh'> John Jones</h3>
-                                    <a href='#' className='link-text-kh  !text-sm w-fit '>April 24, 2022 at 10:59 am</a>
+                                    <a href='#' className='Link-text-kh  !text-sm w-fit '>April 24, 2022 at 10:59 am</a>
                                     <p className="pregrap-kh text-justify ">
                                         Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen.
                                     </p>
@@ -173,7 +174,7 @@ const BlogPost = () => {
                                         </div>
                                         <div className="flex flex-col gap-y-2.5">
                                             <h3 className='heading-kh'> John Jones</h3>
-                                            <a href='#' className='link-text-kh  !text-sm w-fit '>April 24, 2022 at 10:59 am</a>
+                                            <a href='#' className='Link-text-kh  !text-sm w-fit '>April 24, 2022 at 10:59 am</a>
                                             <p className="pregrap-kh text-justify ">
                                                 Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen.
                                             </p>
@@ -257,112 +258,71 @@ const BlogPost = () => {
 
                             <div className="flex justify-start gap-x-4  items-center ">
                                 <div className='basis-1/4 '>
-                                    <a className='w-full  ' href="#">
+                                    <Link className='w-full  ' href="#">
                                         {/* <Image src={blog_1} className='w-auto h-20 rounded-lg' alt=""/> */}
 
-                                    </a>
+                                    </Link>
                                 </div>
                                 <div className="flex flex-col gap-y-1 basis-3/4 ">
-                                    <p className='text-rad-kh text-md' > June 10, 2022</p>
-                                    <a className='text-[17px] text-kh-heading hover:text-rad-kh font-bold transition-all delay-200 ease-in-out' href="#">
+                                    <p className='text-rad-kh text-sm' > June 10, 2022</p>
+                                    <Link className='text-base text-kh-heading hover:text-rad-kh font-bold transition-all delay-200 ease-in-out' href="#">
                                         The Data Surrounding Higher Education
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                             <div className="flex justify-start gap-x-4  items-center ">
                                 <div className='basis-1/4 '>
-                                    <a className='w-full  ' href="#">
-                                        {/* <Image src={blog_2} className='w-auto h-20 rounded-lg' alt=""/> */}
-
-                                    </a>
-                                </div>
-                                <div className="flex flex-col gap-y-1 basis-3/4 ">
-                                    <p className='text-rad-kh text-md' > June 10, 2022</p>
-                                    <a className='text-[17px] text-kh-heading hover:text-rad-kh font-bold transition-all delay-200 ease-in-out' href="#">
-                                        The Data Surrounding Higher Education
-                                    </a>
-                                </div>
-                            </div>
-                            <div className="flex justify-start gap-x-4  items-center ">
-                                <div className='basis-1/4 '>
-                                    <a className='w-full  ' href="#">
-                                        {/* <Image src={blog_3} className='w-auto h-20 rounded-lg' alt=""/> */}
-
-                                    </a>
-                                </div>
-                                <div className="flex flex-col gap-y-1 basis-3/4 ">
-                                    <p className='text-rad-kh text-md' > June 10, 2022</p>
-                                    <a className='text-[17px] text-kh-heading hover:text-rad-kh font-bold transition-all delay-200 ease-in-out' href="#">
-                                        The Data Surrounding Higher Education
-                                    </a>
-                                </div>
-                            </div>
-                            <div className="flex justify-start gap-x-4  items-center ">
-                                <div className='basis-1/4 '>
-                                    <a className='w-full  ' href="#">
-                                        {/* <Image src={class_3} className='w-auto h-20 rounded-lg' alt=""/> */}
-                                    </a>
-                                </div>
-                                <div className="flex flex-col gap-y-1 basis-3/4 ">
-                                    <p className='text-rad-kh text-md' > June 10, 2022</p>
-                                    <a className='text-[17px] text-kh-heading hover:text-rad-kh font-bold transition-all delay-200 ease-in-out' href="#">
-                                        The Data Surrounding Higher Education
-                                    </a>
-                                </div>
-                            </div>
-                            <div className="flex justify-start gap-x-4  items-center ">
-                                <div className='basis-1/4 '>
-                                    <a className='w-full  ' href="#">
+                                    <Link className='w-full  ' href="#">
                                         {/* <Image src={blog_1} className='w-auto h-20 rounded-lg' alt=""/> */}
 
-                                    </a>
+                                    </Link>
                                 </div>
                                 <div className="flex flex-col gap-y-1 basis-3/4 ">
                                     <p className='text-rad-kh text-md' > June 10, 2022</p>
-                                    <a className='text-[17px] text-kh-heading hover:text-rad-kh font-bold transition-all delay-200 ease-in-out' href="#">
+                                    <Link className='text-[17px] text-kh-heading hover:text-rad-kh font-bold transition-all delay-200 ease-in-out' href="#">
                                         The Data Surrounding Higher Education
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                             <div className="flex justify-start gap-x-4  items-center ">
                                 <div className='basis-1/4 '>
-                                    <a className='w-full  ' href="#">
+                                    <Link className='w-full  ' href="#">
                                         {/* <Image src={blog_2} className='w-auto h-20 rounded-lg' alt=""/> */}
 
-                                    </a>
+                                    </Link>
                                 </div>
                                 <div className="flex flex-col gap-y-1 basis-3/4 ">
                                     <p className='text-rad-kh text-md' > June 10, 2022</p>
-                                    <a className='text-[17px] text-kh-heading hover:text-rad-kh font-bold transition-all delay-200 ease-in-out' href="#">
+                                    <Link className='text-[17px] text-kh-heading hover:text-rad-kh font-bold transition-all delay-200 ease-in-out' href="#">
                                         The Data Surrounding Higher Education
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                             <div className="flex justify-start gap-x-4  items-center ">
                                 <div className='basis-1/4 '>
-                                    <a className='w-full  ' href="#">
+                                    <Link className='w-full  ' href="#">
                                         {/* <Image src={blog_3} className='w-auto h-20 rounded-lg' alt=""/> */}
 
-                                    </a>
+                                    </Link>
                                 </div>
                                 <div className="flex flex-col gap-y-1 basis-3/4 ">
                                     <p className='text-rad-kh text-md' > June 10, 2022</p>
-                                    <a className='text-[17px] text-kh-heading hover:text-rad-kh font-bold transition-all delay-200 ease-in-out' href="#">
+                                    <Link className='text-[17px] text-kh-heading hover:text-rad-kh font-bold transition-all delay-200 ease-in-out' href="#">
                                         The Data Surrounding Higher Education
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                             <div className="flex justify-start gap-x-4  items-center ">
                                 <div className='basis-1/4 '>
-                                    <a className='w-full  ' href="#">
+                                    <Link className='w-full  ' href="#">
                                         {/* <Image src={class_3} className='w-auto h-20 rounded-lg' alt=""/> */}
-                                    </a>
+                                    </Link>
                                 </div>
                                 <div className="flex flex-col gap-y-1 basis-3/4 ">
                                     <p className='text-rad-kh text-md' > June 10, 2022</p>
-                                    <a className='text-[17px] text-kh-heading hover:text-rad-kh font-bold transition-all delay-200 ease-in-out' href="#">
+                                    <Link className='text-[17px] text-kh-heading hover:text-rad-kh font-bold transition-all delay-200 ease-in-out' href="#">
                                         The Data Surrounding Higher Education
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
 
@@ -377,28 +337,28 @@ const BlogPost = () => {
                             <div className="flex flex-col justify-start items-start gap-y-4 pb-5 ">
                                 <div className='flex justify-center items-center  gap-x-2'>
                                     <span className='text-[10px] text-rad-kh'> <FaCircle/></span>
-                                    <a className='link-text-kh text-md '  href="#">Alphabet Parade</a>
+                                    <Link className='Link-text-kh text-md '  href="#">Alphabet Parade</Link>
                                 </div>
 
                                 <div className='flex justify-center items-center  gap-x-2'>
                                     <span className='text-[10px] text-rad-kh'> <FaCircle/></span>
-                                    <a className='link-text-kh text-md '  href="#">Games</a>
+                                    <Link className='Link-text-kh text-md '  href="#">Games</Link>
                                 </div>
                                 <div className='flex justify-center items-center  gap-x-2'>
                                     <span className='text-[10px] text-rad-kh'> <FaCircle/></span>
-                                    <a className='link-text-kh text-md '  href="#">Gross Motor</a>
+                                    <Link className='Link-text-kh text-md '  href="#">Gross Motor</Link>
                                 </div>
                                 <div className='flex justify-center items-center  gap-x-2'>
                                     <span className='text-[10px] text-rad-kh'> <FaCircle/></span>
-                                    <a className='link-text-kh text-md '  href="#">Inspare Success</a>
+                                    <Link className='Link-text-kh text-md '  href="#">Inspare Success</Link>
                                 </div>
                                 <div className='flex justify-center items-center  gap-x-2'>
                                     <span className='text-[10px] text-rad-kh'> <FaCircle/></span>
-                                    <a className='link-text-kh text-md '  href="#">Auditory Processing</a>
+                                    <Link className='Link-text-kh text-md '  href="#">Auditory Processing</Link>
                                 </div>
                                 <div className='flex justify-center items-center  gap-x-2'>
                                     <span className='text-[10px] text-rad-kh'> <FaCircle/></span>
-                                    <a className='link-text-kh text-md '  href="#">Kindergarten</a>
+                                    <Link className='Link-text-kh text-md '  href="#">Kindergarten</Link>
                                 </div>
                             </div>
 
