@@ -28,9 +28,6 @@
 .icon-kh:hover{
     @apply text-rad-kh bg-kh-white transition-all duration-500
 }
-.hover-box:hover .inner-hover-box{
-    @apply flex transition-[mt-0]
-}
 
 .heading-kh{
     @apply text-kh-heading font-bold font-Catamaran
