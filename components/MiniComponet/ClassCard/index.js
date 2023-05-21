@@ -34,7 +34,7 @@ const ClassCard = ({
                     <h5 className='font-medium'><span className="text-rad-kh mr-1">seat : </span>{seat}</h5>
                 </div>
 
-                <button className={`${Button.btn_card}`}>Join Class</button>
+                <button className={`${Button.btn_card} font-semibold`}>Join Course</button>
             </div>
 
         </div>

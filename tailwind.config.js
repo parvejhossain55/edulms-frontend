@@ -60,10 +60,6 @@ module.exports = {
             transform: 'translateY(0)',
           },
         },
-
-
-
-
       },
     },
 

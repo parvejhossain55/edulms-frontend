@@ -7,7 +7,7 @@ import NewsCard from "../../MiniComponet/NewsCard";
 
 const LatestNews = () => {
     return (
-        <div className="classes bg-kh-white ">
+        <div className="classes bg-kh-white pb-20">
             <div className="containte-kh px-4 py-10  ">
                 <div className="flex flex-col items-center justify-center">
                     <span className="title-kh py-5 ">News & Blog </span>

@@ -7,7 +7,7 @@ import { Button } from '../../Design';
 const ContactForm = () => {
 
     return (
-        <div className='bg-kh-white pt-16 pb-16'>
+        <div className='bg-kh-white pt-16 pb-20'>
             <div className="w-[1140px] mx-auto ">
                 <div className="flex flex-col justify-start lg:justify-between
                                 lg:flex-row gap-y-7 lg:gap-x-8 ">

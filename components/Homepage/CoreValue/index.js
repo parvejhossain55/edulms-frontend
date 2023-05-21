@@ -4,6 +4,7 @@ import valueImage from "../../../assect/img/value-1.png"
 import valueShape1 from '../../../assect/img/value-shape-1.png'
 import valueShape2 from '../../../assect/img/value-shape-2.png'
 import valueShape3 from '../../../assect/img/value-shape-3.png'
+import { Button } from '../../Design';
 
 
 const CoreValue = () => {
@@ -18,8 +19,8 @@ const CoreValue = () => {
                         <span className='title-kh text-left mb-5 '>Our Core Values</span>
                         <h3 className="heading-kh text-2xl lg:text-4xl xl:text-[44px] xl:leading-[1.2]">We are Refunding Early Childcare Education</h3>
                         <div className="flex justify-center items-center mt-5 gap-5">
-                            <div className="flex justify-center items-center p-4 w-14 h-14 bg-[#d3f5fe] border-2 border-rad-kh rounded-full">
-                                <span className=" text-2xl text-center p-5 font-semibold outline-white">01</span>
+                            <div>
+                                <span className={`${Button.btn_activity} bg-sky-300 before:border-sky-200`}>01</span>
                             </div>
                             <div className="flex flex-col gap-2.5 ">
                                 <h4 className="heading-kh mt-5 text-xl ">Active Learning</h4>
@@ -27,8 +28,8 @@ const CoreValue = () => {
                             </div>
                         </div>
                         <div className="flex justify-center items-center gap-5">
-                            <div className="flex justify-center items-center p-4 w-14 h-14 bg-[#fce0ad] border-2 border-rad-kh rounded-full">
-                                <span className=" text-2xl text-center p-5  font-semibold outline-white">02</span>
+                            <div>
+                                <span className={`${Button.btn_activity}  bg-orange-300 before:border-orange-200`}>02</span>
                             </div>
                             <div className="flex flex-col gap-2.5 ">
                                 <h4 className="heading-kh mt-6 text-xl"> Fully Equipment</h4>
@@ -36,8 +37,8 @@ const CoreValue = () => {
                             </div>
                      </div>
                         <div className="flex justify-center items-center gap-5">
-                            <div className="flex justify-center items-center p-4 w-14 h-14 bg-[#fbc9d5] border-2 border-rad-kh rounded-full">
-                                <span className=" text-2xl text-center p-5 font-semibold outline-white">03</span>
+                            <div>
+                                <span className={`${Button.btn_activity}  bg-red-300 before:border-red-200`}>03</span>
                             </div>
                             <div className="flex flex-col gap-2.5 ">
                                 <h4 className="heading-kh mt-6 text-xl"> Fully Equipment</h4>

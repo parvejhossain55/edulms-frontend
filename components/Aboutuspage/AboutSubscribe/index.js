@@ -4,7 +4,7 @@ const AboutSubscribe = () => {
 
     return (
         <div className='bg-[#fdeee9] '>
-            <div className="containte-kh py-6 md:py-8 lg:py-10">
+            <div className="containte-kh py-12 md:py-8 lg:py-20">
                 <div className=" flex flex-col lg:flex-row lg:justify-between  gap-y-5 z-0 ">
 
                         <h1 className="basis-ful md:basis-1/2 md:leading-tight heading-kh text-2xl md:text-[34px] ">Do You Want To Know Get Update What’s Upcoming</h1>

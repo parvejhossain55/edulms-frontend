@@ -12,7 +12,7 @@ import { Button } from '../../Design';
 const ProgramCard = () => {
 
     return (
-        <div className="classes bg-seandary-bg relative z-10 pb-8 ">
+        <div className="classes bg-seandary-bg relative z-10 pb-20 ">
             <div className="containte-kh px-4 py-10">
                 <h1 className='heading-kh  text-2xl md:text-3xl my-6  '>Popular Class</h1>
                 <div className="flex flex-col gap-y-10 justify-center items-center">
@@ -34,7 +34,7 @@ const ProgramCard = () => {
                                     <h5 className='font-medium' ><span className="text-rad-kh ">Time</span> 8-10 AM</h5>
                                     <h5 className='font-medium'><span className="text-rad-kh ">Seat</span> 25</h5>
                                 </div>
-                                <button className={`${Button.btn_card}`}>Join Class</button>
+                                <button className={`${Button.btn_card} font-semibold`}>Join Course</button>
 
                             </div>
 
@@ -56,7 +56,7 @@ const ProgramCard = () => {
                                     <h5 className='font-medium' ><span className="text-rad-kh ">Time</span> 8-10 AM</h5>
                                     <h5 className='font-medium'><span className="text-rad-kh ">Seat</span> 25</h5>
                                 </div>
-                                <button className={`${Button.btn_card}`}>Join Class</button>
+                                <button className={`${Button.btn_card} font-semibold`}>Join Course</button>
 
                             </div>
 
@@ -78,7 +78,7 @@ const ProgramCard = () => {
                                     <h5 className='font-medium' ><span className="text-rad-kh ">Time</span> 8-10 AM</h5>
                                     <h5 className='font-medium'><span className="text-rad-kh ">Seat</span> 25</h5>
                                 </div>
-                                <button className="btn-kh pb-6 max-w-fit">Join Class</button>
+                                <button className={`${Button.btn_card} font-semibold`}>Join Course</button>
                             </div>
                         </div>
 
@@ -98,7 +98,7 @@ const ProgramCard = () => {
                                     <h5 className='font-medium' ><span className="text-rad-kh ">Time</span> 8-10 AM</h5>
                                     <h5 className='font-medium'><span className="text-rad-kh ">Seat</span> 25</h5>
                                 </div>
-                                <button className={`${Button.btn_card}`}>Join Class</button>
+                                <button className={`${Button.btn_card} font-semibold`}>Join Course</button>
 
                             </div>
 
@@ -120,7 +120,7 @@ const ProgramCard = () => {
                                     <h5 className='font-medium' ><span className="text-rad-kh ">Time</span> 8-10 AM</h5>
                                     <h5 className='font-medium'><span className="text-rad-kh ">Seat</span> 25</h5>
                                 </div>
-                                <button className={`${Button.btn_card}`}>Join Class</button>
+                                <button className={`${Button.btn_card} font-semibold`}>Join Course</button>
 
                             </div>
 
@@ -142,7 +142,7 @@ const ProgramCard = () => {
                                     <h5 className='font-medium' ><span className="text-rad-kh ">Time</span> 8-10 AM</h5>
                                     <h5 className='font-medium'><span className="text-rad-kh ">Seat</span> 25</h5>
                                 </div>
-                                <button className="btn-kh pb-6 max-w-fit">Join Class</button>
+                                <button className={`${Button.btn_card} font-semibold`}>Join Course</button>
                             </div>
                         </div>
 
@@ -152,35 +152,35 @@ const ProgramCard = () => {
                     {/*------------------>>>>>>*pagination component call your choice<<<<<-------------*/}
                     {/*<Pagination/>*/}
                     <div className="flex justify-between items-center gap-x-4 ">
-                        <a className='bg-white w-9 h-9 shadow-[0_2px_10px_0_#d8dde6] rounded-[18px] flex justify-center items-center p-2 font-bold text-lg hover:bg-yellow-kh delay-200 transition-all  '
+                        <a className='bg-white w-9 h-9 shadow-[0_2px_10px_0_#d8dde6] rounded-[18px] flex justify-center items-center p-4 font-semibold text-lg hover:bg-yellow-kh hover:text-white duration-300 transition-all  '
                            href="#">
                             <GrFormPrevious/>
                         </a>
-                        <a className='bg-white w-9 h-9 shadow-[0_2px_10px_0_#d8dde6] rounded-[18px] flex justify-center items-center p-2 font-bold text-lg hover:bg-yellow-kh delay-200 transition-all  '
+                        <a className='bg-white w-9 h-9 shadow-[0_2px_10px_0_#d8dde6] rounded-[18px] flex justify-center items-center p-4 font-semibold text-lg hover:bg-yellow-kh hover:text-white duration-300 transition-all  '
                            href="#">
                             1
                         </a>
 
-                        <a className='bg-white w-9 h-9 shadow-[0_2px_10px_0_#d8dde6] rounded-[18px] flex justify-center items-center p-2 font-bold text-lg hover:bg-yellow-kh delay-200 transition-all  '
+                        <a className='bg-white w-9 h-9 shadow-[0_2px_10px_0_#d8dde6] rounded-[18px] flex justify-center items-center p-4 font-semibold text-lg hover:bg-yellow-kh hover:text-white duration-300 transition-all  '
                            href="#">
                             2
                         </a>
 
-                        <a className='bg-white w-9 h-9 shadow-[0_2px_10px_0_#d8dde6] rounded-[18px] flex justify-center items-center p-2 font-bold text-lg hover:bg-yellow-kh delay-200 transition-all  '
+                        <a className='bg-white w-9 h-9 shadow-[0_2px_10px_0_#d8dde6] rounded-[18px] flex justify-center items-center p-4 font-semibold text-lg hover:bg-yellow-kh hover:text-white duration-300 transition-all  '
                            href="#">
                             3
                         </a>
 
-                        <a className='bg-white w-9 h-9 shadow-[0_2px_10px_0_#d8dde6] rounded-[18px] flex justify-center items-center p-2 font-bold text-lg hover:bg-yellow-kh delay-200 transition-all  '
+                        <a className='bg-white w-9 h-9 shadow-[0_2px_10px_0_#d8dde6] rounded-[18px] flex justify-center items-center p-4 font-semibold text-lg hover:bg-yellow-kh hover:text-white duration-300 transition-all  '
                            href="#">
                             4
                         </a>
 
-                        <a className='bg-white w-9 h-9 shadow-[0_2px_10px_0_#d8dde6] rounded-[18px] flex justify-center items-center p-2 font-bold text-lg hover:bg-yellow-kh delay-200 transition-all  '
+                        <a className='bg-white w-9 h-9 shadow-[0_2px_10px_0_#d8dde6] rounded-[18px] flex justify-center items-center p-4 font-semibold text-lg hover:bg-yellow-kh hover:text-white duration-300 transition-all  '
                            href="#">
                             5
                         </a>
-                        <a className='bg-white w-9 h-9 shadow-[0_2px_10px_0_#d8dde6] rounded-[18px] flex justify-center items-center p-2 !font-bold text-lg hover:bg-yellow-kh delay-200 transition-all  '
+                        <a className='bg-white w-9 h-9 shadow-[0_2px_10px_0_#d8dde6] rounded-[18px] flex justify-center items-center p-24!font-semibold text-lg hover:bg-yellow-kh hover:text-white duration-300 transition-all  '
                            href="#">
                             <GrFormNext/>
                         </a>

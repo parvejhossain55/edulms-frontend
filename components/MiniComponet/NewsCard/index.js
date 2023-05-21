@@ -26,7 +26,7 @@ const NewsCard = ({
             <div className="flex flex-col px-6 gap-y-4">
                 <Link href='#' className='text-xl md:text-2xl font-bold text-kh-heading title-link capitalize transition ease-in duration-200'>{title}</Link>
                 <p className="pregrap-kh mb-2"> {description}</p>
-                <button className={`${Button.btn_card}`}>Join Class</button>
+                <button className={`${Button.btn_card} py-3`}>Read More</button>
             </div>
         </div>
     );

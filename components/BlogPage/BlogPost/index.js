@@ -12,10 +12,11 @@ import {FaCircle, FaFacebookF, FaPinterestP} from "react-icons/fa";
 
 import {AiOutlineLeft, AiOutlineRight} from "react-icons/ai";
 import {BiSearchAlt} from "react-icons/bi";
+import { Button } from '../../Design';
 
 const BlogPost = () => {
     return (
-        <div className='bg-kh-white ' id='blogPost'>
+        <div className='bg-kh-white pb-20' id='blogPost'>
             <div className="containte-kh px-4   ">
                 <div className="flex flex-col lg:flex-row lg:gap-x-2  gap-y-5 ">
                     <div className="flex flex-col pr-4 basis-full lg:basis-8/12 gap-y-6 mb-5">
@@ -225,9 +226,7 @@ const BlogPost = () => {
                                 </label>
                             </div>
 
-                            <input className='btn-kh mt-2'
-                                   type="button"
-                                   value='Post A Comment'/>
+                            <button type='submit' className={`${Button.btn_card} py-4 font-bold text-lg px-6`}>Post A Comment</button>
 
                         </form>
                     </div>
