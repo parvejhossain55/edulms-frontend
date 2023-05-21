@@ -2,7 +2,6 @@ import React from 'react';
 import Image from "next/image";
 import class1 from "../../../assect/img/class-1.jpg";
 import Link from "next/link";
-import Btn from "../TeacherCard";
 import { Button } from '../../Design';
 
 const ClassCard = ({
