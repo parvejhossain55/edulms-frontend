@@ -23,7 +23,7 @@ const AboutCourses = () => {
                         <p className="pregrap-kh">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                         </p>
-                        <button className={`${Button.btn_card}`} href="#">Search Tutor</button>
+                        <button className={`${Button.btn_card}`} >Search Tutor</button>
 
                     </div>
                     <div className="flex justify-center items-center lg:basis-1/2 z-0 relative  ">

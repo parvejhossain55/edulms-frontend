@@ -10,5 +10,5 @@ export const Button = {
 
 
 export const HeroImg = {
-    'primary_img' : 'bg-cover bg-fixed bg-center z-10 h-full relative before:absolute before:top-0 before:left-0 before:bg-black before:opacity-60 before:-z-10 before:w-full before:h-full'
+    'primary_img':'bg-cover bg-fixed bg-center z-10 h-full relative before:absolute before:top-0 before:left-0 before:bg-black before:opacity-60 before:-z-10 before:w-full before:h-full'
 }

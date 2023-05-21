@@ -6,6 +6,7 @@ import { MdOutlineLocationOn } from "react-icons/md";
 import Image from 'next/image'
 import footerImage from '../../assect/img/class-2.jpg'
 import logo from '../../assect/img/leadeducare-lg-logo.png'
+import Link from "next/link";
 
 
 const Footer = () => {
@@ -28,10 +29,10 @@ const Footer = () => {
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
                                 </p>
                                 <div className="icon flex justify-start items-center gap-5 ">
-                                    <a className='icon-kh' href="#"> <FaFacebookF /></a>
-                                    <a className='icon-kh' href="#"><BsTwitter /></a>
-                                    <a className='icon-kh' href=""><FaPinterestP /></a>
-                                    <a className='icon-kh' href="#"><FaLinkedinIn /></a>
+                                    <Link className='icon-kh' href="#"> <FaFacebookF /></Link>
+                                    <Link className='icon-kh' href="#"><BsTwitter /></Link>
+                                    <Link className='icon-kh' href=""><FaPinterestP /></Link>
+                                    <Link className='icon-kh' href="#"><FaLinkedinIn /></Link>
                                 </div>
                             </div>
                             <div className="sm:w-[46%] lg:w-[24%] xl:w-[25%] w-fuex flex-col justify-start">
@@ -40,16 +41,14 @@ const Footer = () => {
                                     <i className='mt-2 font-normal text-xl text-rad-kh mr-6'><BsFillTelephoneFill /></i>
                                     <div className="flex flex-col font-medium">
                                         <h2 className='font-medium text-xl mb-1 '>Phone</h2>
-                                        <a className='link-kh' href="#"> 01533-000000
-                                        </a>
+                                        <Link className='link-kh' href="#"> 01533-000000</Link>
                                     </div>
                                 </div>
                                 <div className="flex justify-start mb-4  ">
                                     <i className='mt-2 font-normal text-2xl text-rad-kh mr-6 '><HiOutlineMail /></i>
                                     <div className="flex flex-col font-medium">
                                         <h2 className='font-medium text-xl mb-1 '>Email</h2>
-                                        <a className='link-kh' href="#"> hello@gmail.com
-                                        </a>
+                                        <Link className='link-kh' href="#"> hello@gmail.com</Link>
                                     </div>
                                 </div>
                                 <div className="flex justify-start mb-4 ">
@@ -66,33 +65,33 @@ const Footer = () => {
                                     <div className="flex flex-col space-y-4">
                                         <div className="flex justify-start">
                                             <div className="flex flex-col font-medium">
-                                                <a className='link-kh' href="#"> Maths Olympiad</a>
+                                                <Link className='link-kh' href="#"> Maths Olympiad</Link>
                                             </div>
                                         </div>
                                         <div className="flex justify-start mb-4 ">
                                             <div className="flex flex-col font-medium">
-                                                <a className='link-kh' href="#"> Art Competition</a>
+                                                <Link className='link-kh' href="#"> Art Competition</Link>
                                             </div>
                                         </div>
                                         <div className="flex justify-start mb-4 ">
                                             <div className="flex flex-col font-medium">
-                                                <a className='link-kh' href="#"> English Novels</a>
+                                                <Link className='link-kh' href="#"> English Novels</Link>
                                             </div>
                                         </div>
                                         <div className="flex justify-start mb-4 ">
                                             <div className="flex flex-col font-medium">
 
-                                                <a className='link-kh' href="#"> Science Competition</a>
+                                                <Link className='link-kh' href="#"> Science Competition</Link>
                                             </div>
                                         </div>
                                         <div className="flex justify-start mb-4 ">
                                             <div className="flex flex-col font-medium">
-                                                <a className='link-kh' href="#"> Teachers Day</a>
+                                                <Link className='link-kh' href="#"> Teachers Day</Link>
                                             </div>
                                         </div>
                                         <div className="flex justify-start mb-4 ">
                                             <div className="flex flex-col font-medium">
-                                                <a className='link-kh' href="#"> World Kids Day</a>
+                                                <Link className='link-kh' href="#"> World Kids Day</Link>
                                             </div>
                                         </div>
                                     </div>

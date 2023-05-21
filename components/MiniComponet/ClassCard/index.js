@@ -2,7 +2,7 @@ import React from 'react';
 import Image from "next/image";
 import class1 from "../../../assect/img/class-1.jpg";
 import Link from "next/link";
-import Btn from "../btn";
+import Btn from "../TeacherCard";
 import { Button } from '../../Design';
 
 const ClassCard = ({
@@ -33,7 +33,6 @@ const ClassCard = ({
                     <h5 className='font-medium'><span className="text-rad-kh mr-1">time :</span> {time}</h5>
                     <h5 className='font-medium'><span className="text-rad-kh mr-1">seat : </span>{seat}</h5>
                 </div>
-
                 <button className={`${Button.btn_card} font-semibold`}>Join Course</button>
             </div>
 
