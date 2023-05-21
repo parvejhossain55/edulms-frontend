@@ -1,7 +1,7 @@
 import React from 'react';
-// import Image from 'next/image'
+import Image from 'next/image'
 // import blogPostImg from '../../../assect/img/BlogPost.jpg'
-// import blog_1 from '../../../assect/img/blog-1.jpg'
+import blog_1 from '../../../assect/img/blog-1.jpg'
 // import blog_2 from '../../../assect/img/blog-2.jpg'
 // import blog_3 from '../../../assect/img/blog-3.jpg'
 // import client_1 from '../../../assect/img/client-1.jpg'
@@ -25,10 +25,10 @@ const BlogPost = () => {
                             {/* <Image src={blogPostImg} className='w-full' alt='blog-post' /> */}
                         </div>
                         <div className='flex justify-start items-center gap-x-5'>
-                            <h5 className='text-kh-heading font-medium  '>Posted On:
+                            <h5 className='text-kh-heading font-[600]  '>Posted On:
                                 <a className='Link-text-kh  pl-2 ' href="#">September 31, 2022</a>
                             </h5>
-                            <h5 className='text-kh-heading  font-medium '>Posted By:
+                            <h5 className='text-kh-heading  font-[600] '>Posted By:
                                 <a className='Link-text-kh pl-2 ' href="#">John Anderson</a>
                             </h5>
                         </div>
@@ -69,10 +69,10 @@ const BlogPost = () => {
 
                             <div className="flex flex-col justify-start gap-y-4">
                                 <h1 className='heading-kh  text-xl md:text-2xl mb-2'>Four Major Elements That We Offer:</h1>
-                                <p className="pregrap-kh flex justify-start  gap-x-3 check  "><span className='flex justify-center items-center w-6 h-6 rounded-[12px] bg-[#faf5f5] text-yellow-kh font-medium  '><BsCheck/></span> Your child’s interests, likes, dislikes</p>
-                                <p className="pregrap-kh flex justify-start  gap-x-3 check  "><span className='flex justify-center items-center w-6 h-6 rounded-[12px] bg-[#faf5f5] text-yellow-kh font-medium  '><BsCheck/></span> Their routines- patterns of eating, sleeping, toileting</p>
-                                <p className="pregrap-kh flex justify-start  gap-x-3 check  "><span className='flex justify-center items-center w-6 h-6 rounded-[12px] bg-[#faf5f5] text-yellow-kh font-medium  '><BsCheck/></span> Your child’s current wellbeing</p>
-                                <p className="pregrap-kh flex justify-start  gap-x-3 check  "><span className='flex justify-center items-center w-6 h-6 rounded-[12px] bg-[#faf5f5] text-yellow-kh font-medium  '><BsCheck/></span> Any major events taking place at home.</p>
+                                <p className="pregrap-kh flex justify-start  gap-x-3 check  "><span className='flex justify-center items-center w-6 h-6 rounded-[12px] bg-[#faf5f5] text-yellow-kh font-[600]  '><BsCheck/></span> Your child’s interests, likes, dislikes</p>
+                                <p className="pregrap-kh flex justify-start  gap-x-3 check  "><span className='flex justify-center items-center w-6 h-6 rounded-[12px] bg-[#faf5f5] text-yellow-kh font-[600]  '><BsCheck/></span> Their routines- patterns of eating, sleeping, toileting</p>
+                                <p className="pregrap-kh flex justify-start  gap-x-3 check  "><span className='flex justify-center items-center w-6 h-6 rounded-[12px] bg-[#faf5f5] text-yellow-kh font-[600]  '><BsCheck/></span> Your child’s current wellbeing</p>
+                                <p className="pregrap-kh flex justify-start  gap-x-3 check  "><span className='flex justify-center items-center w-6 h-6 rounded-[12px] bg-[#faf5f5] text-yellow-kh font-[600]  '><BsCheck/></span> Any major events taking place at home.</p>
 
                             </div>
 
@@ -93,19 +93,19 @@ const BlogPost = () => {
                                 <div className="flex justify-start items-center">
                                     <span className='pregrap-kh mr-3 '>Share:</span>
                                     <div className="icon flex justify-start items-center gap-5 gap-x-2 ">
-                                        <a className='icon-kh !bg-[#faf5f5] text-md font-medium hover:!bg-rad-kh text-rad-kh hover:text-white ' href="#"> <FaFacebookF/></a>
-                                        <a className='icon-kh !bg-[#faf5f5] text-md font-medium hover:!bg-rad-kh text-rad-kh hover:text-white ' href="#"><BsTwitter/></a>
-                                        <a className='icon-kh !bg-[#faf5f5] text-md font-medium hover:!bg-rad-kh text-rad-kh hover:text-white ' href=""><FaPinterestP/></a>
+                                        <a className='icon-kh !bg-[#faf5f5] text-md font-[600] hover:!bg-rad-kh text-rad-kh hover:text-white ' href="#"> <FaFacebookF/></a>
+                                        <a className='icon-kh !bg-[#faf5f5] text-md font-[600] hover:!bg-rad-kh text-rad-kh hover:text-white ' href="#"><BsTwitter/></a>
+                                        <a className='icon-kh !bg-[#faf5f5] text-md font-[600] hover:!bg-rad-kh text-rad-kh hover:text-white ' href=""><FaPinterestP/></a>
                                     </div>
                                 </div>
                             </div>
 
                             <div className="flex justify-between items-center border-y-gray-150 border-y-[1px] py-4 ">
-                                <a className='font-medium text-kh-heading hover:text-rad-kh hover:tracking-tight transition-all delay-300 flex justify-center items-center gap-x-4' href="#">
+                                <a className='font-[600] text-kh-heading hover:text-rad-kh hover:tracking-tight transition-all delay-300 flex justify-center items-center gap-x-4' href="#">
                                     <AiOutlineLeft/>
                                     Prev Post
                                 </a>
-                                <a className='font-medium text-kh-heading hover:text-rad-kh hover:tracking-tight transition-all delay-300 flex justify-center items-center gap-x-4' href="#">
+                                <a className='font-[600] text-kh-heading hover:text-rad-kh hover:tracking-tight transition-all delay-300 flex justify-center items-center gap-x-4' href="#">
                                     Next Post
                                     <AiOutlineRight/>
                                 </a>
@@ -126,7 +126,7 @@ const BlogPost = () => {
                                         Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen.
                                     </p>
                                     <a className='w-20 text-center py-1 px-6 rounded-[20px] bg-white border-gray-200 border
-                                            font-medium shadow text-rad-kh transition-all delay-750 ease-in hover:text-white hover:bg-rad-kh'
+                                            font-[600] shadow text-rad-kh transition-all delay-750 ease-in hover:text-white hover:bg-rad-kh'
                                        href="">Reply
                                     </a>
                                     {/*=====>>>>> Reply the Commet =============>>>> box*/}
@@ -141,7 +141,7 @@ const BlogPost = () => {
                                                 Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen.
                                             </p>
                                             <a className='w-20 text-center  py-1 px-6 rounded-[20px] bg-white border-gray-200 border
-                                                       font-medium shadow text-rad-kh transition-all delay-750 ease-in hover:text-white hover:bg-rad-kh' href="#">Reply
+                                                       font-[600] shadow text-rad-kh transition-all delay-750 ease-in hover:text-white hover:bg-rad-kh' href="#">Reply
                                             </a>
                                         </div>
 
@@ -163,7 +163,7 @@ const BlogPost = () => {
                                         Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen.
                                     </p>
                                     <a className='w-20 text-center py-1 px-6 rounded-[20px] bg-white border-gray-200 border
-                                            font-medium shadow text-rad-kh transition-all delay-750 ease-in hover:text-white hover:bg-rad-kh'
+                                            font-[600] shadow text-rad-kh transition-all delay-750 ease-in hover:text-white hover:bg-rad-kh'
                                        href="">Reply
                                     </a>
 
@@ -179,7 +179,7 @@ const BlogPost = () => {
                                                 Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen.
                                             </p>
                                             <a className='w-20 text-center  py-1 px-6 rounded-[20px] bg-white border-gray-200 border
-                                                      font-medium shadow text-rad-kh transition-all delay-750 ease-in hover:text-white hover:bg-rad-kh'
+                                                      font-[600] shadow text-rad-kh transition-all delay-750 ease-in hover:text-white hover:bg-rad-kh'
                                                href="#">Reply
                                             </a>
                                         </div>
@@ -227,7 +227,7 @@ const BlogPost = () => {
                                 </label>
                             </div>
 
-                            <button type='submit' className={`${Button.btn_card} py-4 font-bold text-lg px-6`}>Post A Comment</button>
+                            <button type='submit' className={`${Button.btn_card} py-4 font-[600] text-lg px-6`}>Post A Comment</button>
 
                         </form>
                     </div>
@@ -242,7 +242,7 @@ const BlogPost = () => {
                                         className='input-kh  !py-3 '
                                 />
 
-                                <button className='w-10 h-10 bg-[#faf5f5] text-rad-kh  flex items-center justify-center hover:text-kh-white hover:bg-rad-kh text-lg font-medium rounded-lg transition-all delay-10 ease-in
+                                <button className='w-10 h-10 bg-[#faf5f5] text-rad-kh  flex items-center justify-center hover:text-kh-white hover:bg-rad-kh text-lg font-[600] rounded-lg transition-all delay-10 ease-in
                                      absolute top-[9%] right-[3%]  '>
                                     <BiSearchAlt/>
                                 </button>
@@ -250,82 +250,73 @@ const BlogPost = () => {
                         </div>
 
                         {/* -------------------->>>> popular post<<<<<<<<---------           */}
-                        <div className="flex flex-col justify-start gap-y-3.5 shadow-kh px-5">
+                        <div className="flex flex-col justify-start gap-y-3.5 shadow-kh px-5 pb-6">
                             <div className='border-b border-y-gray-100 mb-5 pt-5'>
                                 <h3 className='heading-kh text-xl border-b w-fit pb-2  border-rad-kh '>Popular Posts</h3>
                             </div>
-
-
-                            <div className="flex justify-start gap-x-4  items-center ">
-                                <div className='basis-1/4 '>
-                                    <Link className='w-full  ' href="#">
-                                        {/* <Image src={blog_1} className='w-auto h-20 rounded-lg' alt=""/> */}
-
-                                    </Link>
-                                </div>
+                            <div className="flex justify-start gap-x-4 items-center ">
+                                <Link href="#" className={`rounded-md cursor-pointer bg-cover bg-center bg-[url("https://templates.envytheme.com/ketan/default/assets/img/blog/blog-3.jpg")] w-20 h-20 bg-cover basis-1/4`}></Link>
                                 <div className="flex flex-col gap-y-1 basis-3/4 ">
                                     <p className='text-rad-kh text-sm' > June 10, 2022</p>
-                                    <Link className='text-base text-kh-heading hover:text-rad-kh font-bold transition-all delay-200 ease-in-out' href="#">
+                                    <Link className='text-base text-kh-heading hover:text-rad-kh font-[600] transition duration-300 ease-in' href="#">
                                         The Data Surrounding Higher Education
                                     </Link>
                                 </div>
                             </div>
-                            <div className="flex justify-start gap-x-4  items-center ">
-                                <div className='basis-1/4 '>
-                                    <Link className='w-full  ' href="#">
-                                        {/* <Image src={blog_1} className='w-auto h-20 rounded-lg' alt=""/> */}
-
-                                    </Link>
-                                </div>
+                            <div className="flex justify-start gap-x-4 items-center ">
+                                <Link href="#" className={`rounded-md cursor-pointer bg-cover bg-center bg-[url("https://templates.envytheme.com/ketan/default/assets/img/blog/blog-3.jpg")] w-20 h-20 bg-cover basis-1/4`}></Link>
                                 <div className="flex flex-col gap-y-1 basis-3/4 ">
-                                    <p className='text-rad-kh text-md' > June 10, 2022</p>
-                                    <Link className='text-[17px] text-kh-heading hover:text-rad-kh font-bold transition-all delay-200 ease-in-out' href="#">
+                                    <p className='text-rad-kh text-sm' > June 10, 2022</p>
+                                    <Link className='text-base text-kh-heading hover:text-rad-kh font-[600] transition duration-300 ease-in' href="#">
                                         The Data Surrounding Higher Education
                                     </Link>
                                 </div>
                             </div>
-                            <div className="flex justify-start gap-x-4  items-center ">
-                                <div className='basis-1/4 '>
-                                    <Link className='w-full  ' href="#">
-                                        {/* <Image src={blog_2} className='w-auto h-20 rounded-lg' alt=""/> */}
-
-                                    </Link>
-                                </div>
+                            <div className="flex justify-start gap-x-4 items-center ">
+                                <Link href="#" className={`rounded-md cursor-pointer bg-cover bg-center bg-[url("https://templates.envytheme.com/ketan/default/assets/img/blog/blog-3.jpg")] w-20 h-20 bg-cover basis-1/4`}></Link>
                                 <div className="flex flex-col gap-y-1 basis-3/4 ">
-                                    <p className='text-rad-kh text-md' > June 10, 2022</p>
-                                    <Link className='text-[17px] text-kh-heading hover:text-rad-kh font-bold transition-all delay-200 ease-in-out' href="#">
+                                    <p className='text-rad-kh text-sm' > June 10, 2022</p>
+                                    <Link className='text-base text-kh-heading hover:text-rad-kh font-[600] transition duration-300 ease-in' href="#">
                                         The Data Surrounding Higher Education
                                     </Link>
                                 </div>
                             </div>
-                            <div className="flex justify-start gap-x-4  items-center ">
-                                <div className='basis-1/4 '>
-                                    <Link className='w-full  ' href="#">
-                                        {/* <Image src={blog_3} className='w-auto h-20 rounded-lg' alt=""/> */}
-
-                                    </Link>
-                                </div>
+                            <div className="flex justify-start gap-x-4 items-center ">
+                                <Link href="#" className={`rounded-md cursor-pointer bg-cover bg-center bg-[url("https://templates.envytheme.com/ketan/default/assets/img/blog/blog-3.jpg")] w-20 h-20 bg-cover basis-1/4`}></Link>
                                 <div className="flex flex-col gap-y-1 basis-3/4 ">
-                                    <p className='text-rad-kh text-md' > June 10, 2022</p>
-                                    <Link className='text-[17px] text-kh-heading hover:text-rad-kh font-bold transition-all delay-200 ease-in-out' href="#">
+                                    <p className='text-rad-kh text-sm' > June 10, 2022</p>
+                                    <Link className='text-base text-kh-heading hover:text-rad-kh font-[600] transition duration-300 ease-in' href="#">
                                         The Data Surrounding Higher Education
                                     </Link>
                                 </div>
                             </div>
-                            <div className="flex justify-start gap-x-4  items-center ">
-                                <div className='basis-1/4 '>
-                                    <Link className='w-full  ' href="#">
-                                        {/* <Image src={class_3} className='w-auto h-20 rounded-lg' alt=""/> */}
-                                    </Link>
-                                </div>
+                            <div className="flex justify-start gap-x-4 items-center ">
+                                <Link href="#" className={`rounded-md cursor-pointer bg-cover bg-center bg-[url("https://templates.envytheme.com/ketan/default/assets/img/blog/blog-3.jpg")] w-20 h-20 bg-cover basis-1/4`}></Link>
                                 <div className="flex flex-col gap-y-1 basis-3/4 ">
-                                    <p className='text-rad-kh text-md' > June 10, 2022</p>
-                                    <Link className='text-[17px] text-kh-heading hover:text-rad-kh font-bold transition-all delay-200 ease-in-out' href="#">
+                                    <p className='text-rad-kh text-sm' > June 10, 2022</p>
+                                    <Link className='text-base text-kh-heading hover:text-rad-kh font-[600] transition duration-300 ease-in' href="#">
                                         The Data Surrounding Higher Education
                                     </Link>
                                 </div>
                             </div>
-
+                            <div className="flex justify-start gap-x-4 items-center ">
+                                <Link href="#" className={`rounded-md cursor-pointer bg-cover bg-center bg-[url("https://templates.envytheme.com/ketan/default/assets/img/blog/blog-3.jpg")] w-20 h-20 bg-cover basis-1/4`}></Link>
+                                <div className="flex flex-col gap-y-1 basis-3/4 ">
+                                    <p className='text-rad-kh text-sm' > June 10, 2022</p>
+                                    <Link className='text-base text-kh-heading hover:text-rad-kh font-[600] transition duration-300 ease-in' href="#">
+                                        The Data Surrounding Higher Education
+                                    </Link>
+                                </div>
+                            </div>
+                            <div className="flex justify-start gap-x-4 items-center ">
+                                <Link href="#" className={`rounded-md cursor-pointer bg-cover bg-center bg-[url("https://templates.envytheme.com/ketan/default/assets/img/blog/blog-3.jpg")] w-20 h-20 bg-cover basis-1/4`}></Link>
+                                <div className="flex flex-col gap-y-1 basis-3/4 ">
+                                    <p className='text-rad-kh text-sm' > June 10, 2022</p>
+                                    <Link className='text-base text-kh-heading hover:text-rad-kh font-[600] transition duration-300 ease-in' href="#">
+                                        The Data Surrounding Higher Education
+                                    </Link>
+                                </div>
+                            </div>
                         </div>
 
                         {/*    ------------->>>>>> category  DIV <<<<<<<-----------------*/}
@@ -337,28 +328,28 @@ const BlogPost = () => {
                             <div className="flex flex-col justify-start items-start gap-y-4 pb-5 ">
                                 <div className='flex justify-center items-center  gap-x-2'>
                                     <span className='text-[10px] text-rad-kh'> <FaCircle/></span>
-                                    <Link className='Link-text-kh text-md '  href="#">Alphabet Parade</Link>
+                                    <Link className='link-text-kh text-md ' href="#">Alphabet Parade</Link>
                                 </div>
 
                                 <div className='flex justify-center items-center  gap-x-2'>
                                     <span className='text-[10px] text-rad-kh'> <FaCircle/></span>
-                                    <Link className='Link-text-kh text-md '  href="#">Games</Link>
+                                    <Link className='link-text-kh text-md ' href="#">Games</Link>
                                 </div>
-                                <div className='flex justify-center items-center  gap-x-2'>
+                                <div className='flex justify-center items-center gap-x-2'>
                                     <span className='text-[10px] text-rad-kh'> <FaCircle/></span>
-                                    <Link className='Link-text-kh text-md '  href="#">Gross Motor</Link>
+                                    <Link className='link-text-kh text-md ' href="#">Gross Motor</Link>
                                 </div>
-                                <div className='flex justify-center items-center  gap-x-2'>
+                                <div className='flex justify-center items-center gap-x-2'>
                                     <span className='text-[10px] text-rad-kh'> <FaCircle/></span>
-                                    <Link className='Link-text-kh text-md '  href="#">Inspare Success</Link>
+                                    <Link className='link-text-kh text-md ' href="#">Inspare Success</Link>
                                 </div>
-                                <div className='flex justify-center items-center  gap-x-2'>
+                                <div className='flex justify-center items-center gap-x-2'>
                                     <span className='text-[10px] text-rad-kh'> <FaCircle/></span>
-                                    <Link className='Link-text-kh text-md '  href="#">Auditory Processing</Link>
+                                    <Link className='link-text-kh text-md ' href="#">Auditory Processing</Link>
                                 </div>
-                                <div className='flex justify-center items-center  gap-x-2'>
+                                <div className='flex justify-center items-center gap-x-2'>
                                     <span className='text-[10px] text-rad-kh'> <FaCircle/></span>
-                                    <Link className='Link-text-kh text-md '  href="#">Kindergarten</Link>
+                                    <Link className='link-text-kh text-md ' href="#">Kindergarten</Link>
                                 </div>
                             </div>
 
@@ -379,23 +370,23 @@ const BlogPost = () => {
 
                                 <div className="flex justify-start flex-wrap items-center gap-x-4 gap-y-4">
                                     <a className='text-center py-1.5 px-4 rounded-md  w-fit  bg-[#f5f5f5] border-gray-200 border
-                                            font-normal text-kh-heading transition-all delay-200 ease-in hover:text-white hover:bg-rad-kh'
+                                            font-normal text-kh-heading transition-all duration-300 ease-in hover:text-white hover:bg-rad-kh'
                                        href="">Preschool
                                     </a>
                                     <a className='text-center py-1.5 px-4 rounded-md w-fit  bg-[#f5f5f5] border-gray-200 border
-                                            font-normal text-kh-heading transition-all delay-200 ease-in hover:text-white hover:bg-rad-kh'
+                                            font-normal text-kh-heading transition-all duration-300 ease-in hover:text-white hover:bg-rad-kh'
                                        href="">Children
                                     </a>
                                     <a className='text-center py-1.5 px-4 rounded-md w-fit  bg-[#f5f5f5] border-gray-200 border
-                                            font-normal text-kh-heading transition-all delay-200 ease-in hover:text-white hover:bg-rad-kh'
+                                            font-normal text-kh-heading transition-all duration-300 ease-in hover:text-white hover:bg-rad-kh'
                                        href="">Activities
                                     </a>
                                     <a className='text-center py-1.5 px-4 rounded-md w-fit  bg-[#f5f5f5] border-gray-200 border
-                                            font-normal text-kh-heading transition-all delay-200 ease-in hover:text-white hover:bg-rad-kh'
+                                            font-normal text-kh-heading transition-all duration-300 ease-in hover:text-white hover:bg-rad-kh'
                                        href="">Educational
                                     </a>
                                     <a className='text-center py-1.5 px-4 rounded-md w-fit  bg-[#f5f5f5] border-gray-200 border
-                                            font-normal text-kh-heading transition-all delay-200 ease-in hover:text-white hover:bg-rad-kh'
+                                            font-normal text-kh-heading transition-all duration-300 ease-in hover:text-white hover:bg-rad-kh'
                                        href="">Teachers
                                     </a>
                                 </div>
