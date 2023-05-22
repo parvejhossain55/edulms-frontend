@@ -13,7 +13,7 @@ import {FaCircle, FaFacebookF, FaPinterestP} from "react-icons/fa";
 import {AiOutlineLeft, AiOutlineRight} from "react-icons/ai";
 import {BiSearchAlt} from "react-icons/bi";
 import { Button } from '../../Design';
-import Link from "next/Link";
+import Link from "next/link";
 
 const BlogPost = () => {
     return (
