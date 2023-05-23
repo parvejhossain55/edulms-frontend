@@ -11,9 +11,9 @@ const TeacherCard = ({
                          image=teacher_10,
                          teacherName='Glims Bond',
                          teacherTitle='Music Teacher',
-                         fbUrl= 'www.https://faceboock.com',
-                         twUrl= 'www.https://aaa.com',
-                         googleUrl= 'www.https://aaa.com',
+                         fbUrl= 'https://facebook.com',
+                         twUrl= 'https://twitter.com/',
+                         googleUrl= 'https://google.com',
 
                      }) => {
     return (
@@ -24,9 +24,9 @@ const TeacherCard = ({
                 <h2 className='font-bold text-kh-white text-2xl capitalize '>{teacherName}</h2>
                 <span className='text-white font-semibold'>{teacherTitle}</span>
                 <div className="icon flex justify-start items-center gap-5 opacity-100 ">
-                    <Link className='icon-kh' href={fbUrl}> <FaFacebookF/></Link>
-                    <Link className='icon-kh' href={twUrl}><BsTwitter/></Link>
-                    <Link className='icon-kh' href={googleUrl}><FaGooglePlusG/></Link>
+                    <Link className='icon-kh' href={`${fbUrl}`}> <FaFacebookF/></Link>
+                    <Link className='icon-kh' href={`${twUrl}`}><BsTwitter/></Link>
+                    <Link className='icon-kh' href={`${googleUrl}`}><FaGooglePlusG/></Link>
                 </div>
             </div>
         </div>

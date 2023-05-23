@@ -12,14 +12,14 @@ import AboutSubscribe from "./AboutSubscribe";
 const Aboutuspage = () => {
   return (
     <div>
-          <AboutHero/>
-           <AboutSec/>
-            <FunFact/>
-            <ExpertTeacher/>
-            <AboutQuote/>
-            <AboutCourses/>
-            <AboutPricing/>
-            <AboutSubscribe/>
+      <AboutHero />
+      <AboutSec />
+      <FunFact />
+      <ExpertTeacher />
+      <AboutQuote />
+      <AboutCourses />
+      <AboutPricing />
+      <AboutSubscribe />
     </div>
   );
 };
