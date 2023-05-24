@@ -16,10 +16,10 @@ const BlogCard = () => {
                     <div className="flex justify-center items-center flex-col md:justify-between md:flex-row  flex-wrap gap-y-5">
                         <NewsCard image={Blog1} BtnURL='/blog-details'/>
                         <NewsCard image={Blog2} BtnURL='/blog-details'/>
-                        <NewsCard image={Blog3}/>
-                        <NewsCard image={Blog1}/>
-                        <NewsCard image={Blog2}/>
-                        <NewsCard image={Blog3}/>
+                        <NewsCard image={Blog3} BtnURL='/blog-details' />
+                        <NewsCard image={Blog1} BtnURL='/blog-details'/>
+                        <NewsCard image={Blog2} BtnURL='/blog-details'/>
+                        <NewsCard image={Blog3} BtnURL='/blog-details'/>
                     </div>
                     <Pagination/>
                 </div>

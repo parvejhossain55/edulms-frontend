@@ -10,8 +10,18 @@ const AboutCourses = () => {
     return (
         <div className='bg-kh-white' id="AboutCourses ">
             <div className="containte-kh py-6 md:py-8 lg:py-10 relative">
-                <Image src={aboutCourse_shape_1} alt='aboutCourse_shape_1' className='hidden lg:block animate-[slideInRight_4s_ease-in-out_infinite] absolute left-1/2   top-10 z-20 ' />
-                <Image src={aboutCourse_shape_2} alt='aboutCourse_shape_1' className='hidden lg:block animate-[slideInRight_4s_ease-in-out_infinite] absolute bottom-20 right-0 z-0 ' />
+                <Image
+                    src={aboutCourse_shape_1}
+                    width={200}
+                    height={200}
+                    alt='aboutCourse_shape_1'
+                    className='hidden lg:block  animate-[slideInRight_4s_ease-in-out_infinite] absolute left-1/2 top-10 z-20 ' />
+                <Image
+                    src={aboutCourse_shape_2}
+                    width={200}
+                    height={200}
+                    alt='aboutCourse_shape_1'
+                    className='hidden lg:block animate-[slideInRight_4s_ease-in-out_infinite] absolute bottom-20 right-0 z-0 ' />
                 <div className="flex flex-col lg:justify-between lg:flex-row gap-y-5 ">
                     <div className="flex flex-col justify-start lg:basis-1/2 gap-y-8 ">
                         <span className="font-sacramento  font-semibold text-rad-kh -mb-3 ">Courses</span>
@@ -27,11 +37,21 @@ const AboutCourses = () => {
 
                     </div>
                     <div className="flex justify-center items-center lg:basis-1/2 z-0 relative  ">
-                        <Image src={aboutCourse_shape_3} alt='aboutCourse_shape_1'
+                        <Image
+                            src={aboutCourse_shape_3}
+                            width={230}
+                            height={180}
+                            alt='aboutCourse_shape_1'
                             className='hidden lg:block animate-[slideInRight_4s_ease-in-out_infinite]
-                               absolute bottom-20 left-[7%]  z-10 ' />
-                        <Image src={aboutCourse} className='w-full overflow-hidden z-20 ' alt={"who-we-are-3" +
-                            "  "} />
+                               absolute bottom-20 left-0   '
+                        />
+                        <Image
+                            src={aboutCourse}
+                            width={200}
+                            height={200}
+                            className='w-full overflow-hidden z-20 '
+                            alt="who-we-are-3"
+                        />
                     </div>
                 </div>
             </div>
