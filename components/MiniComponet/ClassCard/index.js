@@ -16,7 +16,11 @@ const ClassCard = ({
     return (
         <div className="card flex rounded-2xl md:basis-[49%] lg:basis-[32%] flex-col bg-kh-white shadow-[0_2px_28px_0_rgba(0,0,0,0.09)]">
             <div className=" w-full overflow-hidden ">
-                <Image src={image} width={650} height={500} className="cardImage transition duration-500 " alt="classImage" />
+                <Image
+                    src={image}
+                    style={{width:"auto" , height:"auto"}}
+                    className="cardImage transition duration-500"
+                    alt="classImage" />
             </div>
             <div className="text-right mb-4  mt-[6px] ">
                 <strong className="text-center font-medium w-fit text-lg rounded-bl-[10px] py-2 px-6 bg-rad-kh text-white">
