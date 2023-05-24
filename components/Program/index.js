@@ -1,16 +1,19 @@
 import React from 'react';
 import ProgramHero from "./ProgramHero";
-import ProgramCard from "./ProgramCard";
-import ProgramDetails from "./ProgramDetails";
+import AboutSubscribe from "../Aboutuspage/AboutSubscribe";
+import BecomeTeacher from "./BecomeTeacher";
+import ProgramCourse from "./ProgramCourse";
+import ProgramGallery from "./ProgramGallery";
 
 const Program = () => {
 
     return (
         <div>
             <ProgramHero/>
-            <ProgramDetails/>
-            <ProgramCard/>
-
+            <ProgramCourse/>
+            <BecomeTeacher/>
+            <ProgramGallery/>
+            <AboutSubscribe/>
         </div>
     );
 };

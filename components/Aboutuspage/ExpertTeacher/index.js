@@ -1,10 +1,7 @@
 import React from 'react';
-import Image from 'next/image'
 import teacher_8 from '../../../assect/img/teacher-8.jpg'
 import teacher_9 from '../../../assect/img/teacher-9.jpg'
 import teacher_10 from '../../../assect/img/teacher-10.jpg'
-import {FaFacebookF, FaGooglePlusG} from "react-icons/fa";
-import {BsTwitter} from "react-icons/bs";
 import { Button } from '../../Design';
 import TeacherCard from "../../MiniComponet/TeacherCard";
 
