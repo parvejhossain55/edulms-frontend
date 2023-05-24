@@ -1,9 +1,9 @@
 import React from 'react';
 import ProgramHero from "./ProgramHero";
-import AboutSubscribe from "../Aboutuspage/AboutSubscribe";
 import BecomeTeacher from "./BecomeTeacher";
 import ProgramCourse from "./ProgramCourse";
 import ProgramGallery from "./ProgramGallery";
+import ProgramSubcribe from "./ProgramSubcribe";
 
 const Program = () => {
 
@@ -13,7 +13,7 @@ const Program = () => {
             <ProgramCourse/>
             <BecomeTeacher/>
             <ProgramGallery/>
-            <AboutSubscribe/>
+            <ProgramSubcribe/>
         </div>
     );
 };

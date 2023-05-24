@@ -15,7 +15,7 @@ const AboutCourses = () => {
                 <div className="flex flex-col lg:justify-between lg:flex-row gap-y-5 ">
                     <div className="flex flex-col justify-start lg:basis-1/2 gap-y-8 ">
                         <span className="font-sacramento  font-semibold text-rad-kh -mb-3 ">Courses</span>
-                        <h1 className="heading-kh text-2xl lg:text-[45px] lg:leading-[55px]">Request a Tutors For Free Online Class</h1>
+                        <h1 className="heading-kh text-2xl font-bold lg:text-[45px] lg:leading-[55px]">Request a Tutors For Free Online Class</h1>
 
                         <p className="pregrap-kh">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.

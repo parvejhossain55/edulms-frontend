@@ -11,7 +11,7 @@ const Subscribe  = ({title='Do You Want To Know Get Update What’s Upcoming'}) 
             <div className="containte-kh py-12 md:py-10 lg:py-20 ">
                 <div className=" flex flex-col lg:flex-row lg:justify-between  gap-y-5 z-0 ">
 
-                    <h1 className="basis-ful md:basis-1/2 md:leading-tight heading-kh text-2xl md:text-[35px] mt-3 ">{title}</h1>
+                    <h1 className="basis-ful md:basis-1/2 md:leading-tight heading-kh text-2xl md:text-[35px] mt-3 font-bold ">{title}</h1>
                     <div className='md:relative basis-full md:basis-1/2 mb-2 flex flex-col justify-start md:flex-row
                                     md:justify-center md:items-center rounded-xl '>
                         <input type='text' className='px-9 py-5  w-full rounded-xl ' placeholder="Enter Your Email Address"   />

@@ -3,7 +3,7 @@ import React from 'react';
 import Blog1 from "../../../assect/img/blog-3.jpg";
 import Blog2 from "../../../assect/img/blog-2.jpg";
 import Blog3 from "../../../assect/img/blog-1.jpg";
-import Pagination from "../../Program/Pagination";
+import Pagination from "../../MiniComponet/Pagination";
 // import {GrFormNext, GrFormPrevious} from "react-icons/gr";
 import NewsCard from "../../MiniComponet/NewsCard";
 
