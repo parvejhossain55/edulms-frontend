@@ -15,6 +15,7 @@ import {BiSearchAlt} from "react-icons/bi";
 import { Button } from '../../Design';
 import Link from "next/Link";
 
+
 const BlogPost = () => {
     return (
         <div className='bg-kh-white pb-20' id='blogPost'>
