@@ -57,7 +57,8 @@ const BlogPost = () => {
                             </p>
                             <div className="flex justify-between items-center w-full gap-x-4 my-3">
                                 <div className='basis-1/3'>
-                                     <Image src={blog_1} style={{width:"auto",height:"auto"}} className='w-full' style={{width:"auto",height:"auto"}} alt="blog-1" />
+                                     {/*<Image src={blog_1} style={{width:"auto",height:"auto"}} className='w-full' style={{width:"auto",height:"auto"}} alt="blog-1" />*/}
+                                     <Image src={blog_1} className='w-full' style={{width:"auto",height:"auto"}} alt="blog-1" />
                                 </div>
                                 <div className='basis-1/3'>
                                      <Image src={blog_2} className='w-full' style={{width:"auto",height:"auto"}} alt="blog-1" />
@@ -242,7 +243,7 @@ const BlogPost = () => {
                                         className='input-kh  !py-3 '
                                 />
 
-                                <button className='w-10 h-10 bg-[#faf5f5] text-rad-kh  flex items-center justify-center hover:text-kh-white hover:bg-rad-kh text-lg font-[600] rounded-lg transition-all delay-10 ease-in
+                                 <button className='w-10 h-10 bg-[#faf5f5] text-rad-kh  flex items-center justify-center hover:text-kh-white hover:bg-rad-kh text-lg font-[600] rounded-lg transition-all delay-10 ease-in
                                      absolute top-[9%] right-[3%]  '>
                                     <BiSearchAlt/>
                                 </button>
