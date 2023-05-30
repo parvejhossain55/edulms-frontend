@@ -16,9 +16,9 @@ const Homepage = () => {
         <WhoWeAre />
         <Activities />
         <Classes />
-        <Teacher />
         <Event />
         <CoreValue />
+        <Teacher />
         <LatestNews />
       </div>
     </div>
