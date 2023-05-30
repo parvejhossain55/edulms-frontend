@@ -51,7 +51,7 @@ const Event = () => {
                   <div className="flex flex-col justify-center items-center bg-kh-white gap-y-5 md:flex-row md:justify-between basis-full md:basis-[49%] rounded-lg py-4 px-3  ">
 
                       <div className="flex flex-col justify-center items-center basis-full md:basis-[22%] ">
-                          <Image src={event1} style={{width:"auto", height:"auto"}} alt='event-1'/>
+                          <Image src={event2} style={{width:"auto", height:"auto"}} alt='event-1'/>
                       </div>
 
                       <div className="flex flex-col justify-center items-center gap-y-2.5 basis-full md:basis-[55%]">
@@ -76,7 +76,7 @@ const Event = () => {
                   <div className="flex flex-col justify-center items-center bg-kh-white gap-y-5 md:flex-row md:justify-between basis-full md:basis-[49%] rounded-lg py-4 px-3  ">
 
                       <div className="flex flex-col justify-center items-center basis-full md:basis-[22%] ">
-                          <Image src={event1} style={{width:"auto", height:"auto"}} alt='event-1'/>
+                          <Image src={event3} style={{width:"auto", height:"auto"}} alt='event-1'/>
                       </div>
 
                       <div className="flex flex-col justify-center items-center gap-y-2.5 basis-full md:basis-[55%]">
@@ -101,7 +101,7 @@ const Event = () => {
                   <div className="flex flex-col justify-center items-center bg-kh-white gap-y-5 md:flex-row md:justify-between basis-full md:basis-[49%] rounded-lg py-4 px-3  ">
 
                       <div className="flex flex-col justify-center items-center basis-full md:basis-[22%] ">
-                          <Image src={event1} style={{width:"auto", height:"auto"}} alt='event-1'/>
+                          <Image src={event4} style={{width:"auto", height:"auto"}} alt='event-1'/>
                       </div>
 
                       <div className="flex flex-col justify-center items-center gap-y-2.5 basis-full md:basis-[55%]">

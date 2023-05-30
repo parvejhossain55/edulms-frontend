@@ -7,7 +7,6 @@ import Teacher from "./Teacher";
 import Event from "./Event";
 import LatestNews from "./LatestNews";
 import Activities from "./Activitie";
-// import BuyNowBtn from "./BuyNowBtn";
 
 const Homepage = () => {
   return (
@@ -17,11 +16,10 @@ const Homepage = () => {
         <WhoWeAre />
         <Activities />
         <Classes />
-        <CoreValue />
         <Teacher />
         <Event />
+        <CoreValue />
         <LatestNews />
-        {/*<BuyNowBtn/>*/}
       </div>
     </div>
   );

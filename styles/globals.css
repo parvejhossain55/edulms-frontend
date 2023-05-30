@@ -38,7 +38,7 @@
     @apply text-kh-heading font-bold font-Catamaran
 }
 .pregrap-kh{
-    @apply font-normal text-base  text-p-kh
+    @apply font-normal text-base text-p-kh
 }
 .containte-kh{
     @apply container mx-auto px-3 sm:px-0 lg:px-10 xl:px-20
