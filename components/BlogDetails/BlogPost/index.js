@@ -9,10 +9,10 @@ import client_3 from '../../../assect/img/client-3.jpg'
 
 import {BsCheck, BsFillBookmarkFill, BsTwitter} from "react-icons/bs";
 import {FaCircle, FaFacebookF, FaPinterestP} from "react-icons/fa";
-
-// import {AiOutlineLeft, AiOutlineRight} from "react-icons/ai";
+import {AiOutlineLeft, AiOutlineRight} from "react-icons/ai";
 import {BiSearchAlt} from "react-icons/bi";
 import { Button } from '../../Design';
+import Link from "next/link";
 
 
 const BlogPost = () => {
@@ -22,14 +22,14 @@ const BlogPost = () => {
                 <div className="flex flex-col lg:flex-row lg:gap-x-2  gap-y-5   mt-16">
                     <div className="flex flex-col pr-4 basis-full lg:basis-8/12 gap-y-6 mb-5">
                         <div className='w-full'>
-                             <Image src={blogPostImg} style={{width:"auto",height:"auto"}} className='w-full ' alt='blog-post' />
+                            <Image src={blogPostImg} style={{width:"auto",height:"auto"}} className='w-full ' alt='blog-post' />
                         </div>
                         <div className='flex justify-start items-center gap-x-5'>
                             <h5 className='text-kh-heading font-[600]  '>Posted On:
-                                {/*<Link className='Link-text-kh  pl-2 ' href="#">September 31, 2022</Link>*/}
+                                <Link className='Link-text-kh  pl-2 ' href="#">September 31, 2022</Link>
                             </h5>
                             <h5 className='text-kh-heading  font-[600] '>Posted By:
-                                {/*<Link className='Link-text-kh pl-2 ' href="#">John Anderson</Link>*/}
+                                <Link className='Link-text-kh pl-2 ' href="#">John Anderson</Link>
                             </h5>
                         </div>
                         <div className='flex flex-col justify-start  gap-y-5'>
@@ -57,24 +57,38 @@ const BlogPost = () => {
                             </p>
                             <div className="flex justify-between items-center w-full gap-x-4 my-3">
                                 <div className='basis-1/3'>
-                                     {/*<Image src={blog_1} style={{width:"auto",height:"auto"}} className='w-full' style={{width:"auto",height:"auto"}} alt="blog-1" />*/}
-                                     <Image src={blog_1} className='w-full' style={{width:"auto",height:"auto"}} alt="blog-1" />
+
+                                    {/*<Image src={blog_1} style={{width:"auto",height:"auto"}} className='w-full' style={{width:"auto",height:"auto"}} alt="blog-1" />*/}
+                                    <Image
+                                        src={blog_1}
+                                        style={{width:"auto",height:"auto"}}
+                                        className='w-full'
+                                        alt="blog-1"
+                                    />
                                 </div>
                                 <div className='basis-1/3'>
-                                     <Image src={blog_2} className='w-full' style={{width:"auto",height:"auto"}} alt="blog-1" />
+                                    <Image
+                                        src={blog_2}
+                                        className='w-full'
+                                        style={{width:"auto",height:"auto"}}
+                                        alt="blog-1"
+                                    />
                                 </div>
                                 <div className='basis-1/3'>
-                                     <Image src={blog_3} className='w-full' style={{width:"auto",height:"auto"}} alt="blog-1" />
+                                    <Image
+                                        src={blog_3}
+                                        className='w-full'
+                                        style={{width:"auto",height:"auto"}}
+                                        alt="blog-1"
+                                    />
                                 </div>
                             </div>
-
                             <div className="flex flex-col justify-start gap-y-4">
                                 <h1 className='heading-kh  text-xl md:text-2xl mb-2'>Four Major Elements That We Offer:</h1>
-                                <p className="pregrap-kh flex justify-start  gap-x-3 check  "><span className='flex justify-center items-center w-6 h-6 rounded-[12px] bg-[#faf5f5] text-yellow-kh font-[600]  '><BsCheck/></span> Your child’s interests, likes, dislikes</p>
-                                <p className="pregrap-kh flex justify-start  gap-x-3 check  "><span className='flex justify-center items-center w-6 h-6 rounded-[12px] bg-[#faf5f5] text-yellow-kh font-[600]  '><BsCheck/></span> Their routines- patterns of eating, sleeping, toileting</p>
-                                <p className="pregrap-kh flex justify-start  gap-x-3 check  "><span className='flex justify-center items-center w-6 h-6 rounded-[12px] bg-[#faf5f5] text-yellow-kh font-[600]  '><BsCheck/></span> Your child’s current wellbeing</p>
-                                <p className="pregrap-kh flex justify-start  gap-x-3 check  "><span className='flex justify-center items-center w-6 h-6 rounded-[12px] bg-[#faf5f5] text-yellow-kh font-[600]  '><BsCheck/></span> Any major events taking place at home.</p>
-
+                                <p className="pregrap-kh flex justify-start gap-x-3 check"><span className='flex justify-center items-center w-6 h-6 rounded-[12px] bg-[#faf5f5] text-yellow-kh font-[600]  '><BsCheck/></span> Your child’s interests, likes, dislikes</p>
+                                <p className="pregrap-kh flex justify-start gap-x-3 check"><span className='flex justify-center items-center w-6 h-6 rounded-[12px] bg-[#faf5f5] text-yellow-kh font-[600]  '><BsCheck/></span> Their routines- patterns of eating, sleeping, toileting</p>
+                                <p className="pregrap-kh flex justify-start gap-x-3 check"><span className='flex justify-center items-center w-6 h-6 rounded-[12px] bg-[#faf5f5] text-yellow-kh font-[600]  '><BsCheck/></span> Your child’s current wellbeing</p>
+                                <p className="pregrap-kh flex justify-start gap-x-3 check"><span className='flex justify-center items-center w-6 h-6 rounded-[12px] bg-[#faf5f5] text-yellow-kh font-[600]  '><BsCheck/></span> Any major events taking place at home.</p>
                             </div>
 
                             <h1 className='heading-kh  text-xl md:text-2xl mt-4'>
@@ -88,62 +102,68 @@ const BlogPost = () => {
                             <div className="flex justify-between items-center my-6   ">
                                 <div className="flex justify-start items-center ">
                                     <span className='mr-2 '> <BsFillBookmarkFill/></span>
-                                    {/*<Link className='Link-text-kh capitalize' href="#"> preschool, </Link>*/}
-                                    {/*<Link className='Link-text-kh capitalize' href="#">children</Link>*/}
+                                    <Link className='Link-text-kh capitalize' href="#"> preschool, </Link>
+                                    <Link className='Link-text-kh capitalize' href="#">children</Link>
                                 </div>
                                 <div className="flex justify-start items-center">
                                     <span className='pregrap-kh mr-3 '>Share:</span>
                                     <div className="icon flex justify-start items-center gap-5 gap-x-2 ">
-                                        {/*<Link className='icon-kh !bg-[#faf5f5] text-md font-[600] hover:!bg-rad-kh text-rad-kh hover:text-white ' href="x#"> <FaFacebookF/></Link>*/}
-                                        {/*<Link className='icon-kh !bg-[#faf5f5] text-md font-[600] hover:!bg-rad-kh text-rad-kh hover:text-white ' href="#"><BsTwitter/></Link>*/}
-                                        {/*<Link className='icon-kh !bg-[#faf5f5] text-md font-[600] hover:!bg-rad-kh text-rad-kh hover:text-white ' href="#"><FaPinterestP/></Link>*/}
+                                        <Link className='icon-kh !bg-[#faf5f5] text-md font-[600] hover:!bg-rad-kh text-rad-kh hover:text-white transition-all duration-500' href="#"> <FaFacebookF/></Link>
+                                        <Link className='icon-kh !bg-[#faf5f5] text-md font-[600] hover:!bg-rad-kh text-rad-kh hover:text-white transition-all duration-500' href="#"><BsTwitter/></Link>
+                                        <Link className='icon-kh !bg-[#faf5f5] text-md font-[600] hover:!bg-rad-kh text-rad-kh hover:text-white transition-all duration-500' href="#"><FaPinterestP/></Link>
                                     </div>
                                 </div>
                             </div>
 
                             <div className="flex justify-between items-center border-y-gray-150 border-y-[1px] py-4 ">
-                                {/*<Link className='font-[600] text-kh-heading hover:text-rad-kh hover:tracking-tight transition-all delay-300 flex justify-center items-center gap-x-4' href="#">*/}
-                                {/*    <AiOutlineLeft/>*/}
-                                {/*    Prev Post*/}
-                                {/*</Link>*/}
-                                {/*<Link className='font-[600] text-kh-heading hover:text-rad-kh hover:tracking-tight transition-all delay-300 flex justify-center items-center gap-x-4' href="#">*/}
-                                {/*    Next Post*/}
-                                {/*    <AiOutlineRight/>*/}
-                                {/*</Link>*/}
+                                <Link className='font-[600] text-kh-heading hover:text-rad-kh hover:tracking-tight transition-all delay-300 flex justify-center items-center gap-x-4' href="#">
+                                    <AiOutlineLeft/>
+                                    Prev Post
+                                </Link>
+                                <Link className='font-[600] text-kh-heading hover:text-rad-kh hover:tracking-tight transition-all delay-300 flex justify-center items-center gap-x-4' href="#">
+                                    Next Post
+                                    <AiOutlineRight/>
+                                </Link>
                             </div>
                         </div>
                         {/*    ----->>> Comment  Box ---------<<<<<< */}
                         <div className="flex flex-col justify-start gap-y-5  ">
-                            <h3 className='heading-kh text-2xl mb-4 '> 3 Comments:</h3>
+                            <h3 className='heading-kh text-2xl mb-3 '> 3 Comments:</h3>
                             <div className="flex justify-start gap-x-5 ">
                                 <div>
-                                     <Image src={client_1} style={{width:"auto",height:"auto"}} className='w-20'   alt='client-avtar'/>
+                                    <Image
+                                        src={client_1}
+                                        style={{width:"110px",height:"50px"}}
+                                        alt='client-avtar'/>
                                 </div>
-                                <div className="flex flex-col gap-y-3">
+                                <div className="flex flex-col gap-y-2">
                                     {/*--------------this is main comment ----------->>>> */}
                                     <h3 className='heading-kh'> John Jones</h3>
-                                    {/*<Link href='#' className='Link-text-kh  !text-sm w-fit '>April 24, 2022 at 10:59 am</Link>*/}
+                                    <Link href='#' className='Link-text-kh  !text-sm w-fit '>April 24, 2022 at 10:59 am</Link>
                                     <p className="pregrap-kh text-justify">
                                         Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen.
                                     </p>
-                                    {/*<Link className='w-20 text-center py-1 px-6 rounded-[20px] bg-white border-gray-200 border*/}
-                                    {/*        font-[600] shadow text-rad-kh transition-all delay-750 ease-in hover:text-white hover:bg-rad-kh'*/}
-                                    {/*   href="#">Reply*/}
-                                    {/*</Link>*/}
+                                    <Link className='w-20 text-center py-1 px-6 rounded-[20px] bg-white border-gray-200 border
+                                            font-[600] shadow text-rad-kh transition-all delay-750 ease-in hover:text-white hover:bg-rad-kh'
+                                          href="#">Reply
+                                    </Link>
                                     {/*=====>>>>> Reply the Commet =============>>>> box*/}
                                     <div className="flex justify-start gap-x-5 mt-4 ">
                                         <div>
-                                             <Image src={client_3} style={{width:"auto",height:"auto"}} className='w-20'  alt='client-avtar'/>
+                                            <Image
+                                                src={client_3}
+                                                style={{width:"110px",height:"50px"}}
+                                                alt='client-avtar'/>
                                         </div>
                                         <div className="flex flex-col justify-start  gap-y-2.5">
                                             <h3 className='heading-kh'> John Jones</h3>
-                                            {/*<Link href='#' className='Link-text-kh  !text-sm w-fit '>April 24, 2022 at 10:59 am</Link>*/}
+                                            <Link href='#' className='Link-text-kh  !text-sm w-fit '>April 24, 2022 at 10:59 am</Link>
                                             <p className="pregrap-kh text-justify">
                                                 Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen.
                                             </p>
-                                            {/*<Link className='w-20 text-center  py-1 px-6 rounded-[20px] bg-white border-gray-200 border*/}
-                                            {/*           font-[600] shadow text-rad-kh transition-all delay-750 ease-in hover:text-white hover:bg-rad-kh' href="components/BlogDetail/BlogPost/index#">Reply*/}
-                                            {/*</Link>*/}
+                                            <Link className='w-20 text-center py-1 px-6 rounded-[20px] bg-white border-gray-200 border
+                                                       font-[600] shadow text-rad-kh transition-all delay-750 ease-in hover:text-white hover:bg-rad-kh' href="#">Reply
+                                            </Link>
                                         </div>
 
                                     </div>
@@ -154,35 +174,41 @@ const BlogPost = () => {
                             {/*------------------------------------ 2nd Commend ------------->>>>>>*/}
                             <div className="flex justify-start gap-x-5 ">
                                 <div>
-                                     <Image src={client_1} style={{width:"auto",height:"auto"}} className='w-20'  alt='client-avtar'/>
+                                    <Image
+                                        src={client_1}
+                                        style={{width:"110px",height:"50px"}}
+                                        alt='client-avtar'/>
                                 </div>
                                 <div className="flex flex-col gap-y-3">
                                     {/*--------------this is main comment ----------->>>> */}
                                     <h3 className='heading-kh'> John Jones</h3>
-                                    {/*<Link href='#' className='Link-text-kh  !text-sm w-fit '>April 24, 2022 at 10:59 am</Link>*/}
+                                    <Link href='#' className='Link-text-kh  !text-sm w-fit '>April 24, 2022 at 10:59 am</Link>
                                     <p className="pregrap-kh text-justify ">
                                         Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen.
                                     </p>
-                                    {/*<Link className='w-20 text-center py-1 px-6 rounded-[20px] bg-white border-gray-200 border*/}
-                                    {/*        font-[600] shadow text-rad-kh transition-all delay-750 ease-in hover:text-white hover:bg-rad-kh'*/}
-                                    {/*   href="#">Reply*/}
-                                    {/*</Link>*/}
+                                    <Link className='w-20 text-center py-1 px-6 rounded-[20px] bg-white border-gray-200 border
+                                            font-[600] shadow text-rad-kh transition-all delay-750 ease-in hover:text-white hover:bg-rad-kh'
+                                          href="#">Reply
+                                    </Link>
 
                                     {/*=====>>>>> Reply the Commet =============>>>> box*/}
                                     <div className="flex justify-start gap-x-5 mt-4 ">
                                         <div>
-                                             <Image src={client_3} style={{width:"auto",height:"auto"}} className='w-20'  alt='client-avtar'/>
+                                            <Image
+                                                src={client_3}
+                                                style={{width:"110px",height:"50px"}}
+                                                alt='client-avtar'/>
                                         </div>
                                         <div className="flex flex-col gap-y-2.5">
                                             <h3 className='heading-kh'> John Jones</h3>
-                                            {/*<Link href='#' className='Link-text-kh  !text-sm w-fit '>April 24, 2022 at 10:59 am</Link>*/}
+                                            <Link href='#' className='Link-text-kh  !text-sm w-fit '>April 24, 2022 at 10:59 am</Link>
                                             <p className="pregrap-kh text-justify ">
                                                 Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen.
                                             </p>
-                                            {/*<Link className='w-20 text-center  py-1 px-6 rounded-[20px] bg-white border-gray-200 border*/}
-                                            {/*          font-[600] shadow text-rad-kh transition-all delay-750 ease-in hover:text-white hover:bg-rad-kh'*/}
-                                            {/*   href="#">Reply*/}
-                                            {/*</Link>*/}
+                                            <Link className='w-20 text-center  py-1 px-6 rounded-[20px] bg-white border-gray-200 border
+                                                      font-[600] shadow text-rad-kh transition-all delay-750 ease-in hover:text-white hover:bg-rad-kh'
+                                                  href="#">Reply
+                                            </Link>
                                         </div>
                                     </div>
 
@@ -190,12 +216,12 @@ const BlogPost = () => {
 
                             </div>
                         </div>
-                         <div>
+                        <div>
                             <h2 className='heading-kh text-2xl mb-3 '> Leave a Reply</h2>
                             <p className='pregrap-kh'>
-                              Your email address will not be published. Required fields are marked *
+                                Your email address will not be published. Required fields are marked *
                             </p>
-                         </div>
+                        </div>
                         <form className='flex flex-wrap justify-between items-center  gap-y-3 ' action="components/BlogDetail/BlogPost/index">
                             <input  className='input-kh bg-[#f4f4f4] border-none
                                         focus:border-transparent px-4 basis-full  sm:basis-[48%]  '
@@ -240,10 +266,10 @@ const BlogPost = () => {
                             </div>
                             <div className="relative flex justify-start items-center  ">
                                 <input type="text "  placeholder='Search..'
-                                        className='input-kh  !py-3 '
+                                       className='input-kh  !py-3 '
                                 />
 
-                                 <button className='w-10 h-10 bg-[#faf5f5] text-rad-kh  flex items-center justify-center hover:text-kh-white hover:bg-rad-kh text-lg font-[600] rounded-lg transition-all delay-10 ease-in
+                                <button className='w-10 h-10 bg-[#faf5f5] text-rad-kh  flex items-center justify-center hover:text-kh-white hover:bg-rad-kh text-lg font-[600] rounded-lg transition-all delay-10 ease-in
                                      absolute top-[9%] right-[3%]  '>
                                     <BiSearchAlt/>
                                 </button>
@@ -256,30 +282,30 @@ const BlogPost = () => {
                                 <h3 className='heading-kh text-xl border-b w-fit pb-2  border-rad-kh '>Popular Posts</h3>
                             </div>
                             <div className="flex justify-start gap-x-4 items-center ">
-                                {/*<Link href="#" className={`rounded-md cursor-pointer bg-cover bg-center bg-[url("https://templates.envytheme.com/ketan/default/assets/img/blog/blog-3.jpg")] w-20 h-20 bg-cover basis-1/4`}></Link>*/}
+                                <Link href="#" className={`rounded-md cursor-pointer bg-cover bg-center bg-[url("https://templates.envytheme.com/ketan/default/assets/img/blog/blog-3.jpg")] w-20 h-20 bg-cover basis-1/4`}></Link>
                                 <div className="flex flex-col gap-y-1 basis-3/4 ">
                                     <p className='text-rad-kh text-sm' > June 10, 2022</p>
-                                    {/*<Link className='text-base text-kh-heading hover:text-rad-kh font-[600] transition duration-300 ease-in' href="#">*/}
-                                    {/*    The Data Surrounding Higher Education*/}
-                                    {/*</Link>*/}
+                                    <Link className='text-base text-kh-heading hover:text-rad-kh font-[600] transition duration-300 ease-in' href="#">
+                                        The Data Surrounding Higher Education
+                                    </Link>
                                 </div>
                             </div>
                             <div className="flex justify-start gap-x-4 items-center ">
-                                {/*<Link href="#" className={`rounded-md cursor-pointer bg-cover bg-center bg-[url("https://templates.envytheme.com/ketan/default/assets/img/blog/blog-3.jpg")] w-20 h-20 bg-cover basis-1/4`}></Link>*/}
+                                <Link href="#" className={`rounded-md cursor-pointer bg-cover bg-center bg-[url("https://templates.envytheme.com/ketan/default/assets/img/blog/blog-3.jpg")] w-20 h-20 bg-cover basis-1/4`}></Link>
                                 <div className="flex flex-col gap-y-1 basis-3/4 ">
                                     <p className='text-rad-kh text-sm' > June 10, 2022</p>
-                                    {/*<Link className='text-base text-kh-heading hover:text-rad-kh font-[600] transition duration-300 ease-in' href="#">*/}
-                                    {/*    The Data Surrounding Higher Education*/}
-                                    {/*</Link>*/}
+                                    <Link className='text-base text-kh-heading hover:text-rad-kh font-[600] transition duration-300 ease-in' href="#">
+                                        The Data Surrounding Higher Education
+                                    </Link>
                                 </div>
                             </div>
                             <div className="flex justify-start gap-x-4 items-center ">
-                                {/*<Link href="" className={`rounded-md cursor-pointer bg-cover bg-center bg-[url("https://templates.envytheme.com/ketan/default/assets/img/blog/blog-3.jpg")] w-20 h-20 bg-cover basis-1/4`}></Link>*/}
+                                <Link href="#" className={`rounded-md cursor-pointer bg-cover bg-center bg-[url("https://templates.envytheme.com/ketan/default/assets/img/blog/blog-3.jpg")] w-20 h-20 bg-cover basis-1/4`}></Link>
                                 <div className="flex flex-col gap-y-1 basis-3/4 ">
                                     <p className='text-rad-kh text-sm' > June 10, 2022</p>
-                                    {/*<Link className='text-base text-kh-heading hover:text-rad-kh font-[600] transition duration-300 ease-in' href="components/BlogDetail/BlogPost/index#">*/}
-                                    {/*    The Data Surrounding Higher Education*/}
-                                    {/*</Link>*/}
+                                    <Link className='text-base text-kh-heading hover:text-rad-kh font-[600] transition duration-300 ease-in' href="#">
+                                        The Data Surrounding Higher Education
+                                    </Link>
                                 </div>
                             </div>
                         </div>
@@ -293,28 +319,28 @@ const BlogPost = () => {
                             <div className="flex flex-col justify-start items-start gap-y-4 pb-5 ">
                                 <div className='flex justify-center items-center  gap-x-2'>
                                     <span className='text-[10px] text-rad-kh'> <FaCircle/></span>
-                                    {/*<Link className='link-text-kh text-md ' href="#">Alphabet Parade</Link>*/}
+                                    <Link className='link-text-kh text-md ' href="#">Alphabet Parade</Link>
                                 </div>
 
                                 <div className='flex justify-center items-center  gap-x-2'>
                                     <span className='text-[10px] text-rad-kh'> <FaCircle/></span>
-                                    {/*<Link className='link-text-kh text-md ' href="#">Games</Link>*/}
+                                    <Link className='link-text-kh text-md ' href="#">Games</Link>
                                 </div>
                                 <div className='flex justify-center items-center gap-x-2'>
                                     <span className='text-[10px] text-rad-kh'> <FaCircle/></span>
-                                    {/*<Link className='link-text-kh text-md ' href="#">Gross Motor</Link>*/}
+                                    <Link className='link-text-kh text-md ' href="#">Gross Motor</Link>
                                 </div>
                                 <div className='flex justify-center items-center gap-x-2'>
                                     <span className='text-[10px] text-rad-kh'> <FaCircle/></span>
-                                    {/*<Link className='link-text-kh text-md ' href="#">Inspare Success</Link>*/}
+                                    <Link className='link-text-kh text-md ' href="#">Inspare Success</Link>
                                 </div>
                                 <div className='flex justify-center items-center gap-x-2'>
                                     <span className='text-[10px] text-rad-kh'> <FaCircle/></span>
-                                    {/*<Link className='link-text-kh text-md ' href="#">Auditory Processing</Link>*/}
+                                    <Link className='link-text-kh text-md ' href="#">Auditory Processing</Link>
                                 </div>
                                 <div className='flex justify-center items-center gap-x-2'>
                                     <span className='text-[10px] text-rad-kh'> <FaCircle/></span>
-                                    {/*<Link className='link-text-kh text-md ' href="#">Kindergarten</Link>*/}
+                                    <Link className='link-text-kh text-md ' href="#">Kindergarten</Link>
                                 </div>
                             </div>
 
@@ -322,35 +348,35 @@ const BlogPost = () => {
 
                         {/*    ------------------>>>>>>Popular TAGS DIV -<<<<<<<<-------------------------*/}
 
-                            <div className="flex flex-col shadow-kh  justify-center gap-y-5 px-5 pb-7">
-                                <div className='border-b border-y-gray-100 pt-5'>
-                                    <h3 className='heading-kh text-xl border-b w-fit pb-2  border-rad-kh '>Popular Tags </h3>
-                                </div>
-
-                                <div className="flex justify-start flex-wrap items-center gap-x-4 gap-y-4">
-                                    {/*<Link className='text-center py-1.5 px-4 rounded-md  w-fit  bg-[#f5f5f5] border-gray-200 border*/}
-                                    {/*        font-normal text-kh-heading transition-all duration-300 ease-in hover:text-white hover:bg-rad-kh'*/}
-                                    {/*   href="#">Preschool*/}
-                                    {/*</Link>*/}
-                                    {/*<Link className='text-center py-1.5 px-4 rounded-md w-fit  bg-[#f5f5f5] border-gray-200 border*/}
-                                    {/*        font-normal text-kh-heading transition-all duration-300 ease-in hover:text-white hover:bg-rad-kh'*/}
-                                    {/*   href="#">Children*/}
-                                    {/*</Link>*/}
-                                    {/*<Link className='text-center py-1.5 px-4 rounded-md w-fit  bg-[#f5f5f5] border-gray-200 border*/}
-                                    {/*        font-normal text-kh-heading transition-all duration-300 ease-in hover:text-white hover:bg-rad-kh'*/}
-                                    {/*   href="#">Activities*/}
-                                    {/*</Link>*/}
-                                    {/*<Link className='text-center py-1.5 px-4 rounded-md w-fit  bg-[#f5f5f5] border-gray-200 border*/}
-                                    {/*        font-normal text-kh-heading transition-all duration-300 ease-in hover:text-white hover:bg-rad-kh'*/}
-                                    {/*   href="#">Educational*/}
-                                    {/*</Link>*/}
-                                    {/*<Link className='text-center py-1.5 px-4 rounded-md w-fit  bg-[#f5f5f5] border-gray-200 border*/}
-                                    {/*        font-normal text-kh-heading transition-all duration-300 ease-in hover:text-white hover:bg-rad-kh'*/}
-                                    {/*   href="#">*/}
-                                    {/*    Teachers*/}
-                                    {/*</Link>*/}
-                                </div>
+                        <div className="flex flex-col shadow-kh  justify-center gap-y-5 px-5 pb-7">
+                            <div className='border-b border-y-gray-100 pt-5'>
+                                <h3 className='heading-kh text-xl border-b w-fit pb-2  border-rad-kh '>Popular Tags </h3>
                             </div>
+
+                            <div className="flex justify-start flex-wrap items-center gap-x-4 gap-y-4">
+                                <Link className='text-center py-1.5 px-4 rounded-md  w-fit  bg-[#f5f5f5] border-gray-200 border
+                                            font-normal text-kh-heading transition-all duration-300 ease-in hover:text-white hover:bg-rad-kh'
+                                      href="#">Preschool
+                                </Link>
+                                <Link className='text-center py-1.5 px-4 rounded-md w-fit  bg-[#f5f5f5] border-gray-200 border
+                                            font-normal text-kh-heading transition-all duration-300 ease-in hover:text-white hover:bg-rad-kh'
+                                      href="#">Children
+                                </Link>
+                                <Link className='text-center py-1.5 px-4 rounded-md w-fit  bg-[#f5f5f5] border-gray-200 border
+                                            font-normal text-kh-heading transition-all duration-300 ease-in hover:text-white hover:bg-rad-kh'
+                                      href="#">Activities
+                                </Link>
+                                <Link className='text-center py-1.5 px-4 rounded-md w-fit  bg-[#f5f5f5] border-gray-200 border
+                                            font-normal text-kh-heading transition-all duration-300 ease-in hover:text-white hover:bg-rad-kh'
+                                      href="#">Educational
+                                </Link>
+                                <Link className='text-center py-1.5 px-4 rounded-md w-fit  bg-[#f5f5f5] border-gray-200 border
+                                            font-normal text-kh-heading transition-all duration-300 ease-in hover:text-white hover:bg-rad-kh'
+                                      href="#">
+                                    Teachers
+                                </Link>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
