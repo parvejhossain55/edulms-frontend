@@ -9,7 +9,7 @@ import TeacherCard from "../../MiniComponet/TeacherCard";
 const Teacher = () => {
 
     return (
-        <div className='bg-seandary-bg py-5 ' >
+        <div className='bg-kh-white py-5 ' >
             <div className="containte-kh px-4 py-6 md:py-8 lg:py-10 ">
                 <p className="title-kh  mb-4 ">Our Core Teacher</p>
                 <h3 className="heading-kh mb-4 text-[28px] md:text-[35px] lg:text-[45px] mb-8 text-center">Meet Our Teacher</h3>

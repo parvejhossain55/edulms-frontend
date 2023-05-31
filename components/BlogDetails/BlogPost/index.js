@@ -11,7 +11,7 @@ import {BsCheck, BsFillBookmarkFill, BsTwitter} from "react-icons/bs";
 import {FaCircle, FaFacebookF, FaPinterestP} from "react-icons/fa";
 import {AiOutlineLeft, AiOutlineRight} from "react-icons/ai";
 import {BiSearchAlt} from "react-icons/bi";
-import { Button } from '../../Design';
+import {Button, LinkKH} from '../../Design';
 import Link from "next/link";
 
 
@@ -22,7 +22,11 @@ const BlogPost = () => {
                 <div className="flex flex-col lg:flex-row lg:gap-x-2  gap-y-5   mt-16">
                     <div className="flex flex-col pr-4 basis-full lg:basis-8/12 gap-y-6 mb-5">
                         <div className='w-full'>
-                            <Image src={blogPostImg} style={{width:"auto",height:"auto"}} className='w-full ' alt='blog-post' />
+                            <Image
+                                src={blogPostImg}
+                                style={{width:"auto",height:"auto"}}
+                                className='w-full '
+                                alt='blog-post' />
                         </div>
                         <div className='flex justify-start items-center gap-x-5'>
                             <h5 className='text-kh-heading font-[600]  '>Posted On:
@@ -319,28 +323,28 @@ const BlogPost = () => {
                             <div className="flex flex-col justify-start items-start gap-y-4 pb-5 ">
                                 <div className='flex justify-center items-center  gap-x-2'>
                                     <span className='text-[10px] text-rad-kh'> <FaCircle/></span>
-                                    <Link className='link-text-kh text-md ' href="#">Alphabet Parade</Link>
+                                    <Link className={`${LinkKH["link-primary"]} text-md` } href="#">Alphabet Parade</Link>
                                 </div>
 
                                 <div className='flex justify-center items-center  gap-x-2'>
                                     <span className='text-[10px] text-rad-kh'> <FaCircle/></span>
-                                    <Link className='link-text-kh text-md ' href="#">Games</Link>
+                                    <Link className={`${LinkKH["link-primary"]} text-md` } href="#">Games</Link>
                                 </div>
                                 <div className='flex justify-center items-center gap-x-2'>
                                     <span className='text-[10px] text-rad-kh'> <FaCircle/></span>
-                                    <Link className='link-text-kh text-md ' href="#">Gross Motor</Link>
+                                    <Link className={`${LinkKH["link-primary"]} text-md` } href="#">Gross Motor</Link>
                                 </div>
                                 <div className='flex justify-center items-center gap-x-2'>
                                     <span className='text-[10px] text-rad-kh'> <FaCircle/></span>
-                                    <Link className='link-text-kh text-md ' href="#">Inspare Success</Link>
+                                    <Link className={`${LinkKH["link-primary"]} text-md` } href="#">Inspare Success</Link>
                                 </div>
                                 <div className='flex justify-center items-center gap-x-2'>
                                     <span className='text-[10px] text-rad-kh'> <FaCircle/></span>
-                                    <Link className='link-text-kh text-md ' href="#">Auditory Processing</Link>
+                                    <Link className={`${LinkKH["link-primary"]} text-md` } href="#">Auditory Processing</Link>
                                 </div>
                                 <div className='flex justify-center items-center gap-x-2'>
                                     <span className='text-[10px] text-rad-kh'> <FaCircle/></span>
-                                    <Link className='link-text-kh text-md ' href="#">Kindergarten</Link>
+                                    <Link className={`${LinkKH["link-primary"]} text-md` } href="#">Kindergarten</Link>
                                 </div>
                             </div>
 

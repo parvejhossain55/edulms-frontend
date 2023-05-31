@@ -62,10 +62,10 @@
 .bg-banner-kh{
     @apply absolute -z-30 bg-fixed  top-0 right-0  w-full
 }
-
-.link-text-kh{
-    @apply font-normal text-base text-p-kh hover:text-rad-kh transition-all border-transparent
-}
+/*this style not use ==== >>>> */
+/*.link-text-kh{*/
+/*    @apply font-normal text-base text-p-kh hover:text-rad-kh transition-all border-transparent*/
+/*}*/
 
 .check:hover span {
     @apply bg-rad-kh text-kh-white transition-all delay-100 ease-in

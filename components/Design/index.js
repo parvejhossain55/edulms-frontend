@@ -7,6 +7,9 @@ export const Button = {
 
     'btn_activity': 'rounded-full w-14 h-14 flex justify-content p-4 text-black font-semibold  justify-center relative before:absolute before:w-[4.2rem] before:h-[4.2rem] before:border-2 before:border-orange-300 before:flex before:rounded-full before:-top-1.5 before:-z-10 before:hover:border-[#EA512E] hover:bg-[#EA512E] duration-500 before:duration-0 hover:text-white'
 }
+export const LinkKH ={
+    "link-primary":"font-normal text-base text-p-kh hover:text-rad-kh transition-all border-transparent"
+}
 
 
 export const HeroImg = {
