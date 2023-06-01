@@ -10,29 +10,29 @@ const AboutVQuote = () => {
                     <div className="flex flex-col w-full md:basis-9/12 lg:basis-7/12 gap-y-3 justify-start bg-kh-white px-4 py-12 md:px-6 lg:px-12 ">
                         <p className='font-sacramento font-semibold text-rad-kh pl-2 mb-2'> Get a Quote</p>
                         <h2 className='heading-kh text-[22px] md:text-[40px] mb-4'>Online Class Registration</h2>
-                        <div className='px-2 sm:px-0 '>
+                        <div className='px-2 sm:px-0 space-y-3'>
                             <input type="text"
                                 placeholder='Your Name'
-                                   className="py-4 placeholder:text-[15px] w-full mb-2 focus:border-rad-kh border-gray-400 border-[1.5px]
-                                   rounded-lg invalid:border-red-500 outline-none px-5" />
+                                   className="py-4 placeholder:text-base w-full focus:border-rad-kh border-gray-400 border-[1.5px]
+                                   rounded-lg outline-none px-5"  />
                         </div>
                         <div className='px-2 sm:px-0 '>
                             <input type="text"
                                 placeholder='Your Email'
-                                   className="py-4 placeholder:text-[15px] w-full mb-2 focus:border-rad-kh border-gray-400 border-[1.5px]
-                                   rounded-lg invalid:border-red-500 outline-none px-5"/>
+                                   className="py-4 placeholder:text-[15px] w-full focus:border-rad-kh border-gray-400 border-[1.5px]
+                                   rounded-lg outline-none px-5"/>
                         </div>
                         <div className='px-2 sm:px-0 '>
                             <input type="text"
                                 placeholder='Studying Class'
-                                   className="py-4 placeholder:text-[15px] w-full mb-2 focus:border-rad-kh border-gray-400 border-[1.5px]
-                                   rounded-lg invalid:border-red-500 outline-none px-5" />
+                                   className="py-4 placeholder:text-[15px] w-full focus:border-rad-kh border-gray-400 border-[1.5px]
+                                   rounded-lg outline-none px-5" />
                         </div>
                         <div className='px-2 sm:px-0 '>
                             <input type="text"
                                 placeholder='Type Your Requirement'
-                                className="py-4 placeholder:text-[15px] w-full mb-2 focus:border-rad-kh border-gray-400 border-[1.5px]
-                                   rounded-lg invalid:border-red-500 outline-none px-5" />
+                                className="py-4 placeholder:text-[15px] w-full focus:border-rad-kh border-gray-400 border-[1.5px]
+                                   rounded-lg outline-none px-5" />
                         </div>
                         <div className='px-2 sm:px-0 '>
                             <button  className={`${Button.btn_primary} py-4 w-full capitalize`}>

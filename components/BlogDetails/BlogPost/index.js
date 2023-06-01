@@ -229,30 +229,26 @@ const BlogPost = () => {
                         </div>
 
                         {/*----->>>>>>input form------<<<<<<<<*/}
-                        <form className='flex flex-wrap justify-between items-center  gap-y-3 ' action="components/BlogDetail/BlogPost/index">
-                            <input  className='py-4 px-6 w-full mb-2 border-gray-300 focus:border-rad-kh border-[1.5px] rounded-lg outline-none transition-all duration-300 ease-in-out bg-[#f4f4f4] border-none
-                                        focus:border-transparent px-4 basis-full  sm:basis-[48%]  '
+                        <form className='flex flex-wrap justify-between items-center  gap-y-6 ' action="components/BlogDetail/BlogPost/index">
+                            <input  className='py-4 px-6 rounded-lg bg-[#f4f4f4] basis-full sm:basis-[48%] placeholder:text-[17px] border-[1px] focus:border-rad-kh outline-none duration-500'
                                     type="text"
                                     placeholder='Your Name*'
                             />
-                            <input  className='py-4 px-6 w-full mb-2 border-gray-300 focus:border-rad-kh border-[1.5px] rounded-lg outline-none transition-all duration-300 ease-in-out bg-[#f4f4f4] border-none
-                                        focus:border-transparent px-4 basis-full  sm:basis-[48%] '
+                            <input className='py-4 px-6  rounded-lg bg-[#f4f4f4] basis-full sm:basis-[48%] placeholder:text-[17px] border-[1px] focus:border-rad-kh outline-none duration-500'
                                     type="text"
                                     placeholder='Your Email*'
                             />
-                            <input  className='py-4 px-6 w-full mb-2 border-gray-300 focus:border-rad-kh border-[1.5px] rounded-lg outline-none transition-all duration-300 ease-in-out bg-[#f4f4f4] border-none
-                                    focus:border-transparent px-4 basis-full   '
+                            <input  className='py-4 px-6 border-[1px] rounded-lg bg-[#f4f4f4] basis-full placeholder:text-[17px] border-[1px] focus:border-rad-kh outline-none duration-500 '
                                     type="text"
                                     placeholder='Website*'
                             />
-                            <textarea className='py-4 px-6 w-full mb-2 border-gray-300 focus:border-rad-kh border-[1.5px] rounded-lg outline-none transition-all duration-300 ease-in-out bg-[#f4f4f4] border-none
-                                        focus:border-transparent px-4  basis-full  '
+                            <textarea className='py-4 px-6 border-[1px] rounded-lg bg-[#f4f4f4] basis-full placeholder:text-[17px] border-2 focus:border-rad-kh outline-none duration-500  '
                                       placeholder='Your Comment'
                                       cols="10"
                                       rows="5">
                             </textarea>
                             <div className='flex justify-start items-center gap-x-3 basis-full '>
-                                <input  className='w-4 h-4  '
+                                <input  className='w-4 h-4 checked::bg-rad-kh '
                                         type="checkbox"
                                         id='blog-formCheck'
                                 />
