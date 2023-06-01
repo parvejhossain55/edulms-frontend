@@ -14,7 +14,12 @@ const Subscribe  = ({title='Do You Want To Know Get Update What’s Upcoming'}) 
                     <h1 className="basis-ful md:basis-1/2 md:leading-tight heading-kh text-2xl md:text-[35px] mt-3 font-bold ">{title}</h1>
                     <div className='md:relative basis-full md:basis-1/2 mb-2 flex flex-col justify-start md:flex-row
                                     md:justify-center md:items-center rounded-xl '>
-                        <input type='text' className='px-9 py-5  w-full rounded-xl ' placeholder="Enter Your Email Address"   />
+
+                        <input
+                            type='text'
+                            className='px-9 py-5 placeholder:text-xl w-full rounded-xl outline-none border-[2px] border-transparent duration-500 focus:border-rad-kh '
+                            placeholder="Enter Your Email Address"
+                        />
                         <button className={`${Button.btn_primary} mt-5 md:mt-0 md:absolute md:top-center font-semibold w-fit md:right-[2%]`}>Subscribe Now</button>
                     </div>
                 </div>

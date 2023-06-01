@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Catamaran&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
-
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -14,7 +12,6 @@
 .btn-primary {
     @apply my-12 justify-center flex items-center border-2 py-3 w-full rounded-3xl bg-orange-500 text-white shadow-2xl
 }
-
 .btn-primary:hover{
     @apply bg-orange-400 transition-colors
 }
@@ -27,25 +24,15 @@
 .btn-kh::before:hover{
     @apply left-0 w-full
 }
-
-/*----->>>>> not use so comment this style ,,, <<<< some reason for not deleter this code <<<<<<< -----------------*/
-/*.icon-kh{*/
-/*    @apply flex justify-center items-center bg-rad-kh w-8 h-8 rounded-[16px] mr-4 transition-all duration-500*/
-/*}*/
-/*.icon-kh:hover{*/
-/*    @apply text-rad-kh bg-kh-white*/
-/*}*/
-
 .heading-kh{
     @apply text-kh-heading font-bold font-Catamaran
 }
-
 
 .containte-kh{
     @apply container mx-auto px-3 sm:px-0 lg:px-10 xl:px-20
 }
 .title-kh{
-    @apply  text-center font-semibold text-rad-kh font-sacramento text-lg capitalize
+    @apply text-center font-semibold text-rad-kh font-sacramento text-lg capitalize
 }
 .moving-banner{
     @apply hidden lg:block absolute lg:w-24 xl:max-w-[100px] animate-[slideInRight_4s_ease-in-out_infinite]
@@ -53,22 +40,13 @@
 .topBottomSlide{
     @apply animate-[slideTopBottom_4s_ease-in-out_infinite]
 }
-.input-kh{
-    @apply py-4 px-6 w-full mb-2 border-gray-300 focus:border-rad-kh border-[1.5px] rounded-lg outline-none transition-all delay-200 ease-in-out
-}
-
 .bg-banner-kh{
     @apply absolute -z-30 bg-fixed  top-0 right-0  w-full
 }
-/*this style not use ==== >>>>  some reason not delete this code ------>>>>>RIGHT NOW*/
-/*.link-text-kh{*/
-/*    @apply font-normal text-base text-p-kh hover:text-rad-kh transition-all border-transparent*/
-/*}*/
 
 .check:hover span {
     @apply bg-rad-kh text-kh-white transition-all delay-100 ease-in
 }
-
 .activity-box:hover .readMore-kh{
     @apply -tracking-[-1.2px]
 }
@@ -79,12 +57,10 @@
 .activity-box:hover strong{
     @apply bg-yellow-kh text-white
 }
-
 .footer-img-effect{
     @apply before:bg-[#ea512e] relative before:absolute top-0 left-0 before:w-full
     before:h-full hover:before:opacity-50 before:opacity-0 before:duration-300 cursor-pointer overflow-hidden before:z-10
 }
-
 .footer-img-effect:hover img{
     transform: scale(1.1);
 }

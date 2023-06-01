@@ -14,6 +14,7 @@ const Program = () => {
             <BecomeTeacher/>
             <ProgramGallery/>
             <ProgramSubcribe/>
+
         </div>
     );
 };

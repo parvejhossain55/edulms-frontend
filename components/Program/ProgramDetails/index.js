@@ -1,7 +1,6 @@
 import React from 'react';
 import Image from 'next/image'
 import blogPostImg from '../../../assect/img/BlogPost.jpg'
-
 import {BsCheck} from "react-icons/bs";
 import { Button } from '../../Design';
 
@@ -143,15 +142,7 @@ const ProgramDetails = () => {
                                 />
                                 <button className={`${Button.btn_primary} mt-8`}>subscribe</button>
                             </form>
-
                         </div>
-
-
-
-
-
-
-
                     </div>
                 </div>
             </div>

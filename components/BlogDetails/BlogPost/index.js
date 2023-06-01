@@ -102,7 +102,7 @@ const BlogPost = () => {
 
                             <div className="flex justify-between items-center my-6   ">
                                 <div className="flex justify-start items-center ">
-                                    <span className='mr-2 '> <BsFillBookmarkFill/></span>
+                                    <span className='mr-2'> <BsFillBookmarkFill/></span>
                                     <Link className='Link-text-kh capitalize' href="#"> preschool, </Link>
                                     <Link className='Link-text-kh capitalize' href="#">children</Link>
                                 </div>
@@ -227,23 +227,25 @@ const BlogPost = () => {
                                 Your email address will not be published. Required fields are marked *
                             </p>
                         </div>
+
+                        {/*----->>>>>>input form------<<<<<<<<*/}
                         <form className='flex flex-wrap justify-between items-center  gap-y-3 ' action="components/BlogDetail/BlogPost/index">
-                            <input  className='input-kh bg-[#f4f4f4] border-none
+                            <input  className='py-4 px-6 w-full mb-2 border-gray-300 focus:border-rad-kh border-[1.5px] rounded-lg outline-none transition-all duration-300 ease-in-out bg-[#f4f4f4] border-none
                                         focus:border-transparent px-4 basis-full  sm:basis-[48%]  '
                                     type="text"
                                     placeholder='Your Name*'
                             />
-                            <input  className='input-kh bg-[#f4f4f4] border-none
+                            <input  className='py-4 px-6 w-full mb-2 border-gray-300 focus:border-rad-kh border-[1.5px] rounded-lg outline-none transition-all duration-300 ease-in-out bg-[#f4f4f4] border-none
                                         focus:border-transparent px-4 basis-full  sm:basis-[48%] '
                                     type="text"
                                     placeholder='Your Email*'
                             />
-                            <input  className='input-kh bg-[#f4f4f4] border-none
+                            <input  className='py-4 px-6 w-full mb-2 border-gray-300 focus:border-rad-kh border-[1.5px] rounded-lg outline-none transition-all duration-300 ease-in-out bg-[#f4f4f4] border-none
                                     focus:border-transparent px-4 basis-full   '
                                     type="text"
                                     placeholder='Website*'
                             />
-                            <textarea className='input-kh bg-[#f4f4f4] border-none
+                            <textarea className='py-4 px-6 w-full mb-2 border-gray-300 focus:border-rad-kh border-[1.5px] rounded-lg outline-none transition-all duration-300 ease-in-out bg-[#f4f4f4] border-none
                                         focus:border-transparent px-4  basis-full  '
                                       placeholder='Your Comment'
                                       cols="10"
@@ -269,12 +271,13 @@ const BlogPost = () => {
                             <div className='border-b border-y-gray-100 pt-5'>
                                 <h3 className='heading-kh text-xl border-b w-fit pb-2  border-rad-kh '>Search</h3>
                             </div>
-                            <div className="relative flex justify-start items-center  ">
-                                <input type="text "  placeholder='Search..'
-                                       className='input-kh  !py-3 '
+                            <div className="relative flex justify-start items-center ">
+                                <input type="text"
+                                       placeholder='Search..'
+                                       className='py-4 px-6 w-full mb-2 border-gray-300 focus:border-rad-kh border-[1.5px] rounded-lg outline-none transition-all duration-300 ease-in-out  !py-3 '
                                 />
 
-                                <button className='w-10 h-10 bg-[#faf5f5] text-rad-kh  flex items-center justify-center hover:text-kh-white hover:bg-rad-kh text-lg font-[600] rounded-lg transition-all delay-10 ease-in
+                                <button className='w-10 h-10 bg-[#faf5f5] text-rad-kh flex items-center justify-center hover:text-kh-white hover:bg-rad-kh text-lg rounded-lg transition-all duration-500 ease-in
                                      absolute top-[9%] right-[3%]  '>
                                     <BiSearchAlt/>
                                 </button>
