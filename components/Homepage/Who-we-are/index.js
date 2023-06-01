@@ -14,8 +14,8 @@ const WhoWeAre = () => {
                             <h1 className='heading-kh py-5 text-2xl  md:text-3xl lg:text-[45px] lg:leading-[50px] '>
                                 Learn About Our Work and Cultural Activities
                             </h1>
-                            <p className='pregrap-kh leading-tight '>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
-                            <p className='pregrap-kh leading-tight'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <p className='font-normal text-base text-p-kh'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+                            <p className='font-normal text-base text-p-kh'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                             <div className="flex justify-between items-center flex-wrap gap-y-5 mt-3">
                                 <div className="flex justify-self-start items-center w-1/2 ">
                                     <span className='w-7 h-7 text-kh-white bg-rad-kh hover:bg-yellow-kh text-sm font-semibold text-center rounded-full pt-1'>1</span>

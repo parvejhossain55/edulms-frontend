@@ -46,16 +46,16 @@ const ProgramDetails = () => {
 
                             <div >
                                 <h1 className='heading-kh text-xl md:text-2xl mb-4'>Education Lessons</h1>
-                                <p className="pregrap-kh text-justify leading-7 ">
+                                <p className="font-normal text-base text-p-kh text-justify leading-7 ">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo .
                                 </p>
-                                <p className="pregrap-kh text-justify leading-7 mb-3">
+                                <p className="font-normal text-base text-p-kh text-justify leading-7 mb-3">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo .
                                 </p>
                             </div>
                             <div>
                                 <h1 className='heading-kh text-xl md:text-2xl md-4 '>English Lesson Class</h1>
-                                <p className="pregrap-kh text-justify ">
+                                <p className="font-normal text-base text-p-kh text-justify ">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
                                 </p>
 
@@ -63,31 +63,31 @@ const ProgramDetails = () => {
                             </div>
                             <div>
                                 <h1 className='heading-kh text-xl md:text-2xl mb-4 '>Requirements</h1>
-                                <p className="pregrap-kh text-justify ">
+                                <p className="font-normal text-base text-p-kh text-justify ">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo .
                                 </p>
                             </div>
 
                             <div className="flex flex-col justify-start gap-y-3">
 
-                                <p className="pregrap-kh flex justify-start  gap-x-3 check  ">
+                                <p className="font-normal text-base text-p-kh flex justify-start  gap-x-3 check  ">
                                     <span className='flex justify-center items-center w-6 h-6 rounded-[12px] bg-[#faf5f5] text-yellow-kh font-medium  '>
                                     <BsCheck/></span>
                                     Aliquam sit amet mi vitae turpis gravida vulputate.
                                 </p>
-                                <p className="pregrap-kh flex justify-start  gap-x-3 check  ">
+                                <p className="font-normal text-base text-p-kh flex justify-start  gap-x-3 check  ">
                                     <span className='flex justify-center items-center w-6 h-6 rounded-[12px] bg-[#faf5f5] text-yellow-kh font-medium  '>
                                     <BsCheck/></span>
                                     Proin a orci nec sapien condimentum imperdiet.
                                 </p>
 
-                                <p className="pregrap-kh flex justify-start  gap-x-3 check  ">
+                                <p className="font-normal text-base text-p-kh flex justify-start  gap-x-3 check  ">
                                     <span className='flex justify-center items-center w-6 h-6 rounded-[12px] bg-[#faf5f5] text-yellow-kh font-medium  '>
                                     <BsCheck/></span>
                                     Suspendisse viverra lectus eu augue efficitur pulvinar.
                                 </p>
 
-                                <p className="pregrap-kh flex justify-start  gap-x-3 check  ">
+                                <p className="font-normal text-base text-p-kh flex justify-start  gap-x-3 check  ">
                                     <span className='flex justify-center items-center w-6 h-6 rounded-[12px] bg-[#faf5f5] text-yellow-kh font-medium  '>
                                     <BsCheck/></span>
                                     Mauris a purus ut mauris sodales ultrices.
@@ -109,24 +109,24 @@ const ProgramDetails = () => {
                             <div className="flex justify-start flex-col  gap-y-4 gap-x-2 mt-3 ">
                                 <div className=' flex justify-start items-center gap-x-2'>
                                     <h4 className='heading-kh capitalize mr-1' >student:</h4>
-                                    <p className='pregrap-kh'>25</p>
+                                    <p className='font-normal text-base text-p-kh'>25</p>
                                 </div>
 
                                 <div className=' flex justify-start items-center gap-x-2'>
                                     <h4 className='heading-kh capitalize mr-1' >Lectures:</h4>
-                                    <p className='pregrap-kh'>25</p>
+                                    <p className='font-normal text-base text-p-kh'>25</p>
                                 </div>
                                 <div className=' flex justify-start items-center gap-x-2'>
                                     <h4 className='heading-kh capitalize mr-1' >time:</h4>
-                                    <p className='pregrap-kh'>9AM - 11:30AM</p>
+                                    <p className='font-normal text-base text-p-kh'>9AM - 11:30AM</p>
                                 </div>
                                 <div className=' flex justify-start items-center gap-x-2'>
                                     <h4 className='heading-kh capitalize mr-1' >learn day::</h4>
-                                    <p className='pregrap-kh'>Monday, Wednesday</p>
+                                    <p className='font-normal text-base text-p-kh'>Monday, Wednesday</p>
                                 </div>
                                 <div className=' flex justify-start items-center gap-x-2'>
                                     <h4 className='heading-kh capitalize mr-1'>Language:</h4>
-                                    <p className='pregrap-kh'>English</p>
+                                    <p className='font-normal text-base text-p-kh'>English</p>
                                 </div>
                             </div>
 

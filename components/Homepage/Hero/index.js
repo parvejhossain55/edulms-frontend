@@ -36,7 +36,7 @@ const HeroSection = () => {
                                 <h1 className='heading-kh py-5 text-3xl md:text-5xl lg:text-[54px] lg:leading-tight  '>
                                     We are a Childcare Professional
                                 </h1>
-                                <p className='pregrap-kh w-auto pr-5'> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+                                <p className='font-normal text-base text-p-kh w-auto pr-5'> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
                                 <div className="flex justify-center items-center  lg:justify-start  ">
                                     <button className={`${Button.btn_primary} mr-7`}> Learn More </button>
                                     <button className={`${Button.btn_primary}`}> Find Out More</button>

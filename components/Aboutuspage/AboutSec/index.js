@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image'
 import WhoWeAre_3 from "../../../assect/img/who-we-are-3.png"
-import { Button } from '../../Design';
+import { Button,Element } from '../../Design';
 
 const AboutSec = () => {
 
@@ -12,9 +12,10 @@ const AboutSec = () => {
                        <div className="flex flex-col justify-start lg:basis-1/2 gap-y-5 ">
                            <span className="title-kh">About</span>
                            <h1 className="heading-kh text-2xl lg:text-[45px] lg:leading-[55px] ">Learn About Our Work and Cultural Activities</h1>
-                           <p className='pregrap-kh px-3'>  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
+                           <p className={`${Element.paragraphs} px-3`}>  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
+
                             </p>
-                           <p className='pregrap-kh px-3'> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                           <p className={`${Element.paragraphs} px-3`}> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                            </p>
 
                            <div className="flex justify-between items-center flex-wrap pt-5 ">

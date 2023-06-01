@@ -1,4 +1,5 @@
 import React from 'react';
+import {Element} from "../../Design";
 
 const AboutPricing = () => {
 
@@ -19,33 +20,33 @@ const AboutPricing = () => {
                         </thead>
                         <tbody >
                             <tr className=''>
-                                <td className='pregrap-kh p-6 border  border-gray-300' >Full-Day (8:00 AM - 6:00 PM)</td>
-                                <td className='pregrap-kh p-6 border  border-gray-300' >$80.00</td>
-                                <td className='pregrap-kh p-6 border  border-gray-300' >$180.00</td>
-                                <td className='pregrap-kh p-6 border  border-gray-300' >$280.00</td>
+                                <td className={`${Element.paragraphs} p-6 border border-gray-300`} >Full-Day (8:00 AM - 6:00 PM)</td>
+                                <td className={`${Element.paragraphs} p-6 border border-gray-300`} >$80.00</td>
+                                <td className={`${Element.paragraphs} p-6 border border-gray-300`} >$180.00</td>
+                                <td className={`${Element.paragraphs} p-6 border border-gray-300`} >$280.00</td>
                             </tr>
                             <tr className='border border-gray-500 '>
-                                <td className='pregrap-kh p-6 border  border-gray-300' >Half Day (8:00 AM - 2:00 PM or 3:00 PM - 6:00 PM)</td>
-                                <td className='pregrap-kh p-6 border  border-gray-300' >$35.00</td>
-                                <td className='pregrap-kh p-6 border  border-gray-300' >$75.00</td>
-                                <td className='pregrap-kh p-6 border  border-gray-300' >$275.00</td>
+                                <td className={`${Element.paragraphs} p-6 border border-gray-300`} >Half Day (8:00 AM - 2:00 PM or 3:00 PM - 6:00 PM)</td>
+                                <td className={`${Element.paragraphs} p-6 border border-gray-300`} >$35.00</td>
+                                <td className={`${Element.paragraphs} p-6 border border-gray-300`} >$75.00</td>
+                                <td className={`${Element.paragraphs} p-6 border border-gray-300`} >$275.00</td>
                             </tr>
                             <tr className='border border-gray-500 '>
-                                <td className='pregrap-kh p-6 border  border-gray-300' >Food Expenses Paid Per Day</td>
-                                <td className='pregrap-kh p-6 border  border-gray-300' >$30.00</td>
-                                <td className='pregrap-kh p-6 border  border-gray-300' >$45.00</td>
-                                <td className='pregrap-kh p-6 border  border-gray-300' >$75.00</td>
+                                <td className={`${Element.paragraphs} p-6 border border-gray-300`} >Food Expenses Paid Per Day</td>
+                                <td className={`${Element.paragraphs} p-6 border border-gray-300`} >$30.00</td>
+                                <td className={`${Element.paragraphs} p-6 border border-gray-300`} >$45.00</td>
+                                <td className={`${Element.paragraphs} p-6 border border-gray-300`} >$75.00</td>
                             </tr>
                             <tr className='border border-gray-500 '>
-                                <td className='pregrap-kh p-6 border  border-gray-300' >Activities</td>
-                                <td className='pregrap-kh p-6 border  border-gray-300' >$30.00</td>
-                                <td className='pregrap-kh p-6 border  border-gray-300' >$45.00</td>
-                                <td className='pregrap-kh p-6 border  border-gray-300' >$75.00</td>
+                                <td className={`${Element.paragraphs} p-6 border border-gray-300`} >Activities</td>
+                                <td className={`${Element.paragraphs} p-6 border border-gray-300`} >$30.00</td>
+                                <td className={`${Element.paragraphs} p-6 border border-gray-300`} >$45.00</td>
+                                <td className={`${Element.paragraphs} p-6 border border-gray-300`} >$75.00</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
-                <p className="pregrap-kh text-center mt-5">The preschool reserves the right to increase the said fees at any time.</p>
+                <p className={` /${Element.paragraphs} text-center mt-5`}>The preschool reserves the right to increase the said fees at any time.</p>
 
             </div>
 

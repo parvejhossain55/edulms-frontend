@@ -2,7 +2,8 @@ import React from 'react';
 import {ImLocation} from "react-icons/im";
 import {HiOutlineMail} from "react-icons/hi";
 import {TbPhoneCall} from "react-icons/tb";
-import { Button } from '../../Design';
+import {Button,Element} from '../../Design';
+import Link from "next/link";
 
 const ContactForm = () => {
 
@@ -71,20 +72,20 @@ const ContactForm = () => {
                             </p>
                             <p className="flex  items-center ">
                                 <span className="text-rad-kh mr-3 text-xl  " ><TbPhoneCall/></span>Call Us:
-                                <a className=' heading-kh link-kh ml-2' href="#">01321654214</a>
+                                <Link className={`heading - kh ${Element["link-before"]} ml-2`} href="#">01321654214</Link>
                             </p>
                             <p className="flex  items-center ">
                                 <span className="text-rad-kh mr-3 text-xl  "  ><HiOutlineMail/></span>Email Us:
-                                <a className='heading-kh link-kh ml-2 ' href="#">helle@gmail.com</a>
+                                <Link className={`heading - kh ${Element["link-before"]} ml-2`} href="#">helle@gmail.com</Link>
                             </p>
                         </div>
                         <div className="flex flex-col justify-start ">
                             <h3 className='heading-kh text-2xl mb-5 '>Here to Help</h3>
-                            <p className='pregrap-kh text-lg mb-3 '>Tuesday: 8AM - 6AM</p>
-                            <p className='pregrap-kh text-lg mb-3 '>Wednesday: 8AM - 6AM</p>
-                            <p className='pregrap-kh text-lg mb-3 '>Monday: 8AM - 6AM</p>
-                            <p className='pregrap-kh text-lg mb-3 '>Thursday: 8AM - 6AM</p>
-                            <p className='pregrap-kh text-lg mb-3 '>Friday: Closed</p>
+                            <p className={`${Element.paragraphs} text-lg mb-3`}>Tuesday: 8AM - 6AM</p>
+                            <p className={`${Element.paragraphs} text-lg mb-3`}>Wednesday: 8AM - 6AM</p>
+                            <p className={`${Element.paragraphs} text-lg mb-3`}>Monday: 8AM - 6AM</p>
+                            <p className={`${Element.paragraphs} text-lg mb-3`}>Thursday: 8AM - 6AM</p>
+                            <p className={`${Element.paragraphs} text-lg mb-3`}>Friday: Closed</p>
 
                         </div>
 

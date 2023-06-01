@@ -27,7 +27,7 @@ const CoreValue = () => {
                             </div>
                             <div className='flex flex-col justify-start gap-y-2.5  '>
                                 <Link href='#' className='text-xl font-bold text-kh-heading title-link capitalize transition ease-in duration-200 '>Active Learning</Link>
-                                <p className='pregrap-kh '>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor</p>
+                                <p className='font-normal text-base text-p-kh '>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor</p>
                             </div>
                         </div>
                         <div className="flex justify-start items-start activity-box transition-all">
@@ -38,7 +38,7 @@ const CoreValue = () => {
                             </div>
                             <div className='flex flex-col justify-start gap-y-2.5  '>
                                 <Link href='#' className='text-xl font-bold text-kh-heading title-link capitalize transition ease-in duration-200 '>Safe Environment</Link>
-                                <p className='pregrap-kh '>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor</p>
+                                <p className='font-normal text-base text-p-kh '>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor</p>
                             </div>
                         </div>
                         <div className="flex justify-start items-start activity-box transition-all">
@@ -49,7 +49,7 @@ const CoreValue = () => {
                             </div>
                             <div className='flex flex-col justify-start gap-y-2.5  '>
                                 <Link href='#' className='text-xl font-bold text-kh-heading title-link capitalize transition ease-in duration-200 '>Fully Equipment</Link>
-                                <p className='pregrap-kh '>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor</p>
+                                <p className='font-normal text-base text-p-kh '>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor</p>
                             </div>
                         </div>
                     </div>
@@ -67,7 +67,7 @@ const CoreValue = () => {
                             </div>
                             <div className='flex flex-col justify-start gap-y-2.5  '>
                                 <Link href='#' className='text-xl font-bold text-kh-heading title-link capitalize transition ease-in duration-200 '>art class</Link>
-                                <p className='pregrap-kh '>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor</p>
+                                <p className='font-normal text-base text-p-kh '>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor</p>
                             </div>
                         </div>
                         <div className="flex justify-start items-start activity-box transition-all">
@@ -78,7 +78,7 @@ const CoreValue = () => {
                             </div>
                             <div className='flex flex-col justify-start gap-y-2.5  '>
                                 <Link href='#' className='text-xl font-bold text-kh-heading title-link capitalize transition ease-in duration-200 '>expart teacher</Link>
-                                <p className='pregrap-kh '>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor</p>
+                                <p className='font-normal text-base text-p-kh '>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor</p>
                             </div>
                         </div>
                         <div className="flex justify-start items-start activity-box transition-all">
@@ -89,7 +89,7 @@ const CoreValue = () => {
                             </div>
                             <div className='flex flex-col justify-start gap-y-2.5  '>
                                 <Link href='#' className='text-xl font-bold text-kh-heading title-link capitalize transition ease-in duration-200 '>Sport Section</Link>
-                                <p className='pregrap-kh '>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor</p>
+                                <p className='font-normal text-base text-p-kh '>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor</p>
                             </div>
                         </div>
                     </div>

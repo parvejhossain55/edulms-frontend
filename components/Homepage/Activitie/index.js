@@ -17,7 +17,7 @@ const Activities = () => {
                         </div>
                         <div className='flex flex-col justify-start gap-y-4  '>
                             <Link href='#' className='text-xl md:text-2xl font-bold text-kh-heading title-link capitalize  transition ease-in duration-200 '>math Club</Link>
-                            <p className='pregrap-kh'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <p className='font-normal text-base text-p-kh'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                             <Link href='#' className='text-rad-kh text-md font-medium readMore-kh  transition-all ease-in duration-200'>Read More</Link>
                         </div>
                     </div>
@@ -32,7 +32,7 @@ const Activities = () => {
                         </div>
                         <div className='flex flex-col justify-start gap-y-4  '>
                             <Link href='#' className='text-xl md:text-2xl font-bold text-kh-heading title-link capitalize  transition ease-in duration-200 '>Music Training</Link>
-                            <p className='pregrap-kh'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <p className='font-normal text-base text-p-kh'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                             <Link href='#' className='text-rad-kh text-md font-medium readMore-kh  transition-all ease-in duration-200'>Read More</Link>
                         </div>
                     </div>
@@ -45,7 +45,7 @@ const Activities = () => {
                         </div>
                         <div className='flex flex-col justify-start gap-y-4  '>
                             <Link href='#' className='text-xl md:text-2xl font-bold text-kh-heading title-link capitalize  transition ease-in duration-200 '>World Kids Day</Link>
-                            <p className='pregrap-kh'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <p className='font-normal text-base text-p-kh'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                             <Link href='#' className='text-rad-kh text-md font-medium readMore-kh  transition-all ease-in duration-200'>Read More</Link>
                         </div>
                     </div>
@@ -60,7 +60,7 @@ const Activities = () => {
                         </div>
                         <div className='flex flex-col justify-start gap-y-4  '>
                             <Link href='#' className='text-xl md:text-2xl font-bold text-kh-heading title-link capitalize  transition ease-in duration-200 '>Full-Day Session</Link>
-                            <p className='pregrap-kh'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <p className='font-normal text-base text-p-kh'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                             <Link href='#' className='text-rad-kh text-md font-medium readMore-kh  transition-all ease-in duration-200'>Read More</Link>
                         </div>
                     </div>
@@ -73,7 +73,7 @@ const Activities = () => {
                         </div>
                         <div className='flex flex-col justify-start gap-y-4  '>
                             <Link href='#' className='text-xl md:text-2xl font-bold text-kh-heading title-link capitalize  transition ease-in duration-200 '>Art Competition</Link>
-                            <p className='pregrap-kh'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <p className='font-normal text-base text-p-kh'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                             <Link href='#' className='text-rad-kh text-md font-medium readMore-kh  transition-all ease-in duration-200'>Read More</Link>
                         </div>
                     </div>
@@ -87,7 +87,7 @@ const Activities = () => {
                         </div>
                         <div className='flex flex-col justify-start gap-y-4  '>
                             <Link href='#' className='text-xl md:text-2xl font-bold text-kh-heading title-link capitalize  transition ease-in duration-200 '>Museum Visit</Link>
-                            <p className='pregrap-kh'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <p className='font-normal text-base text-p-kh'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                             <Link href='#' className='text-rad-kh text-md font-medium readMore-kh  transition-all ease-in duration-200'>Read More</Link>
                         </div>
                     </div>

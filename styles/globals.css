@@ -27,19 +27,20 @@
 .btn-kh::before:hover{
     @apply left-0 w-full
 }
-.icon-kh{
-    @apply flex justify-center items-center bg-rad-kh w-8 h-8 rounded-[16px]
-}
-.icon-kh:hover{
-    @apply text-rad-kh bg-kh-white transition-all duration-500
-}
+
+/*----->>>>> not use so comment this style ,,, <<<< some reason for not deleter this code <<<<<<< -----------------*/
+/*.icon-kh{*/
+/*    @apply flex justify-center items-center bg-rad-kh w-8 h-8 rounded-[16px] mr-4 transition-all duration-500*/
+/*}*/
+/*.icon-kh:hover{*/
+/*    @apply text-rad-kh bg-kh-white*/
+/*}*/
 
 .heading-kh{
     @apply text-kh-heading font-bold font-Catamaran
 }
-.pregrap-kh{
-    @apply font-normal text-base text-p-kh
-}
+
+
 .containte-kh{
     @apply container mx-auto px-3 sm:px-0 lg:px-10 xl:px-20
 }
@@ -56,13 +57,10 @@
     @apply py-4 px-6 w-full mb-2 border-gray-300 focus:border-rad-kh border-[1.5px] rounded-lg outline-none transition-all delay-200 ease-in-out
 }
 
-.link-kh{
-    @apply hover:text-[#ea512e] font-semibold  before:w-0 before:h-[1px]  before:absolute hover:duration-500 before:-left-0 before:-bottom-2 before:bg-[#ea512e] relative before:duration-300 hover:before:w-full
-}
 .bg-banner-kh{
     @apply absolute -z-30 bg-fixed  top-0 right-0  w-full
 }
-/*this style not use ==== >>>> */
+/*this style not use ==== >>>>  some reason not delete this code ------>>>>>RIGHT NOW*/
 /*.link-text-kh{*/
 /*    @apply font-normal text-base text-p-kh hover:text-rad-kh transition-all border-transparent*/
 /*}*/

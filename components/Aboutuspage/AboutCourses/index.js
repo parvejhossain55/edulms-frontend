@@ -4,7 +4,7 @@ import aboutCourse from '../../../assect/img/AboutCourses -1.png';
 import aboutCourse_shape_1 from '../../../assect/img/AboutCourses-shape-1.png';
 import aboutCourse_shape_2 from '../../../assect/img/AboutCourses-shape-2.png';
 import aboutCourse_shape_3 from '../../../assect/img/AboutCourses-shape-3.png';
-import { Button } from '../../Design';
+import { Button,Element } from '../../Design';
 
 const AboutCourses = () => {
     return (
@@ -27,10 +27,10 @@ const AboutCourses = () => {
                         <span className="font-sacramento  font-semibold text-rad-kh -mb-3 ">Courses</span>
                         <h1 className="heading-kh text-2xl font-bold lg:text-[45px] lg:leading-[55px]">Request a Tutors For Free Online Class</h1>
 
-                        <p className="pregrap-kh">
+                        <p className={`${Element.paragraphs}`}>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
                         </p>
-                        <p className="pregrap-kh">
+                        <p className={`${Element.paragraphs}`}>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                         </p>
                         <button className={`${Button.btn_card}`} >Search Tutor</button>

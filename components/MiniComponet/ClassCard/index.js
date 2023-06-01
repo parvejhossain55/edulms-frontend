@@ -29,7 +29,7 @@ const ClassCard = ({
             </div>
             <div className="flex flex-col px-8 pb-6 ">
                 <Link className="heading-kh mb-4 text-xl md:text-2xl transition-all duration-200 ease-in  title-link" href='#'>{title}</Link>
-                <p className="pregrap-kh mb-5"> {description}</p>
+                <p className="font-normal text-base text-p-kh mb-5"> {description}</p>
                 <span className='bg-rad-kh w-full border-dashed border-b-[1.5px] mb-4 '></span>
                 <div className="flex justify-between items-center mb-4 capitalize">
                     <h5 className='font-medium'><span className="text-rad-kh mr-1">age : </span>{age}</h5>
