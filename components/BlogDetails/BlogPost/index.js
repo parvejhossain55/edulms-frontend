@@ -4,8 +4,8 @@ import blogPostImg from '../../../assect/img/BlogPost.jpg'
 import blog_1 from '../../../assect/img/blog-1.jpg'
 import blog_2 from '../../../assect/img/blog-2.jpg'
 import blog_3 from '../../../assect/img/blog-3.jpg'
-import client_1 from '../../../assect/img/client-1.jpg'
-import client_3 from '../../../assect/img/client-3.jpg'
+// import client_1 from '../../../assect/img/client-1.jpg'
+// import client_3 from '../../../assect/img/client-3.jpg'
 import {BsCheck, BsFillBookmarkFill, BsTwitter} from "react-icons/bs";
 import {FaCircle, FaFacebookF, FaPinterestP} from "react-icons/fa";
 import {AiOutlineLeft, AiOutlineRight} from "react-icons/ai";
@@ -132,11 +132,11 @@ const BlogPost = () => {
                             <h3 className='heading-kh text-2xl mb-3 '> 3 Comments:</h3>
                             <div className="flex justify-start gap-x-5 ">
                                 <div>
-                                    <Image
+                                   {/* <Image
                                         src={client_1}
                                         style={{width:"auto",height:"auto"}}
                                         className='!w-28 '
-                                        alt='client-avtar'/>
+                                        alt='client-avtar'/>*/}
                                 </div>
                                 <div className="flex flex-col gap-y-2">
                                     {/*--------------this is main comment ----------->>>> */}
@@ -152,11 +152,11 @@ const BlogPost = () => {
                                     {/*=====>>>>> Reply the Commet =============>>>> box*/}
                                     <div className="flex justify-start gap-x-5 mt-4 ">
                                         <div>
-                                            <Image
+                                           {/* <Image
                                                 src={client_3}
                                                 style={{width:"auto",height:"auto"}}
                                                 className='!w-28 '
-                                                alt='client-avtar'/>
+                                                alt='client-avtar'/>*/}
                                         </div>
                                         <div className="flex flex-col justify-start  gap-y-2.5">
                                             <h3 className='heading-kh'> John Jones</h3>
@@ -177,11 +177,11 @@ const BlogPost = () => {
                             {/*------------------------------------ 2nd Commend ------------->>>>>>*/}
                             <div className="flex justify-start gap-x-5 ">
                                 <div>
-                                    <Image
+                                    {/*<Image
                                         src={client_1}
                                         style={{width:"auto",height:"auto"}}
                                         className='!w-28 '
-                                        alt='client-avtar'/>
+                                        alt='client-avtar'/>*/}
                                 </div>
                                 <div className="flex flex-col gap-y-3">
                                     {/*--------------this is main comment ----------->>>> */}
@@ -198,11 +198,11 @@ const BlogPost = () => {
                                     {/*=====>>>>> Reply the Commet =============>>>> box*/}
                                     <div className="flex justify-start gap-x-5 mt-4 ">
                                         <div>
-                                            <Image
+                                           {/* <Image
                                                 src={client_3}
                                                 style={{width:"auto",height:"auto"}}
                                                 className='!w-28 '
-                                                alt='client-avtar'/>
+                                                alt='client-avtar'/>*/}
                                         </div>
                                         <div className="flex flex-col gap-y-2.5">
                                             <h3 className='heading-kh'> John Jones</h3>
