@@ -1,8 +1,8 @@
 import React from 'react'
-import { SignupPage } from '../../components'
+import { SignupPage } from '../components'
 import Head from 'next/head'
 
-const signup = () => {
+const register = () => {
     return (
         <div>
             <div>
@@ -17,4 +17,4 @@ const signup = () => {
     )
 }
 
-export default signup
+export default register

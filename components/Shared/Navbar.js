@@ -18,6 +18,10 @@ import logo from '../../assect/img/leadeducare-lg-logo.png'
 import Link from 'next/link';
 import { Drawer, List, ListItem, ListItemButton, ListItemText, SwipeableDrawer } from '@mui/material';
 import { useRouter } from 'next/router';
+import {getToken, logOut, removeSessions} from "../../helper/sessionStorage";
+import axios from "axios";
+import {Dropdown, Space} from "antd";
+import {DownOutlined, KeyOutlined, UploadOutlined, UserOutlined} from "@ant-design/icons";
 
 
 
@@ -63,6 +67,68 @@ export default function Navbar(props) {
             setSelectedIndex(4)
         }
     }, [])
+
+    const AuthVerify = async () => {
+        const token = getToken()
+        const AuthToken = { headers: { 'Authorization': `Bearer ${token}` } }
+
+        try {
+            await axios.get(`${process.env.NEXT_PUBLIC_URL}/auth/auth-check`, AuthToken)
+        } catch (err) {
+            if (err?.response?.status === 401) {
+                removeSessions()
+                router.push('/login')
+            } else if (err?.response?.status === 500) {
+                removeSessions()
+                router.push('/404');
+            }
+        }
+    }
+    React.useEffect(() => {
+
+        const token = localStorage.getItem('token')
+        if (token) {
+            setUser({ value: token })
+            setKey(Math.random())
+            AuthVerify()
+        }
+
+    }, [])
+
+    const logout = ()=>{
+        logOut()
+    }
+
+    const items = [
+        {
+            key: '1',
+            label: (
+                <Link href='/dashboard'>
+                    Dashboard
+                </Link>
+            ),
+            icon: <UserOutlined />
+        },
+        {
+            key: '2',
+            label: (
+                <Link href='/dashboard/profile'>
+                    Profile
+                </Link>
+            ),
+            icon: <KeyOutlined rotate={-130} />
+        },
+        {
+            key: '3',
+            label: (
+                <Link href='/' onClick={logout} >
+                    Log Out
+                </Link>
+            ),
+            icon: <UploadOutlined rotate={90} />
+        }
+    ];
+
 
     return (
 
@@ -152,7 +218,8 @@ export default function Navbar(props) {
                         </Box>
                         {
                             !user.value && <Box sx={{ flexGrow: 0 }}>
-                                <Button color='secondary' component={Link} href='/users/login' sx={{ textTransform: 'capitalize', fontWeight: '600', background: '#ea512e', '&:hover': {background: '#ff2e00'} }} variant='contained' disableElevation>Login</Button>
+                                <Button color='secondary' component={Link} href='/login' className='mr-4' sx={{ textTransform: 'capitalize', fontWeight: '600', background: '#ea512e', '&:hover': {background: '#ff2e00'} }} variant='contained' disableElevation>Login</Button>
+                                <Button color='secondary' component={Link} href='/register' sx={{ textTransform: 'capitalize', fontWeight: '600', background: '#ea512e', '&:hover': {background: '#ff2e00'} }} variant='contained' disableElevation>Register</Button>
                             </Box>
                         }
                         {
@@ -185,6 +252,11 @@ export default function Navbar(props) {
                                             <Typography sx={{ paddingRight: 8 }} textAlign="center">{setting.title}</Typography>
                                         </MenuItem>
                                     ))}
+                                    <MenuItem component={Link} href='/' onClick={logOut}>
+                                        <Typography sx={{ paddingRight: 8 }} textAlign="center">Logout</Typography>
+                                    </MenuItem>
+
+
                                 </Menu>
                             </Box>
                         }
@@ -245,8 +317,7 @@ function ElevationScroll(props) {
         sx: {
             padding: trigger ? '0' : '20px 0px',
             backgroundColor: trigger ? '#fff' : '#e7ddf4',
-            transition: 'background-color 0.3s ease',
-            transition: 'padding 0.3s ease',
+            transition: 'background-color 0.3s ease padding 0.3s ease',
             boxShadow: trigger ? '9px 7px 40px #00000036' : 'none'
         },
     });
@@ -283,9 +354,5 @@ const settings = [
     {
         link: '/dashboard/profile',
         title: 'Profile'
-    },
-    {
-        link: '/logout',
-        title: 'Logout'
     },
 ]
