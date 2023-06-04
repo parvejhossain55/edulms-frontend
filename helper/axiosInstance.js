@@ -8,3 +8,15 @@ const instance = axios.create({
 });
 
 export default instance;
+
+/*export const  getServerSideProps = async ()=>{
+    const page = 1;
+    const perPage = 12;
+    const keyword = '0';
+    const url = `/posts/${page}/${perPage}/${keyword}`
+    const {data} = await axiosInstance.get(url);
+    console.log('data', data)
+    return {
+        props: {posts: data}
+    }
+}*/

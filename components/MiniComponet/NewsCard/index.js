@@ -11,8 +11,6 @@ const NewsCard = ({
     admin = 'jack john',
     date = '25 Dec 2022',
     BtnURL='#'
-
-
 }) => {
     return (
         <div className="card bg-kh-white flex rounded-2xl md:basis-[48%] lg:basis-[31%] flex-col drop-shadow-lg pb-8">
