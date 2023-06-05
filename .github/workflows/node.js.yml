@@ -18,7 +18,7 @@ jobs:
           node-version: '18.15.0'
       - name: 🔨 Dependencies Install
         run: |
-          npm install
+          yarn
 
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
