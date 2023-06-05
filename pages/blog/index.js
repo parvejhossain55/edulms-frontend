@@ -1,17 +1,17 @@
 import Head from "next/head";
-import {BlogPage} from "../components";
-import axiosInstance from "../helper/axiosInstance";
+import {BlogPage} from "../../components";
+import axiosInstance from "../../helper/axiosInstance";
 import process from "next/dist/build/webpack/loaders/resolve-url-loader/lib/postcss";
 import React, {createContext, useContext, useEffect, useState} from "react";
 import {Skeleton} from "antd";
 import ReactPaginate from "react-paginate";
-import BlogCard from "../components/BlogPage/BlogCard";
+import BlogCard from "../../components/BlogPage/BlogCard";
 import axios from "axios";
 import {Stack} from "@mui/material";
-import {PostsFilterContext, PostsFilterContextProvider} from "../context/postFilter";
-import {store} from "../redux/store";
+import {PostsFilterContext, PostsFilterContextProvider} from "../../context/postFilter";
+import {store} from "../../redux/store";
 import {useDispatch} from "react-redux";
-import {setCurrentPage} from "../redux/slice/posts-slice";
+import {setCurrentPage} from "../../redux/slice/posts-slice";
 import {useRouter} from "next/router";
 
 
