@@ -21,7 +21,7 @@ const BlogCard = ({
             <div className="flex flex-col px-6 gap-y-4">
                 <Link href='#' className='text-xl font-bold text-kh-heading title-link capitalize transition ease-in duration-200'>{post?.title}</Link>
                 { ReactHtmlParser(post?.content.substring(0, 120)+'...')}
-                <Link href={`/blog/${post?._id}`} className={`text-white bg-red-600 w-[120px] p-2 rounded`}>Read More</Link>
+                <Link href={`/blog/${post?._id}`} className={`${Button.btn_card} font-semibold`}>Read More</Link>
             </div>
         </div>
     );

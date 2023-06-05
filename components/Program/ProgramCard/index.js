@@ -6,7 +6,7 @@ import class3 from "../../../assect/img/class-3.jpg";
 import classShape1 from "../../../assect/img/class-shape-1.png";
 import classShape2 from "../../../assect/img/class-shape-2.png";
 import Pagination from "../../MiniComponet/Pagination";
-import ClassCard from "../../MiniComponet/ClassCard";
+import ClassCard from "../../MiniComponet/CoursCard";
 
 const ProgramCard = () => {
     return (
