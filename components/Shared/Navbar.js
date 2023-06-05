@@ -314,10 +314,11 @@ function ElevationScroll(props) {
     });
 
     return React.cloneElement(children, {
+        elevation: trigger ? 4 : 0,
         sx: {
             padding: trigger ? '0' : '20px 0px',
             backgroundColor: trigger ? '#fff' : '#e7ddf4',
-            transition: 'background-color 0.3s ease padding 0.3s ease',
+            transition: '300ms ease-in-out',
             boxShadow: trigger ? '9px 7px 40px #00000036' : 'none'
         },
     });
