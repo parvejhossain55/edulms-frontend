@@ -5,7 +5,7 @@ import Classes from "./Classes";
 import CoreValue from "./CoreValue";
 import Teacher from "./Teacher";
 import Event from "./Event";
-import LatestNews from "./LatestNews";
+import LatestBlog from "./LatestBlog";
 import Activities from "./Activitie";
 
 const Homepage = () => {
@@ -14,12 +14,13 @@ const Homepage = () => {
       <div>
         <HeroSection />
         <WhoWeAre />
+        <LatestBlog />
         <Activities />
         <Classes />
         <Event />
         <CoreValue />
         <Teacher />
-        <LatestNews />
+
       </div>
     </div>
   );
