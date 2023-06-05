@@ -1,5 +1,4 @@
 
-
 .card:hover .cardImage{
   transform: rotate(2deg) scale(1.2);
 }

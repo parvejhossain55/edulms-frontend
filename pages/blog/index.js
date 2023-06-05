@@ -59,6 +59,7 @@ const Blog = ({posts, totalPages, currentPage, totalPosts, categories}) => {
             router.push(`/blog?page=${selectedPage}`);
         }
     };
+    console.log('totalPages', totalPages)
 
     return (
         <>
