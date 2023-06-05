@@ -12,9 +12,26 @@ import {AiOutlineLeft, AiOutlineRight} from "react-icons/ai";
 import {BiSearchAlt} from "react-icons/bi";
 import {Button,Element} from '../../components/Design';
 import Link from "next/link";
+import axiosInstance from "../../helper/axiosInstance";
+import moment from "moment";
+import ReactHtmlParser from 'react-html-parser';
+
+export const getServerSideProps = async ({query}) => {
+  const {id} = query;
+  const url = `/posts/${id}`;
+  const {data} =  await axiosInstance.get(url)
+  const categories =  await axiosInstance.get(`blog/category/dropdown`)
+
+  return { props: {
+          post: data,
+          categories: categories.data
+  } };
+};
 
 
-const BlogPost = () => {
+const BlogPost = ({post, categories}) => {
+  console.log('post', post);
+  console.log('categories', categories);
     return (
         <div className='bg-kh-white pb-20' id='blogPost'>
             <div className="containte-kh px-4   ">
@@ -22,20 +39,38 @@ const BlogPost = () => {
                     <div className="flex flex-col pr-4 basis-full lg:basis-8/12 gap-y-6 mb-5">
                         <div className='w-full '>
                             <Image
-                                src={blogPostImg}
-                                style={{width:"auto",height:"auto"}}
+                                src={post?.thumbnail?.secure_url}
+                                width={'500'}
+                                height={'400'}
                                 className='w-full rounded-md '
-                                alt='blog-post' />
+                                alt={post?.title} />
+
                         </div>
                         <div className='flex justify-start items-center gap-x-5 -mt-2 flex-wrap  '>
                             <h5 className='text-kh-heading font-[600]  '>Posted On:
-                                <Link className='Link-text-kh  pl-2' href="#">September 31, 2022</Link>
+                                <Link className='Link-text-kh  pl-2' href="#">{moment(post?.createdAt, "YYYYMMDD").fromNow()}</Link>
                             </h5>
                             <h5 className='text-kh-heading  font-[600] '>Posted By:
-                                <Link className='Link-text-kh pl-2 ' href="#">John Anderson</Link>
+                                <Link className='Link-text-kh pl-2 ' href="#">{post?.author.firstName +' '+  post?.author.lastName}</Link>
                             </h5>
                         </div>
                         <div className='flex flex-col justify-start  gap-y-5'>
+                            {
+                                ReactHtmlParser(post?.content)
+                            }
+                            <div className="flex justify-between items-center border-y-gray-150 border-y-[1px] py-4 ">
+                                <Link className='font-[600] text-kh-heading hover:text-rad-kh hover:tracking-tight transition-all delay-300 flex justify-center items-center gap-x-4' href="#">
+                                    <AiOutlineLeft/>
+                                    Prev Post
+                                </Link>
+                                <Link className='font-[600] text-kh-heading hover:text-rad-kh hover:tracking-tight transition-all delay-300 flex justify-center items-center gap-x-4' href="#">
+                                    Next Post
+                                    <AiOutlineRight/>
+                                </Link>
+                            </div>
+                        </div>
+
+                        {/* <div className='flex flex-col justify-start  gap-y-5'>
 
                             <h1 className='heading-kh text-xl md:text-2xl  '>
                                 Determining The True Goal of Good Education is Difficult.
@@ -126,7 +161,8 @@ const BlogPost = () => {
                                     <AiOutlineRight/>
                                 </Link>
                             </div>
-                        </div>
+                        </div> */}
+
                         {/*    ----->>> Comment  Box ---------<<<<<< */}
                         <div className="flex flex-col justify-start gap-y-5  ">
                             <h3 className='heading-kh text-2xl mb-3 '> 3 Comments:</h3>

@@ -74,7 +74,7 @@ const BlogCard = ({ item, index , BlogList, }) => {
             <div
                 key={index}
                 className="mb-5 border bg-white-800 rounded-md hover:shadow-sm mx-2 sm:mx-0 first:ms-4"
-                // className="mb-5 w-96 sm:w-64 2xl:w-80 border bg-white-800 rounded-md hover:shadow-sm mx-2 sm:mx-0 first:ms-4"
+
             >
                 <img
                     className="w-full rounded-t-md h-full bg-cover bg-center"

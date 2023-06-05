@@ -16,19 +16,20 @@ import {useRouter} from "next/router";
 
 
 export const getServerSideProps = async ({query}) => {
-    // const {currentPage, perPage} = store.getState().post;
     const {page, cat} = query;
-   const url = `/posts/${page}/1/0`
+   const url = `/posts/${page}/10/0`
    const {data} =  await axiosInstance.post(url, {category: cat ? [cat] : []})
+    const categories =  await axiosInstance.get(`blog/category/dropdown`)
 
     return { props: {
             posts: data?.posts,
             totalPages: data?.totalPages,
             currentPage: data?.currentPage,
-            totalPosts: data?.totalPosts
+            totalPosts: data?.totalPosts,
+            categories: categories.data
     } };
 };
-const Blog = ({posts, totalPages, currentPage, totalPosts}) => {
+const Blog = ({posts, totalPages, currentPage, totalPosts, categories}) => {
     const dispatch = useDispatch();
     const router = useRouter();
 
@@ -39,44 +40,10 @@ const Blog = ({posts, totalPages, currentPage, totalPosts}) => {
     // const [totalPosts, setTotalPosts] = useState();
     const [perPage, setPerPage] = useState(1);
     const [category, setCategory] = useState([]);
-    const [categories, setCategories] = useState([])
     const [loading, setLoading] = useState(true);
 
-    console.log('alamgir', posts)
 
-    const BlogList = async () => {
-        try {
 
-            setLoading(true)
-            const { data } = await axiosInstance.post(`/posts/${currentPage}/${perPage}/0`, {category: selectedCategory})
-            setLoading(false)
-            setBlogPost(data?.posts)
-            // setTotalPages(data?.totalPages)
-            setCurrentPage(data?.currentPage)
-            // setTotalPosts(data?.totalPosts)
-            setLoading(false);
-            // console.log('posts', data?.posts)
-
-        } catch (err) {
-            console.log(err)
-        }
-    }
-    const CategoryList = async () => {
-        try {
-            setLoading(true)
-            const { data } = await axiosInstance.get(`/blog/category/1/10/0`)
-            setLoading(false)
-            setCategories(data.data[0].Rows)
-            console.log("axPPP", data)
-        } catch (err) {
-            console.log(err)
-        }
-    }
-
-    useEffect(() => {
-        BlogList()
-        CategoryList()
-    }, [currentPage, perPage, totalPages , totalPosts , selectedCategory ])
     const handleBlogCatChange = (e) => {
         const { value } = e.target;
         setSelectedCategory(value);
@@ -98,24 +65,21 @@ const Blog = ({posts, totalPages, currentPage, totalPosts}) => {
             <Head>
                 <title>Blog Post</title>
             </Head>
-            {/*<main>
-                <BlogPage />
-            </main>*/}
 
                 <div className="font-roboto">
                 <h2 className="pt-10 pb-2 text-3xl text-[#140342] font-bold text-center">
-                    Latest News
+                    All Blogs
                 </h2>
-                <h2 className="text-md text-gray-600 text-center">
+                {/*<h2 className="text-md text-gray-600 text-center">
                     We`re on a mission to deliver engaging, curated courses at a reasonable
                     price.
-                </h2>
+                </h2>*/}
                 <div className="w-12/12 md:flex container mx-auto px-5">
                     <div className="w-12/12 md:w-2/12 ms-6 mt-4">
                         <div className="flex justify-center my-10">
                             <ul className="flex flex-col space-x-2">
                                 <p className="ms-2 text-xl font-medium">Categories</p>
-                                { loading &&
+                               {/* { loading &&
                                     <>
                                         <Skeleton active width={130}/>
                                         <Skeleton active width={150}/>
@@ -128,7 +92,7 @@ const Blog = ({posts, totalPages, currentPage, totalPosts}) => {
                                         <Skeleton active width={150}/>
                                         <Skeleton active width={130}/>
                                     </>
-                                }
+                                }*/}
                                 <label>
                                     <button
                                         className={`me-2 mt-4 text-md hover:text-indigo-600 ${selectedCategory === "" ? "text-indigo-600 cursor-pointer" : "cursor-pointer"}`}
@@ -155,14 +119,13 @@ const Blog = ({posts, totalPages, currentPage, totalPosts}) => {
                     </div>
 
                     <div className="w-12/12 md:w-10/12 mt-8">
-                        <BlogCard/>
                         <div className="flex justify-between">
-                            <p className="text-center ms-4 mb-2">Total Blog {totalPosts}</p>
+                            <p className="text-center ms-4 mb-2">Total Posts {totalPosts}</p>
                             <p className="text-center mb-2">Page {currentPage} of {totalPages}</p>
                         </div>
 
                         <div className="flex flex-wrap 2xl:container 2xl:mx-auto items-start justify-center ">
-                            {loading &&
+                           {/* {loading &&
                                 Array.from({ length: 8 }).map((item, i) => (
                                     <div className="ps-4 w-12/12 sm:w-6/12 md:w-4/12 lg:w-3/12 space-x-4" key={i} >
                                         <Stack key={i.toString()} spacing={1} sx={{ width: '250px' }}>
@@ -175,10 +138,10 @@ const Blog = ({posts, totalPages, currentPage, totalPosts}) => {
                                         </Stack>
                                     </div>
                                 ))
-                            }
+                            }*/}
                             { posts?.map((item, index) => (
                                 <div key={index} className="w-12/12 sm:w-6/12 md:w-4/12 lg:w-3/12">
-                                    <BlogCard item={item} index={index} BlogList={BlogList}/>
+                                    <BlogCard item={item} index={index} BlogList={item}/>
                                 </div>
                                  ))
                             }
