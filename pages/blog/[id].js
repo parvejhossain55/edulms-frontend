@@ -255,7 +255,7 @@ const BlogPost = ({post, categories, popularPosts, relatedPosts}) => {
                             </div>
                             {
                                 popularPosts?.map(post => (
-                                    <div className="flex justify-start gap-x-4 items-center ">
+                                    <div className="flex justify-start gap-x-4 items-center" key={post?._id}>
                                         <Link href={`/blog/${post?._id}`} className={`rounded-md cursor-pointer bg-cover bg-center bg-cover basis-1/4`}>
                                             <Image src={post?.thumbnail?.secure_url} width={120} height={120} alt={post?.name} className='border border-1'/>
                                         </Link>
@@ -277,7 +277,7 @@ const BlogPost = ({post, categories, popularPosts, relatedPosts}) => {
                             </div>
                             {
                                 relatedPosts?.map(post => (
-                                    <div className="flex justify-start gap-x-4 items-center ">
+                                    <div className="flex justify-start gap-x-4 items-center " key={post?._id}>
                                         <Link href={`/blog/${post?._id}`} className={`rounded-md cursor-pointer bg-cover bg-center bg-cover basis-1/4`}>
                                             <Image src={post?.thumbnail?.secure_url} width={120} height={120} alt={post?.name} className='border border-1'/>
                                         </Link>
@@ -302,7 +302,7 @@ const BlogPost = ({post, categories, popularPosts, relatedPosts}) => {
                             <div className="flex flex-col justify-start items-start gap-y-4 pb-5 ">
                                 {
                                     categories?.map(category => (
-                                        <div className='flex justify-center items-center  gap-x-2'>
+                                        <div className='flex justify-center items-center  gap-x-2' key={category?._id}>
                                             <span className='text-[10px] text-rad-kh'> <FaCircle/></span>
                                             <Link className={`${Element["link-primary"]} heading-kh !font-thin` } href={`/blog/category/${category?._id}?cat=${category?.name}`}>{category?.name}</Link>
                                         </div>
