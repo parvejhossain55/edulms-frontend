@@ -38,7 +38,7 @@ const ClassCard = ({ course}) => {
             </div>
 
             <div className="flex flex-col px-8 pb-6 ">
-                <Link className="heading-kh mb-4 text-xl md:text-2xl transition-all duration-200 ease-in  title-link" href='#'>{course?.name}</Link>
+                <Link  href={`/course/${course?._id}`} className="heading-kh mb-4 text-xl md:text-2xl transition-all duration-200 ease-in  title-link">{course?.name}</Link>
                 <p className="font-normal text-base text-p-kh mb-5"> {course?.description?.substring(0, 120)}</p>
                 <span className='bg-rad-kh w-full border-dashed border-b-[1.5px] mb-4 '></span>
                 <button className={`${Button.btn_card} font-semibold`}>Join Course</button>
