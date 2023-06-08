@@ -338,12 +338,20 @@ const pages = [
         title: 'Blog'
     },
     {
+        link: '/teacher/teachers',
+        title: 'Teachers'
+    },
+    {
         link: '/contact-us',
         title: 'Contact'
     },
     {
         link: '/about-us',
         title: 'About Us'
+    },
+    {
+        link: '/cart',
+        title: 'Cart'
     },
 ];
 
